@@ -1,35 +1,45 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Models</title>
 </head>
 <body>
+<h1>Models</h1>
+<div id="index"></div>
 <script>
     (async () => {
-        const path = '/'
+        const path = window.location.pathname.split('/')[0]
+        const extensions = ['xml', 'ini', 'toml', 'qml', 'sql']
+
         const response = await fetch('https://api.github.com/repos/opengisch/models/contents' + path);
         const data = await response.json();
         let dirHtmlString = '';
         let fileHtmlString = '';
-        
+
         for (let file of data) {
             if (file.type == 'dir') {
-                dirHtmlString += `<li><a href="${file.name}">${file.name}</a></li>`;
+                dirHtmlString += `<li class="list-group-item"><a href="${file.name}">${file.name}</a></li>`;
                 continue;
             }
-	   
-	    fileExtension = file.name.substr((file.name.lastIndexOf('.') + 1));
-            if (fileExtension == 'xml') {
-                fileHtmlString += `<li><a href="${file.name}">${file.name}</a></li>`;
+
+            fileExtension = file.name.substr((file.name.lastIndexOf('.') + 1));
+            if (extensions.indexOf(fileExtension) != -1) {
+                fileHtmlString += `<li class="list-group-item"><a href="${file.name}">${file.name}</a></li>`;
             }
         }
-        
-        fileHtmlString = `<ul>${dirHtmlString}${fileHtmlString}</ul>`;
-        document.getElementsByTagName('body')[0].innerHTML = fileHtmlString;
+
+        fileHtmlString = `<ul class="list-group">${dirHtmlString}${fileHtmlString}</ul>`;
+        document.getElementById('index').innerHTML = fileHtmlString;
     })()
 
 </script>
 
 </body>
 </html>
+
