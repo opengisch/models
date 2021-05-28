@@ -11,7 +11,7 @@
     <title>Models</title>
 </head>
 <body>
-<h1 id="title">Models - </h1>
+<h1 id="title">Models</h1>
 <div id="index"></div>
 <script>
     (async () => {
@@ -37,7 +37,8 @@
 
         fileHtmlString = `<ul class="fa-ul list-group">${dirHtmlString}${fileHtmlString}</ul>`;
         document.getElementById('index').innerHTML = fileHtmlString;
-        document.getElementById('title').innerHTML += path;
+        document.getElementById('title').innerHTML += ` - ${path}`;
+        document.title += ` - ${path}`;
     })()
 
 </script>
