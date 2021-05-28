@@ -10,19 +10,23 @@
         const path = '/'
         const response = await fetch('https://api.github.com/repos/opengisch/models/contents' + path);
         const data = await response.json();
-        let htmlString = '<ul>';
+        let dirHtmlString = '';
+        let fileHtmlString = '';
+        
         for (let file of data) {
-            fileExtension = file.name.substr((file.name.lastIndexOf('.') + 1));
-            if (!(file.type == 'dir' || fileExtension == 'xml')) {
+            if (file.type == 'dir') {
+                dirHtmlString += `<li><a href="${file.name}">${file.name}</a></li>`;
                 continue;
             }
-            let period = file.name.lastIndexOf('.');
-            let file_name = file.name.substring(0, period);
-
-            htmlString += `<li><a href="${file_name}">${file_name}</a></li>`;
+	   
+	    fileExtension = file.name.substr((file.name.lastIndexOf('.') + 1));
+            if (fileExtension == 'xml') {
+                fileHtmlString += `<li><a href="${file.name}">${file.name}</a></li>`;
+            }
         }
-        htmlString += '</ul>';
-        document.getElementsByTagName('body')[0].innerHTML = htmlString;
+        
+        fileHtmlString = `<ul>${dirHtmlString}${fileHtmlString}</ul>`;
+        document.getElementsByTagName('body')[0].innerHTML = fileHtmlString;
     })()
 
 </script>
