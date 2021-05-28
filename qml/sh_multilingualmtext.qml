@@ -1,0 +1,117 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis maxScale="0" version="3.10.13-A Coruña" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" minScale="1e+08" readOnly="0">
+  <flags>
+    <Identifiable>1</Identifiable>
+    <Removable>1</Removable>
+    <Searchable>1</Searchable>
+  </flags>
+  <customproperties>
+    <property key="embeddedWidgets/count" value="0"/>
+    <property key="variableNames"/>
+    <property key="variableValues"/>
+  </customproperties>
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+    <activeChecks/>
+    <checkConfiguration/>
+  </geometryOptions>
+  <fieldConfiguration>
+    <field name="t_id">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="t_seq">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+  </fieldConfiguration>
+  <aliases>
+    <alias index="0" field="t_id" name=""/>
+    <alias index="1" field="t_seq" name=""/>
+  </aliases>
+  <excludeAttributesWMS/>
+  <excludeAttributesWFS/>
+  <defaults>
+    <default field="t_id" expression="" applyOnUpdate="0"/>
+    <default field="t_seq" expression="" applyOnUpdate="0"/>
+  </defaults>
+  <constraints>
+    <constraint unique_strength="1" field="t_id" exp_strength="0" notnull_strength="1" constraints="3"/>
+    <constraint unique_strength="0" field="t_seq" exp_strength="0" notnull_strength="0" constraints="0"/>
+  </constraints>
+  <constraintExpressions>
+    <constraint field="t_id" exp="" desc=""/>
+    <constraint field="t_seq" exp="" desc=""/>
+  </constraintExpressions>
+  <expressionfields/>
+  <attributeactions>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+  </attributeactions>
+  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+    <columns>
+      <column type="field" hidden="0" width="-1" name="t_id"/>
+      <column type="field" hidden="0" width="-1" name="t_seq"/>
+      <column type="actions" hidden="1" width="-1"/>
+    </columns>
+  </attributetableconfig>
+  <conditionalstyles>
+    <rowstyles/>
+    <fieldstyles/>
+  </conditionalstyles>
+  <storedexpressions/>
+  <editform tolerant="1"></editform>
+  <editforminit/>
+  <editforminitcodesource>0</editforminitcodesource>
+  <editforminitfilepath></editforminitfilepath>
+  <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+  <featformsuppress>0</featformsuppress>
+  <editorlayout>tablayout</editorlayout>
+  <attributeEditorForm>
+    <attributeEditorField index="0" name="t_id" showLabel="1"/>
+    <attributeEditorField index="1" name="t_seq" showLabel="1"/>
+  </attributeEditorForm>
+  <editable>
+    <field name="t_id" editable="1"/>
+    <field name="t_seq" editable="1"/>
+  </editable>
+  <labelOnTop>
+    <field name="t_id" labelOnTop="0"/>
+    <field name="t_seq" labelOnTop="0"/>
+  </labelOnTop>
+  <widgets>
+    <widget name="localisatnch_v1_lclsdmtext_multilingualmtxt_lclsdtext_fkey_1">
+      <config type="Map">
+        <Option type="QString" name="nm-rel" value=""/>
+      </config>
+    </widget>
+    <widget name="localisedmtext_multilingualmtxt_lclsdtext_fkey_1">
+      <config type="Map">
+        <Option type="QString" name="nm-rel" value=""/>
+      </config>
+    </widget>
+  </widgets>
+  <previewExpression>"t_id"</previewExpression>
+  <mapTip></mapTip>
+  <layerGeometryType>4</layerGeometryType>
+</qgis>
