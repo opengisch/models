@@ -15,7 +15,7 @@
 <div id="index"></div>
 <script>
     (async () => {
-        const path = window.location.pathname.split('/')[0]
+        const path = window.location.pathname.split('/')[1]
         const extensions = ['xml', 'ini', 'toml', 'qml', 'sql']
 
         const response = await fetch('https://api.github.com/repos/opengisch/models/contents' + path);
