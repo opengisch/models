@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Models</title>
+</head>
+<body>
+<h1>Models</h1>
+<div id="index"></div>
+<script>
+    (async () => {
+        const path = window.location.pathname.split('/')[0]
+        const extensions = ['xml', 'ini', 'toml', 'qml', 'sql']
+
+        const response = await fetch('https://api.github.com/repos/opengisch/models/contents' + path);
+        const data = await response.json();
+        let dirHtmlString = '';
+        let fileHtmlString = '';
+
+        for (let file of data) {
+            if (file.type == 'dir') {
+                dirHtmlString += `<li class="list-group-item list-group-item-secondary"><span class="fa-li"><i class="far fa-folder-open"></i></span><a href="${file.name}">${file.name}</a></li>`;
+                continue;
+            }
+
+            fileExtension = file.name.substr((file.name.lastIndexOf('.') + 1));
+            if (extensions.indexOf(fileExtension) != -1) {
+                fileHtmlString += `<li class="list-group-item"><span class="fa-li"><i class="far fa-file"></i></span><a href="${file.name}">${file.name}</a></li>`;
+            }
+        }
+
+        fileHtmlString = `<ul class="fa-ul list-group">${dirHtmlString}${fileHtmlString}</ul>`;
+        document.getElementById('index').innerHTML = fileHtmlString;
+    })()
+
+</script>
+
+</body>
+</html>
+
