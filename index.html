@@ -8,7 +8,7 @@
 <script>
     (async () => {
         const path = '/'
-        const response = await fetch('https://api.github.com/repos/opengisch/so-qgis-bench-results/contents' + path);
+        const response = await fetch('https://api.github.com/repos/opengisch/models/contents' + path);
         const data = await response.json();
         let htmlString = '<ul>';
         for (let file of data) {
