@@ -13,7 +13,7 @@
         let htmlString = '<ul>';
         for (let file of data) {
             fileExtension = file.name.substr((file.name.lastIndexOf('.') + 1));
-            if (file.type == 'dir' || fileExtension == 'xml') {
+            if (!(file.type == 'dir' || fileExtension == 'xml')) {
                 continue;
             }
             let period = file.name.lastIndexOf('.');
