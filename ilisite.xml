@@ -7,14 +7,14 @@
 	<DATASECTION>
 		<IliSite09.SiteMetadata BID="b0">
 			<IliSite09.SiteMetadata.Site TID="1">
-				<Name>usability.opengis.ch</Name>
-				<Title>Allgemeine metadaten für ili-modelle</Title>
-				<shortDescription>Weitere Sites des UsabILItyHubs</shortDescription>
-				<Owner>http://usabilityhub.opengis.ch</Owner>
+				<Name>models.opengis.ch</Name>
+				<Title>Allgemeine Zusatzkonfigurationen für INTERLIS Modelle</Title>
+				<shortDescription>Weitere Sites des UsabILIty Hubs</shortDescription>
+				<Owner>http://models.opengis.ch</Owner>
 				<technicalContact>mailto:david@opengis.ch</technicalContact>
 				<subsidiarySite>
 					<IliSite09.RepositoryLocation_>
-						<value>https://gitlab.com/signedav/usabilitydave/-/raw/master/www/</value>
+						<value>https://signedav.github.io/usabilitydave/</value>
 					</IliSite09.RepositoryLocation_>
 				</subsidiarySite>
 			</IliSite09.SiteMetadata.Site>
