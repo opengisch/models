@@ -717,28 +717,6 @@
           </DatasetIdx16.DataFile>
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
-
-      <!-- catalogue used by SH and OPENGIS.ch -->
-      <DatasetIdx16.DataIndex.DatasetMetadata TID="6c1fa234-4777-4430-b3be-92d499845b01">
-        <id>ch.sh.catalogue.KbS_Codetexte_V1_4</id>
-        <version>2021-03-01</version>
-        <owner>mailto:romedi@sh.ch</owner>
-        <categories>
-          <DatasetIdx16.Code_>
-            <value>http://codes.interlis.ch/type/referenceData</value>
-          </DatasetIdx16.Code_>
-        </categories>
-         <files>
-          <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
-            <file>
-              <DatasetIdx16.File>
-                <path>referencedata/KbS_Codetexte_V1_4.xml</path>
-              </DatasetIdx16.File>
-            </file>
-          </DatasetIdx16.DataFile>
-        </files>
-      </DatasetIdx16.DataIndex.DatasetMetadata>
       <!-- end SH -->
 
    </DatasetIdx16.DataIndex>
