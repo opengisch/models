@@ -14,6 +14,11 @@
 				<technicalContact>mailto:david@opengis.ch</technicalContact>
 				<subsidiarySite>
 					<IliSite09.RepositoryLocation_>
+						<value>http://models.geo.admin.ch/</value>
+					</IliSite09.RepositoryLocation_>
+				</subsidiarySite>
+				<subsidiarySite>
+					<IliSite09.RepositoryLocation_>
 						<value>https://signedav.github.io/usabilitydave/</value>
 					</IliSite09.RepositoryLocation_>
 				</subsidiarySite>
