@@ -471,7 +471,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/bzr_verweis_pos.qml</path>
+                <path>qml/lu_bzr_verweis_pos.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -492,7 +492,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/beschriftung_pos.qml</path>
+                <path>qml/lu_beschriftung_pos.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -513,7 +513,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/beschriftung_text.qml</path>
+                <path>qml/lu_beschriftung_text.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -534,7 +534,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/bemassung_pos.qml</path>
+                <path>lu_bemassung_pos.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -555,7 +555,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/ueberlagerung_punkte.qml</path>
+                <path>qml/lu_ueberlagerung_punkte.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -576,7 +576,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/bemassung_hlinie.qml</path>
+                <path>qml/lu_bemassung_hlinie.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -597,7 +597,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/bemassung_geometrie.qml</path>
+                <path>qml/lu_bemassung_geometrie.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -618,7 +618,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/baulinien.qml</path>
+                <path>qml/lu_baulinien.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -639,7 +639,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/ueberlagerung_linien.qml</path>
+                <path>qml/lu_ueberlagerung_linien.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -660,7 +660,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/ueberlagerung_flaechen.qml</path>
+                <path>qml/lu_ueberlagerung_flaechen.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -681,7 +681,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/grundnutzung.qml</path>
+                <path>qml/lu_grundnutzung.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
