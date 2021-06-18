@@ -1,0 +1,71 @@
+legend:
+  - "SEMP_NP_PUNKTE":
+      group: true
+      checked: true
+      expanded: false
+      child-nodes:
+        - "BZR_Verweis_Pos":
+            checked: true
+        - "Beschriftung_Pos":
+            checked: true
+        - "Bemassung (BemassungPos)":
+            checked: true
+        - "Ueberlagerung_Punkte":
+            checked: true
+  - "SEMP_NP_LINIEN":
+      group: true
+      checked: true
+      expanded: false
+      child-nodes:
+        - "Bemassung_HLinie":
+            checked: false
+        - "Bemassung (Geometrie)":
+            checked: true
+        - "Baulinien":
+            checked: true
+        - "Ueberlagerung_Linien":
+            checked: true
+            expanded: true
+  - "SEMP_NP_UEBERL_FL": 
+      group: true     
+      checked: true
+      expanded: false
+      child-nodes:
+        - "Ueberlagerung_Flaechen":
+            checked: true
+            expanded: false
+  - "SEMP_NP_GRUNDZONEN":
+      group: true
+      checked: true
+      expanded: false
+      child-nodes:
+        - "Grundnutzung":
+            checked: true
+            expanded: true
+  - "SEMP_NP_TABELLEN":
+      group: true
+      checked: true
+      expanded: false
+      child-nodes:
+        - "tables":
+            group: true
+            checked: true
+            expanded: true
+            child-nodes:
+              - "domains":
+                  group: true
+                  checked: true
+                  expanded: false
+                  child-nodes:
+                    - "Bauweisen":
+                    - "Plantypen":
+                    - "Rechtsstatus":
+                    - "Empfindlichkeitsstufen":
+                    - "AV_Qualitaeten":
+                    - "BZR_Verweis_Pos_Schriftgroesse":
+                    - "Beschriftung_Pos_Schriftgroesse":
+                    - "Bemassung_Schriftgroesse":
+                    - "VALIGNMENT":
+                    - "HALIGNMENT":
+              - "Beschriftung_Text":
+                  featurecount: true

@@ -336,6 +336,360 @@
       </DatasetIdx16.DataIndex.DatasetMetadata>
       <!-- end OPENGISCH Demo -->
 
+      <!-- beginn LU Nutzungsplan_V310-->
+      <!-- metaconfigs -->
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="a2acb2f5-38bd-4d1a-8af0-c2463dcb5b66">
+        <id>ch.opengis.ili.config.Nutzungsplanung_V310</id>
+        <version>2021-03-12</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <title>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Styling und Tree für PostgreSQL Projekt für den Kanton Luzern (lu.ch)</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </title>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Die Metakonfiguration für ein PostgreSQL Projekt generiert mit dem Model Nutzungsplan_V310 enthält Links zu Layertree Struktur, TOML und QML Files.</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <categories>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.interlis.ch/model/Nutzungsplanung_V310</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.interlis.ch/type/metaconfig</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.opengis.ch/modelbaker</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>metaconfig/lu_nutzungsplanung_v310.ini</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+
+      <!-- layertree -->
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="333a9e68-268e-4ed2-8f8a-eeeeaab43432">
+        <id>ch.lu.topping.layertree_Nutzungsplanung_V310</id>
+        <version>2021-01-06</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Layertree Nutzungsplan Luzern</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/model/Nutzungsplanung_V310</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/layertree</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+            <value>http://codes.opengis.ch/modelbaker</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>layertree/layertree_Nutzungsplanung_V310.yaml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <!-- meta attr toml -->
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="912afab9-1b95-4bc8-951f-5eb8bcad8b63">
+        <id>ch.lu.topping.npluzern_toml</id>
+        <version>2021-01-06</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>TOML (iliMetaAttrs) für Nutzungsplan Luzern</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/toml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>toml/Nutzungsplanung_V310.toml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <!-- qmls -->
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="2dcc47e5-1dd5-4f05-9fc8-756125705a3c">
+        <id>ch.lu.topping.Nutzungsplanung_V310_bzr_verweis_pos</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_bzr_verweis_pos.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="bc96e499-f7a9-4126-8155-fc8d6b9d3d1b">
+        <id>ch.lu.topping.Nutzungsplanung_V310_beschriftung_pos</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_beschriftung_pos.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="7d0ba876-2d09-4266-9280-ee0ceac797f9">
+        <id>ch.lu.topping.Nutzungsplanung_V310_beschriftung_text</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_beschriftung_text.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="eeea4152-6a2c-11eb-84dd-43cf319ea780">
+        <id>ch.lu.topping.Nutzungsplanung_V310_bemassung_pos</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>lu_bemassung_pos.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="2dcc47e5-3dd5-4f05-9fc8-756125705a5c">
+        <id>ch.lu.topping.Nutzungsplanung_V310_ueberlagerung_punkte</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_ueberlagerung_punkte.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="1d88c706-225a-498c-9509-297475e5ece9">
+        <id>ch.lu.topping.Nutzungsplanung_V310_bemassung_hlinie</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_bemassung_hlinie.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="d220d9ff-e66f-46f8-b927-5c4d6f9578a5">
+        <id>ch.lu.topping.Nutzungsplanung_V310_bemassung_geometrie</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_bemassung_geometrie.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="b0b20636-6a2c-11eb-84dd-43cf319ea780">
+        <id>ch.lu.topping.Nutzungsplanung_V310_baulinien</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_baulinien.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="2dcc47e5-3dd5-4f05-9fc8-756125705a4c">
+        <id>ch.lu.topping.Nutzungsplanung_V310_ueberlagerung_linien</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_ueberlagerung_linien.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="2dcc47e5-3dd5-4f05-9fc8-756125705a3c">
+        <id>ch.lu.topping.Nutzungsplanung_V310_ueberlagerung_flaechen</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_ueberlagerung_flaechen.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="3dcc47e5-1dd5-4f05-9fc8-756125705a2c">
+        <id>ch.lu.topping.Nutzungsplanung_V310_grundnutzung</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/lu_grundnutzung.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <!--qmls -->
+      <!-- end LU -->
+      
       <!-- begin SH Kbs_LV95_V1_4 -->
       <!-- metaconfig -->
       <DatasetIdx16.DataIndex.DatasetMetadata TID="911d9e68-268e-4ed2-8f8a-eeeeaab455aa">

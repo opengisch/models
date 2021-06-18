@@ -1,0 +1,5 @@
+["Nutzungsplanung_V310.MultiPoint"]                                           
+ili2db.mapping=MultiPoint
+
+["Nutzungsplanung_V310.MultiSurface"]                                           
+ili2db.mapping=MultiSurface
