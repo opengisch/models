@@ -347,11 +347,21 @@
             <LocalisedText>
               <DatasetIdx16.LocalisedMText>
                 <Language>de</Language>
-                <Text>Topping Nutzungsplan Luzern mit YAML und TOML</Text>
+                <Text>Styling und Tree für PostgreSQL Projekt für den Kanton Luzern (lu.ch)</Text>
               </DatasetIdx16.LocalisedMText>
             </LocalisedText>
           </DatasetIdx16.MultilingualMText>
         </title>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Die Metakonfiguration für ein PostgreSQL Projekt generiert mit dem Model Nutzungsplan_V310 enthält Links zu Layertree Struktur, TOML und QML Files.</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
         <categories>
           <DatasetIdx16.Code_>
           	<value>http://codes.interlis.ch/model/Nutzungsplanung_V310</value>
@@ -368,7 +378,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>metaconfig/npluzern_metaconfig.ini</path>
+                <path>metaconfig/lu_nutzungsplanung_v310.ini</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
