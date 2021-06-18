@@ -489,6 +489,27 @@
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
 
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="7d0ba876-2d09-4266-9280-ee0ceac797f9">
+        <id>ch.lu.topping.Nutzungsplanung_V310_beschriftung_text</id>
+        <version>2021-01-20</version>
+        <owner>mailto:zsanett@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/beschriftung_text.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
       <DatasetIdx16.DataIndex.DatasetMetadata TID="eeea4152-6a2c-11eb-84dd-43cf319ea780">
         <id>ch.lu.topping.Nutzungsplanung_V310_bemassung_pos</id>
         <version>2021-01-20</version>
