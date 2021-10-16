@@ -1,0 +1,14 @@
+legend:
+  - "Buildings":
+      group: true
+      checked: true
+      expanded: true
+      child-nodes:
+        - "Residential Building":
+            checked: true
+        - "Office Building":
+            checked: true
+        - "Public Office Building":
+            checked: true
+  - "Parcel":
+     checked: true
