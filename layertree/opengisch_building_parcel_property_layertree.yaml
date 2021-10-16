@@ -4,11 +4,36 @@ legend:
       checked: true
       expanded: true
       child-nodes:
-        - "Residential Building":
+        - "Offices":
+            group: true
             checked: true
-        - "Office Building":
+            expanded: true
+            child-nodes:
+              - "Office Building":
+                  checked: true
+              - "Public Office Building":
+                  checked: true
+              - "Office":
+                  checked: true
+        - "Residents":
+            group: true
             checked: true
-        - "Public Office Building":
-            checked: true
+            expanded: true
+            child-nodes:
+              - "Residential Building":
+                  checked: true
+              - "Flat":
+                  checked: true
   - "Parcel":
      checked: true
+  - "Tabels":
+      group: true
+      checked: true
+      expanded: true
+      child-nodes:
+        - "Heating":
+            checked: true
+        - "Person":
+            checked: true
+        - "Property":
+            checked: true

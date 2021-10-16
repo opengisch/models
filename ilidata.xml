@@ -119,7 +119,7 @@
             <LocalisedText>
               <DatasetIdx16.LocalisedMText>
                 <Language>de</Language>
-                <Text>Styling und Tree für PostgreSQL Projekt (OPENGIS.ch)</Text>
+                <Text>Styling für PostgreSQL Projekt (OPENGIS.ch)</Text>
               </DatasetIdx16.LocalisedMText>
             </LocalisedText>
           </DatasetIdx16.MultilingualMText>
@@ -151,6 +151,53 @@
             <file>
               <DatasetIdx16.File>
                 <path>metaconfig/opengisch_building_parcel_property.ini</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="cf78144a-b70e-4a95-b5a2-aabebb6d3dc9">
+        <id>ch.opengis.ili.config.bulding_parcel_property_layertree</id>
+        <version>2021-10-16</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Styling und Tree für PostgreSQL Projekt (OPENGIS.ch)</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </title>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Die Metakonfiguration mit Toppings (inkl. Legende) für das Demo Projekt des Building_Parcel_Property Models im Zusammenhang mit dem Relations Workshop der QGIS Anwendergruppe</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <categories>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.interlis.ch/model/Building_Parcel_Property</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.interlis.ch/type/metaconfig</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.opengis.ch/modelbaker</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>metaconfig/opengisch_building_parcel_property_layertree.ini</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
