@@ -110,6 +110,53 @@
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
 
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="8b313673-2272-443a-b81e-0cb7951b2901">
+        <id>ch.opengis.ili.config.bulding_parcel_property</id>
+        <version>2021-10-16</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Styling und Tree für PostgreSQL Projekt (OPENGIS.ch)</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </title>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Die Metakonfiguration mit Toppings für das Demo Projekt des Building_Parcel_Property Models im Zusammenhang mit dem Relations Workshop der QGIS Anwendergruppe</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <categories>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.interlis.ch/model/Building_Parcel_Property</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.interlis.ch/type/metaconfig</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+          	<value>http://codes.opengis.ch/modelbaker</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>metaconfig/opengisch_building_parcel_property.ini</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
       <!-- qmls -->
       <DatasetIdx16.DataIndex.DatasetMetadata TID="b0b20636-6a2c-11eb-84dd-43cf319ea780">
         <id>ch.opengis.topping.opengisch_KbS_LV95_V1_4_001</id>
@@ -195,6 +242,187 @@
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
 
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="57e59aac-ec83-4b40-ab7e-62305846f301">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_office_building</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_office_building.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="1d88c706-225a-498c-9509-297475e5ece9">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_public_office_building</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_public_office_building.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="b69c646a-cb04-4b0a-a05a-cf02f6307ed9">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_parcel</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_parcel.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="9e4065cc-2bd9-4ce7-8ba2-f41f8f65023b">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_residential_building</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_residential_building.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="2201c711-3015-4eb4-afac-ba0cc2a343d2">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_property</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_property.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="e4ef6391-b92e-4017-8257-96134f1d7997">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_person</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_person.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="1ad96c6b-819b-456f-b3ad-c0a7d64f367d">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_office</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_office.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="42320d3d-7ed4-42ef-8e56-5cf456580fcd">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_heating</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_heating.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="b5c37b28-2cc4-470a-9872-851fb765e41f">
+        <id>ch.opengis.topping.opengisch_building_parcel_property_flat</id>
+        <version>2021-01-20</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/opengisch_building_parcel_property_flat.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
       <!-- layertree KbS_LV95_V1_4 -->
       <DatasetIdx16.DataIndex.DatasetMetadata TID="333a9e68-268e-4ed2-8f8a-eeeeaab43432">
         <id>ch.opengis.topping.KbS_LV95_V1_4</id>
@@ -265,6 +493,28 @@
             <file>
               <DatasetIdx16.File>
                 <path>layertree/opengisch_layertree_KbS_LV95_V1_4_GPKG.yaml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <!-- layertree Building_Parcel_Property Postgres -->
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="d4b8238f-fecf-45e1-a8ad-6f87e4c120062">
+        <id>ch.opengis.topping.building_parcel_property_layertree</id>
+        <version>2021-01-06</version>
+        <owner>mailto:david@opengis.ch</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/layertree</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>layertree/opengisch_building_parcel_property_layertree.yaml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
