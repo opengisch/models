@@ -17,18 +17,18 @@
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option value="true" name="AllowAddFeatures" type="bool"/>
-            <Option value="false" name="AllowNULL" type="bool"/>
-            <Option value="false" name="MapIdentification" type="bool"/>
-            <Option value="true" name="OrderByValue" type="bool"/>
-            <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;person&quot;" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="Person_5a2f200a_8461_4ebb_ad8a_2d6dc49271dc" name="ReferencedLayerId" type="QString"/>
-            <Option value="Person" name="ReferencedLayerName" type="QString"/>
-            <Option value="postgres" name="ReferencedLayerProviderKey" type="QString"/>
-            <Option value="property_person_fkey" name="Relation" type="QString"/>
-            <Option value="false" name="ShowForm" type="bool"/>
-            <Option value="false" name="ShowOpenFormButton" type="bool"/>
+            <Option name="AllowAddFeatures" type="bool" value="true"/>
+            <Option name="AllowNULL" type="bool" value="false"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;person&quot;"/>
+            <Option name="ReferencedLayerId" type="QString" value="Person_5a2f200a_8461_4ebb_ad8a_2d6dc49271dc"/>
+            <Option name="ReferencedLayerName" type="QString" value="Person"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
+            <Option name="Relation" type="QString" value="property_person_fkey"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
@@ -37,18 +37,18 @@
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option value="false" name="AllowAddFeatures" type="bool"/>
-            <Option value="false" name="AllowNULL" type="bool"/>
-            <Option value="true" name="MapIdentification" type="bool"/>
-            <Option value="true" name="OrderByValue" type="bool"/>
-            <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;parcel&quot; (geometrie)" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="Parcel_2df46b80_d1a0_4c4b_914e_49899ab21f8d" name="ReferencedLayerId" type="QString"/>
-            <Option value="Parcel" name="ReferencedLayerName" type="QString"/>
-            <Option value="postgres" name="ReferencedLayerProviderKey" type="QString"/>
-            <Option value="property_parcel_fkey" name="Relation" type="QString"/>
-            <Option value="false" name="ShowForm" type="bool"/>
-            <Option value="false" name="ShowOpenFormButton" type="bool"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="false"/>
+            <Option name="MapIdentification" type="bool" value="true"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;parcel&quot; (geometrie)"/>
+            <Option name="ReferencedLayerId" type="QString" value="Parcel_2df46b80_d1a0_4c4b_914e_49899ab21f8d"/>
+            <Option name="ReferencedLayerName" type="QString" value="Parcel"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
+            <Option name="Relation" type="QString" value="property_parcel_fkey"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
@@ -57,19 +57,19 @@
       <editWidget type="ValueRelation">
         <config>
           <Option type="Map">
-            <Option value="false" name="AllowMulti" type="bool"/>
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="&quot;description&quot;" name="Description" type="QString"/>
-            <Option value="" name="FilterExpression" type="QString"/>
-            <Option value="ilicode" name="Key" type="QString"/>
-            <Option value="Property_Type_a2b39112_a9f9_46b7_9aa5_239ad38f4874" name="Layer" type="QString"/>
-            <Option value="Property_Type" name="LayerName" type="QString"/>
-            <Option value="postgres" name="LayerProviderName" type="QString"/>
-            <Option value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='itfcode' checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;property_type&quot;" name="LayerSource" type="QString"/>
-            <Option value="1" name="NofColumns" type="int"/>
-            <Option value="true" name="OrderByValue" type="bool"/>
-            <Option value="false" name="UseCompleter" type="bool"/>
-            <Option value="dispname" name="Value" type="QString"/>
+            <Option name="AllowMulti" type="bool" value="false"/>
+            <Option name="AllowNull" type="bool" value="false"/>
+            <Option name="Description" type="QString" value="&quot;description&quot;"/>
+            <Option name="FilterExpression" type="QString" value=""/>
+            <Option name="Key" type="QString" value="ilicode"/>
+            <Option name="Layer" type="QString" value="Property_Type_a2b39112_a9f9_46b7_9aa5_239ad38f4874"/>
+            <Option name="LayerName" type="QString" value="Property_Type"/>
+            <Option name="LayerProviderName" type="QString" value="postgres"/>
+            <Option name="LayerSource" type="QString" value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='itfcode' checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;property_type&quot;"/>
+            <Option name="NofColumns" type="int" value="1"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="UseCompleter" type="bool" value="false"/>
+            <Option name="Value" type="QString" value="dispname"/>
           </Option>
         </config>
       </editWidget>
@@ -78,12 +78,12 @@
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option value="true" name="AllowNull" type="bool"/>
-            <Option value="100" name="Max" type="int"/>
-            <Option value="0" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
+            <Option name="AllowNull" type="bool" value="true"/>
+            <Option name="Max" type="int" value="100"/>
+            <Option name="Min" type="int" value="0"/>
+            <Option name="Precision" type="int" value="0"/>
+            <Option name="Step" type="int" value="1"/>
+            <Option name="Style" type="QString" value="SpinBox"/>
           </Option>
         </config>
       </editWidget>
@@ -97,25 +97,25 @@
     <alias name="Ownership-Share [Percent]" index="4" field="ownership_share"/>
   </aliases>
   <defaults>
-    <default expression="" applyOnUpdate="0" field="t_id"/>
-    <default expression="" applyOnUpdate="0" field="person"/>
-    <default expression="" applyOnUpdate="0" field="parcel"/>
-    <default expression="'joint_ownership'" applyOnUpdate="0" field="property_type"/>
-    <default expression="" applyOnUpdate="0" field="ownership_share"/>
+    <default applyOnUpdate="0" field="t_id" expression=""/>
+    <default applyOnUpdate="0" field="person" expression=""/>
+    <default applyOnUpdate="0" field="parcel" expression=""/>
+    <default applyOnUpdate="0" field="property_type" expression="'joint_ownership'"/>
+    <default applyOnUpdate="0" field="ownership_share" expression=""/>
   </defaults>
   <constraints>
-    <constraint unique_strength="1" notnull_strength="1" field="t_id" constraints="3" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="1" field="person" constraints="1" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="1" field="parcel" constraints="1" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="1" field="property_type" constraints="1" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="1" field="ownership_share" constraints="1" exp_strength="0"/>
+    <constraint notnull_strength="1" constraints="3" exp_strength="0" unique_strength="1" field="t_id"/>
+    <constraint notnull_strength="1" constraints="1" exp_strength="0" unique_strength="0" field="person"/>
+    <constraint notnull_strength="1" constraints="1" exp_strength="0" unique_strength="0" field="parcel"/>
+    <constraint notnull_strength="1" constraints="1" exp_strength="0" unique_strength="0" field="property_type"/>
+    <constraint notnull_strength="1" constraints="1" exp_strength="0" unique_strength="0" field="ownership_share"/>
   </constraints>
   <constraintExpressions>
-    <constraint exp="" field="t_id" desc=""/>
-    <constraint exp="" field="person" desc=""/>
-    <constraint exp="" field="parcel" desc=""/>
-    <constraint exp="" field="property_type" desc=""/>
-    <constraint exp="" field="ownership_share" desc=""/>
+    <constraint exp="" desc="" field="t_id"/>
+    <constraint exp="" desc="" field="person"/>
+    <constraint exp="" desc="" field="parcel"/>
+    <constraint exp="" desc="" field="property_type"/>
+    <constraint exp="" desc="" field="ownership_share"/>
   </constraintExpressions>
   <expressionfields/>
   <editform tolerant="1"></editform>
@@ -142,10 +142,10 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorField name="ownership_share" index="4" showLabel="1"/>
-    <attributeEditorField name="parcel" index="2" showLabel="1"/>
-    <attributeEditorField name="person" index="1" showLabel="1"/>
-    <attributeEditorField name="property_type" index="3" showLabel="1"/>
+    <attributeEditorField name="ownership_share" showLabel="1" index="4"/>
+    <attributeEditorField name="parcel" showLabel="1" index="2"/>
+    <attributeEditorField name="person" showLabel="1" index="1"/>
+    <attributeEditorField name="property_type" showLabel="1" index="3"/>
   </attributeEditorForm>
   <editable>
     <field name="ownership_share" editable="1"/>
@@ -155,11 +155,11 @@ def my_form_open(dialog, layer, feature):
     <field name="t_id" editable="1"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="ownership_share"/>
-    <field labelOnTop="0" name="parcel"/>
-    <field labelOnTop="0" name="person"/>
-    <field labelOnTop="0" name="property_type"/>
-    <field labelOnTop="0" name="t_id"/>
+    <field name="ownership_share" labelOnTop="0"/>
+    <field name="parcel" labelOnTop="0"/>
+    <field name="person" labelOnTop="0"/>
+    <field name="property_type" labelOnTop="0"/>
+    <field name="t_id" labelOnTop="0"/>
   </labelOnTop>
   <dataDefinedFieldProperties/>
   <widgets/>
