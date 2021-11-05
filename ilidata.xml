@@ -21,14 +21,14 @@
         <version>2021-01-06</version>
         <owner>mailto:david@opengis.ch</owner>
         <title>
-          <DatasetIdx16.MultilingualMText>
+          <DatasetIdx16.MultilingualText>
             <LocalisedText>
-              <DatasetIdx16.LocalisedMText>
+              <DatasetIdx16.LocalisedText>
                 <Language>de</Language>
                 <Text>Einfaches Styling und Tree für PostgreSQL Projekt (OPENGIS.ch)</Text>
-              </DatasetIdx16.LocalisedMText>
+              </DatasetIdx16.LocalisedText>
             </LocalisedText>
-          </DatasetIdx16.MultilingualMText>
+          </DatasetIdx16.MultilingualText>
         </title>
         <shortDescription>
           <DatasetIdx16.MultilingualMText>
@@ -68,14 +68,14 @@
         <version>2021-01-06</version>
         <owner>mailto:david@opengis.ch</owner>
         <title>
-          <DatasetIdx16.MultilingualMText>
+          <DatasetIdx16.MultilingualText>
             <LocalisedText>
-              <DatasetIdx16.LocalisedMText>
+              <DatasetIdx16.LocalisedText>
                 <Language>de</Language>
                 <Text>Einfaches Styling und Tree für GeoPackage Projekt (OPENGIS.ch)</Text>
-              </DatasetIdx16.LocalisedMText>
+              </DatasetIdx16.LocalisedText>
             </LocalisedText>
-          </DatasetIdx16.MultilingualMText>
+          </DatasetIdx16.MultilingualText>
         </title>
         <shortDescription>
           <DatasetIdx16.MultilingualMText>
@@ -115,14 +115,14 @@
         <version>2021-10-16</version>
         <owner>mailto:david@opengis.ch</owner>
         <title>
-          <DatasetIdx16.MultilingualMText>
+          <DatasetIdx16.MultilingualText>
             <LocalisedText>
-              <DatasetIdx16.LocalisedMText>
+              <DatasetIdx16.LocalisedText>
                 <Language>de</Language>
                 <Text>Styling für PostgreSQL Projekt (OPENGIS.ch)</Text>
-              </DatasetIdx16.LocalisedMText>
+              </DatasetIdx16.LocalisedText>
             </LocalisedText>
-          </DatasetIdx16.MultilingualMText>
+          </DatasetIdx16.MultilingualText>
         </title>
         <shortDescription>
           <DatasetIdx16.MultilingualMText>
@@ -162,14 +162,14 @@
         <version>2021-10-16</version>
         <owner>mailto:david@opengis.ch</owner>
         <title>
-          <DatasetIdx16.MultilingualMText>
+          <DatasetIdx16.MultilingualText>
             <LocalisedText>
-              <DatasetIdx16.LocalisedMText>
+              <DatasetIdx16.LocalisedText>
                 <Language>de</Language>
                 <Text>Styling und Tree für PostgreSQL Projekt (OPENGIS.ch)</Text>
-              </DatasetIdx16.LocalisedMText>
+              </DatasetIdx16.LocalisedText>
             </LocalisedText>
-          </DatasetIdx16.MultilingualMText>
+          </DatasetIdx16.MultilingualText>
         </title>
         <shortDescription>
           <DatasetIdx16.MultilingualMText>
@@ -640,14 +640,14 @@
         <version>2021-03-12</version>
         <owner>mailto:zsanett@opengis.ch</owner>
         <title>
-          <DatasetIdx16.MultilingualMText>
+          <DatasetIdx16.MultilingualText>
             <LocalisedText>
-              <DatasetIdx16.LocalisedMText>
+              <DatasetIdx16.LocalisedText>
                 <Language>de</Language>
                 <Text>Styling und Tree für PostgreSQL Projekt für den Kanton Luzern (lu.ch)</Text>
-              </DatasetIdx16.LocalisedMText>
+              </DatasetIdx16.LocalisedText>
             </LocalisedText>
-          </DatasetIdx16.MultilingualMText>
+          </DatasetIdx16.MultilingualText>
         </title>
         <shortDescription>
           <DatasetIdx16.MultilingualMText>
@@ -994,14 +994,14 @@
         <version>2021-01-06</version>
         <owner>mailto:romedi@sh.ch</owner>
         <title>
-          <DatasetIdx16.MultilingualMText>
+          <DatasetIdx16.MultilingualText>
             <LocalisedText>
-              <DatasetIdx16.LocalisedMText>
+              <DatasetIdx16.LocalisedText>
                 <Language>de</Language>
                 <Text>Styling und Tree für PostgreSQL Projekt des Kanton Schaffhausens (SH.ch)</Text>
-              </DatasetIdx16.LocalisedMText>
+              </DatasetIdx16.LocalisedText>
             </LocalisedText>
-          </DatasetIdx16.MultilingualMText>
+          </DatasetIdx16.MultilingualText>
         </title>
         <shortDescription>
           <DatasetIdx16.MultilingualMText>
