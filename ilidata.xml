@@ -728,7 +728,7 @@
             <fileFormat>text/plain;version=2.3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>qml/opengisch_wildruhezonen_wildruhezone_teilgebiet.qml</path>
+                <path>qml/opengisch_wildruhezonen_wildruhezone_teilobjekt.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
