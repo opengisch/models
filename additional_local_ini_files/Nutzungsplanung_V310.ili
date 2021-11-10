@@ -1,0 +1,444 @@
+INTERLIS 2.3;
+
+/** Transfer-Geodatenmodell Nutzungsplanung Kt. LU (kantonal / kommunal)
+ * Geobasisdatensatz nach Bundesrecht Nr. 73
+ */
+!!@ technicalContact=mailto:stefanie.hinn@lu.ch
+MODEL Nutzungsplanung_V310 (de)
+AT "https://www.raumdatenpool.ch/"
+VERSION "Version-310 2019-05-03" 
+  // ----------------------------------------------------------------------------------------------
+     Version | Date       | Who        | Modification
+     ----------------------------------------------------------------------------------------------
+     300     | 2018-06-08 | KSTEC GmbH | Initiale Version, freigegeben am 07.06.2018
+     310     | 2019-05-03 | KSTEC GmbH | Definitive Version nach Praxistests
+             | 2019-05-28 | KSTEC GmbH | Constraints zu ID und Gde_Code_C zusammengefasst
+             |            |            | Constraint-Info für Logfile-Ausgabe Interlis-Checker
+             |            |            | ergänzt   -->  publizierte Version
+   // =
+  IMPORTS GeometryCHLV95_V1,Units;
+
+  DOMAIN
+
+    /** Beschreibt den rechtlichen Status einer Zone
+     */
+    Rechtsstatus = (
+      /** Wird intern beim Planer vergeben, kommt im Datensatz beim Upload nicht mehr vor.
+       */
+      in_Bearbeitung,
+      /** Ab öffentlicher Auflage. Zum Zeitpunkt der öffentlichen Auflage beginnt automatisch die Wirkung einer Planungszone, die beachtet werden muss (dieser Status wird bis auf weiteres nicht angewandt, wird aber im DM definiert).
+       */
+      Vorwirkung,
+      /** Beschlossen oder genehmigt, noch nicht in Kraft (Verwaltungsgerichts- oder Bundesgerichtsbeschwerde hängig). Dieser Status kann im Fall keiner Einsprache nach Ablauf der Rechtsmittelfrist übersprungen werden. Ein Status "Laufende Rechtsmittelfrist" ist nicht nötig.
+       */
+      nicht_inKraft,
+      /** Zeitpunkt ab definitiver Wirksamkeit. Die Inkraftsetzung erfolgt nicht durch eine Behörde, sondern automatisch durch das Ablaufen einer Frist.
+       */
+      inKraft
+    );
+
+    /** Beschreibt die Qualität der Grundlage für die Erhebung.
+     */
+    AV_Qualitaeten = (
+      /** Die Daten der amtlichen Vermessung sind erneuert und erfüllen die Vorgaben für den Qualitätsstandard AV93 bezüglich Genauigkeit und Zuverlässigkeit.
+       */
+      AV93_konform,
+      /** Die Daten der amtlichen Vermessung wurden mittels Digitalisierung ab Papierplänen und teilweiser Berechnung erhoben. Diese AV-Daten müssen noch erneuert werden. Folgearbeiten am Zonenplan sind möglich.
+       */
+      prov_numerisiert,
+      /** Liegen keine oben erwähnten Grundlagen vor, so können ausnahmsweise, falls die Möglichkeit einer Rückstellung nicht besteht, auch gescannte Grundlagen verwendet werden.
+       */
+      gescannt
+    );
+
+    /** Domain für die Lärmempfindlichkeitsstufen nach Art 43 Abs 1 LSV, Lärmschutzverordnung
+     */
+    Empfindlichkeitsstufen = (
+      /** Die Empfindlichkeitsstufe I gilt in Zonen mit einem erhöhten Lärmschutzbedürfnis, namentlich in Erholungszonen; § 43 Abs 1 a) LSL.
+       */
+      ES_I,
+      /** Die Empfindlichkeitsstufe II gilt in Zonen, in denen keine störenden Betriebe zugelassen sind, namentlich in Wohnzonen sowie Zonen für öffentliche Bauten und Anlagen; § 43 Abs 1 b) LSL.
+       */
+      ES_II,
+      /** Die  Empfindlichkeitsstufe  III  gilt in  Zonen,  in  denen  mässig  störende  Betriebe  zugelassen  sind,  namentlich  in  Wohn-  und  Gewerbezonen  (Mischzonen) sowie Landwirtschaftszonen; § 43 Abs 1 c) LSL.
+       */
+      ES_III,
+      /** Die Empfindlichkeitsstufe IV gilt in Zonen, in denen stark störende Betriebe zugelassen sind, namentlich in Industriezonen;  § 43 Abs 1 d) LSL.
+       */
+      ES_IV,
+      /** Zone ohne oder mit undefinierter Empfindlichkeitsstufe (für Wald).
+       */
+      Keine_ES
+    );
+
+    Bauweisen = (
+      /** Es gibt keine Angabe zur Bauweise
+       */
+      unbekannt,
+      /** Geschlossene Bauweise
+       */
+      geschlossen,
+      /** Offene Bauweise
+       */
+      offen,
+      /** Keine Bebauung
+       */
+      keine
+    );
+
+    /** Beschreibt in welchem Plan die Beschriftung platziert wird.
+     */
+    Plantypen = (
+      Siedlung,
+      Landschaft,
+      /** z.B. Gewässerraumplan
+       */
+      Spezialplan
+    );
+
+    /** Gibt die Rotation in [gon] an; 0.0 bis 399.9 gon, CIRCULAR, rechts drehend ab Nordachse
+     */
+    Rotation = 0.0 .. 399.9 CIRCULAR [Units.Gon] CLOCKWISE;
+
+  /** Struktur als Basis von MultiPoint.
+   */
+  STRUCTURE PointStructure =
+    /** Punkt mit Y-/X-Koordinate, LV 95
+     */
+    Point : GeometryCHLV95_V1.Coord2;
+    /** Definiert die Rotation des Punktes; 0.0 bis 399.9 [gon]; Default 100.0
+     */
+    Orientierung : Rotation;
+  END PointStructure;
+
+  /** MultiPoint beinhaltet ein oder mehrere Punkte der PointStructure.
+   */
+  STRUCTURE MultiPoint =
+    /** Behälter (BAG) von Punkten
+     */
+    Points : BAG {1..*} OF Nutzungsplanung_V310.PointStructure;
+  END MultiPoint;
+
+  /** Struktur als Basis von MultiSurface
+   */
+  STRUCTURE SurfaceStructure =
+    /** Einzelflächen mit Geraden und Kreisbögen; Überlappung max. 0.050; LV95
+     */
+    Surface : SURFACE WITH (ARCS,STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS>0.050;
+  END SurfaceStructure;
+
+  /** MultiSurface beinhaltet ein oder mehrere Flächen der SurfaceStructure.
+   */
+  STRUCTURE MultiSurface =
+    /** Behälter mit einer oder mehreren Einzelflächen des Typs SurfaceStructure.
+     */
+    Surfaces : BAG {1..*} OF Nutzungsplanung_V310.SurfaceStructure;
+  END MultiSurface;
+
+  TOPIC Nutzungsplanung =
+
+    CLASS Typ (ABSTRACT) =
+      /** Der „Identifikator“ ist ein eindeutiger Wert (UNIQUE) und darf bei einem Element nicht verändert werden. Er wird nach folgender Regel vergeben:
+       * - Grundnutzung: 10000001-19999999
+       * - Zonenüberlagerung: 20000001-29999999
+       * - Baulinien: 30000001-39999999
+       */
+      Identifikator : MANDATORY 10000001 .. 39999999;
+      /** Bezeichnung der Zone durch die Gemeinde/ Planer
+       */
+      Zonentyp_Bez : MANDATORY TEXT*80;
+      /** Abkürzung der Bezeichnung Zonentyp_Bez
+       */
+      Abkuerzung : TEXT*10;
+      /** Zonentyp auf Stufe Gemeinde; 4-stelliger Code; Defaultwert xy01; Wird durch die Gemeinde/Planer vergeben; möglichst aufsteigend nach Dichte
+       */
+      Gde_Code_C : MANDATORY 1101 .. 9999;
+      /** Wertebereich gemässe Domain Rechtsstatus
+       */
+      Rechtsstatus : MANDATORY Nutzungsplanung_V310.Rechtsstatus;
+      /** Beschluss des Stimmbürgers oder Gemeindeparlaments. (Das Beschlussdatum muss beim Upload vorhanden sein)
+       */
+      Datum_Beschluss : INTERLIS.XMLDate;
+      /** Genehmigt durch den Regierungsrat --> Inkraftsetzung. Dies ist das eigentlich relevante Datum! (Beim Upload kann dieses Datumsfeld leer sein, wenn beim Status noch - beschlossen oder genehmigt, noch nicht in Kraft - steht)
+       */
+      Datum_inKraft : INTERLIS.XMLDate;
+      /** Nummer des Regierungsratsentscheids (RRE)
+       */
+      RRE_Nummer : TEXT*10;
+      /** Nummer eines Objektes, welche auf den Beschrieb des Objektes im Bau- und Zonenreglements (BZR) resp. in dessen Anhang hinweist
+       */
+      BZR_Verweis : TEXT*5;
+      /** Artikelbezeichnung des kommunalen Bau- und Zonenreglements (BZR); nur ein Artikel (jener der die Zone beschreibt)
+       */
+      BZR_Artikel : TEXT*50;
+      /** Artikelbezeichnung des kommunalen Bau- und Zonenreglements (BZR); Liste mit weiteren Artikeln
+       */
+      BZR_weitere : TEXT*200;
+      /** Wertebereich gemässe Domain AV_Qualitaeten
+       */
+      AV_Qualitaet : MANDATORY Nutzungsplanung_V310.AV_Qualitaeten;
+      Bemerkung : MTEXT*200;
+      UNIQUE Identifikator;
+      
+      /** Status #inBearbeitung und #Vorprüfung dürfen im Transferdatensatz nicht vorkommen. #inBearbeitung wird vom Planer nur intern beim Erfassungsdatensatz vergeben. #Vorprüfung wird bis auf weiteres nicht angewandt.
+       */
+      !! Rechtsstatus_inKraft
+      !!@ cattr="Identifikator, Rechtsstatus, Datum_inKraft, RRE_Nummer, Datum_Beschluss"
+      !!@ cmsg="MANDATORY constraint prüft in der Klasse Typ die Attribute <Datum_inKraft> <RRE_Nummer> <Datum_Beschluss> bezüglich <Rechtsstatus inKraft oder nicht_inKraft>"
+      MANDATORY CONSTRAINT ( ( Rechtsstatus == #inKraft ) AND  DEFINED ( Datum_inKraft ) AND DEFINED ( RRE_Nummer ) AND DEFINED ( Datum_Beschluss ) )  OR ( ( Rechtsstatus == #nicht_inKraft ) AND DEFINED ( Datum_Beschluss ) AND NOT ( DEFINED ( Datum_inKraft ) ) );
+    END Typ;
+
+    CLASS Grundnutzung
+    EXTENDS Typ =
+      /** Area mit Geraden u. Kreisbögen; Überlappung max. 0.050; LV95
+       */
+      Geometrie : MANDATORY AREA WITH (ARCS,STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS>0.050;
+      /** Überbauungsziffer 1 (maximal); Hauptgebäude; § 25 PBG (UeZ1_max oder UeZ1_max_Annahme obligatorisch für LUBAT, muss zwingend ausgefüllt sein)
+       */
+      UeZ1_max : 0.10 .. 1.00;
+      /** Überbauungsziffer 1 (minimal); Hauptgebäude; § 25 PBG
+       */
+      UeZ1_min : 0.05 .. 1.00;
+      /** Überbauungsziffer 2; Gebäude mit einer geringeren als der zulässigen Gesamthöhe; § 25 Abs. 2 PBG und § 13 Abs. 1a PBV
+       */
+      UeZ2 : 0.05 .. 1.00;
+      /** Überbauungsziffer 3;  für Klein- und Anbauten; § 112 Abs. 2c und d PBG und § 13 Abs. 1b PBV
+       */
+      UeZ3_NNF : 0.02 .. 0.20;
+      /** Überbauungsziffer 4;  für Unterniveaubauten; § 125 Abs. 1 PBG und § 13 Abs. 1c PBV
+       */
+      UeZ4_NNF : 0.02 .. 20.00;
+      /** Grünflächenziffer; § 27 PBG
+       */
+      GruenflaechenZiffer : 0.10 .. 1.00;
+      /** Gebäude-Gesamthöhe (maximal); § 139 Abs. 1 PBG (Gesamt_Hoehe_max oder Gesamthoe-he_max_Annahme obligatorisch für LUBAT, muss zwingend ausgefüllt sein)
+       */
+      Gesamt_Hoehe_max : 3.00 .. 200.00 [INTERLIS.m];
+      /** Gebäude-Gesamthöhe (minimal); § 139 Abs. 1 PBG
+       */
+      Gesamt_Hoehe_min : 3.00 .. 200.00 [INTERLIS.m];
+      /** Fassadenhöhe (maximal); § 139 Abs. 3 PBG
+       */
+      Fassaden_Hoehe_max : 3.00 .. 200.00 [INTERLIS.m];
+      /** Fassadenhöhe (minimal); § 139 Abs. 3 PBG
+       */
+      Fassaden_Hoehe_min : 3.00 .. 200.00 [INTERLIS.m];
+      /** Traufhöhe; § 139 Abs. 5
+       */
+      Trauf_Hoehe : 3.00 .. 200.00 [INTERLIS.m];
+      /** Gebäudelänge; § 112 Abs. 2j PBG
+       */
+      Gebaeude_Laenge : 3.00 .. 500.00 [INTERLIS.m];
+      /** Gebäudebreite; § 112 Abs. 2k PBG
+       */
+      Gebaeude_Breite : 3.00 .. 500.00 [INTERLIS.m];
+      /** Wohnanteil (maximal); (Wohnanteil_max oder Wohnanteil_max_Annahme obligatorisch für LUBAT, muss zwingend ausgefüllt sein)
+       */
+      Wohnanteil_max : 0.10 .. 1.00;
+      /** Wohnanteil (minimal)
+       */
+      Wohnanteil_min : 0.10 .. 1.00;
+      /** Arbeitsanteil (maximal)
+       */
+      Arbeitsanteil_max : 0.10 .. 1.00;
+      /** Arbeitsanteil (minimal)
+       */
+      Arbeitsanteil_min : 0.10 .. 1.00;
+      /** Lärmempfindlichkeitsstufen (ES) gemäss Lärmschutzverordnung; § 43 Abs. 1 LSV
+       */
+      Laermempfindlichkeitsstufe : MANDATORY Nutzungsplanung_V310.Empfindlichkeitsstufen;
+      /** Beschreibt die Bauweise --> offen oder geschlossen
+       */
+      Bauweise : MANDATORY Nutzungsplanung_V310.Bauweisen;
+      /** Annahme Überbauungsziffer (maximal); bei Zonen ohne Dichtemass ist eine ortsverträgliche Annahme zu treffen; nur ausfüllen, wenn UeZ1_max leer ist
+       */
+      UeZ1_max_Annahme : 0.10 .. 1.00;
+      /** Annahme Gesamthöhe (maximal); bei Zonen ohne Höhenmass ist eine ortsverträgliche Annahme zu treffen; nur ausfüllen, wenn Gesamt_Hoehe_max leer ist
+       */
+      Gesamthoehe_max_Annahme : 3.00 .. 200.00 [INTERLIS.m];
+      /** Annahme Wohnanteil (maximal); bei Zonen ohne Nutzungsanteilangaben ist eine ortsverträgliche Annahme zu treffen; nur ausfüllen, wenn Wohnanteil_max leer ist
+       */
+      Wohnanteil_max_Annahme : 0.10 .. 1.00;
+      !! ID_Gde_Code_C_Grundnutzung
+      !!@ cattr="Identifikator, Gde_Code_C"
+      !!@ cmsg="MANDATORY constraint prüft den Wertebereich für die Attribute <Identifikator> und <Gde_Code_C> der Klasse Grundnutzung"
+      MANDATORY CONSTRAINT ( Identifikator >= 10000001 AND Identifikator <= 19999999 ) AND ( ( Gde_Code_C >= 1101 AND Gde_Code_C <= 1199 ) OR ( Gde_Code_C >= 1201 AND Gde_Code_C <= 1299 ) OR ( Gde_Code_C >= 1301 AND Gde_Code_C <= 1399 ) OR ( Gde_Code_C >= 1401 AND Gde_Code_C <= 1499 ) OR ( Gde_Code_C >= 1501 AND Gde_Code_C <= 1599 ) OR ( Gde_Code_C >= 1601 AND Gde_Code_C <= 1699 ) OR ( Gde_Code_C >= 1901 AND Gde_Code_C <= 1999 ) OR ( Gde_Code_C >= 2101 AND Gde_Code_C <= 2149 ) OR ( Gde_Code_C >= 2151 AND Gde_Code_C <= 2199 ) OR ( Gde_Code_C >= 2201 AND Gde_Code_C <= 2249 ) OR ( Gde_Code_C >= 2251 AND Gde_Code_C <= 2299 ) OR ( Gde_Code_C >= 2301 AND Gde_Code_C <= 2349) OR ( Gde_Code_C >= 2351 AND Gde_Code_C <= 2399 )  OR ( Gde_Code_C >= 2401 AND Gde_Code_C <= 2449 ) OR ( Gde_Code_C >= 2501 AND Gde_Code_C <= 2549 ) OR ( Gde_Code_C >= 2551 AND Gde_Code_C <= 2599 ) OR ( Gde_Code_C >= 2601 AND Gde_Code_C <= 2649 ) OR ( Gde_Code_C >= 2651 AND Gde_Code_C <= 2699 ) OR ( Gde_Code_C >= 2701 AND Gde_Code_C <= 2749 ) OR ( Gde_Code_C >= 2751 AND Gde_Code_C <= 2799 ) OR ( Gde_Code_C >= 2801 AND Gde_Code_C <= 2849 ) OR ( Gde_Code_C >= 3101 AND Gde_Code_C <= 3199 ) OR ( Gde_Code_C >= 3201 AND Gde_Code_C <= 3299 ) OR ( Gde_Code_C >= 3301 AND Gde_Code_C <= 3399 ) OR ( Gde_Code_C >= 3401 AND Gde_Code_C <= 3499 ) OR ( Gde_Code_C >= 3501 AND Gde_Code_C <= 3599 ) OR ( Gde_Code_C >= 3601 AND Gde_Code_C <= 3699 ) OR ( Gde_Code_C >= 3901 AND Gde_Code_C <= 3999 ) OR ( Gde_Code_C >= 4101 AND Gde_Code_C <= 4149 ) OR ( Gde_Code_C >= 4151 AND Gde_Code_C <= 4199 ) OR ( Gde_Code_C >= 4201 AND Gde_Code_C <= 4249 ) OR ( Gde_Code_C >= 4251 AND Gde_Code_C <= 4299 ) OR ( Gde_Code_C >= 4301 AND Gde_Code_C <= 4349 ) OR ( Gde_Code_C >= 4351 AND Gde_Code_C <= 4399 ) OR ( Gde_Code_C >= 4401 AND Gde_Code_C <= 4449 ) OR ( Gde_Code_C >= 4501 AND Gde_Code_C <= 4549 ) OR ( Gde_Code_C >= 4551 AND Gde_Code_C <= 4599 ) OR ( Gde_Code_C >= 4601 AND Gde_Code_C <= 4649 ) OR ( Gde_Code_C >= 4651 AND Gde_Code_C <= 4699 ) OR ( Gde_Code_C >= 4701 AND Gde_Code_C <= 4749 ) OR ( Gde_Code_C >= 4751 AND Gde_Code_C <= 4799 ) OR ( Gde_Code_C >= 4801 AND Gde_Code_C <= 4849 ) OR ( Gde_Code_C >= 5101 AND Gde_Code_C <= 5199 ) OR ( Gde_Code_C >= 5201 AND Gde_Code_C <= 5249 ) OR ( Gde_Code_C >= 5251 AND Gde_Code_C <= 5259 ) OR ( Gde_Code_C >= 5301 AND Gde_Code_C <= 5309 ) OR ( Gde_Code_C >= 5401 AND Gde_Code_C <= 5499 ) OR ( Gde_Code_C == 5511 ) OR ( Gde_Code_C == 5521 ) OR ( Gde_Code_C == 5531 ) OR ( Gde_Code_C >= 5911 AND Gde_Code_C <= 5929 ) OR ( Gde_Code_C >= 5951 AND Gde_Code_C <= 5969 ) OR ( Gde_Code_C >= 6001 AND Gde_Code_C <= 6008 ) OR ( Gde_Code_C >= 6031 AND Gde_Code_C <= 6039 ) OR ( Gde_Code_C >= 6061 AND Gde_Code_C <= 6069 ) OR ( Gde_Code_C >= 6101 AND Gde_Code_C <= 6109 ) OR ( Gde_Code_C == 6201 ) OR ( Gde_Code_C == 6301 ) OR ( Gde_Code_C == 6311 ) OR ( Gde_Code_C == 6401 ) OR ( Gde_Code_C == 6501 ) OR ( Gde_Code_C >= 6601 AND Gde_Code_C <= 6609 ) OR ( Gde_Code_C >= 6701 AND Gde_Code_C <= 6705 ) OR ( Gde_Code_C >= 6751 AND Gde_Code_C <= 6755 ) OR ( Gde_Code_C >= 6801 AND Gde_Code_C <= 6809 ) OR ( Gde_Code_C == 6851 ) OR ( Gde_Code_C >= 6901 AND Gde_Code_C <= 6909 ) OR ( Gde_Code_C >= 6951 AND Gde_Code_C <= 6959 ) OR ( Gde_Code_C == 9999 ) );
+      !! Gde_Code_C_Laermempfindlichkeitsstufe
+      !!@ cattr="Identifikator, Gde_Code_C, Laermempfindlichkeitsstufe"
+      !!@ cmsg="MANDATORY constraint prüft den Wert des Attributs <Laermempfindlichkeitsstufe> bezüglich der <Gde_Code_C> der Klasse Grundnutzung"
+      MANDATORY CONSTRAINT ( ( Gde_Code_C >= 1101 AND Gde_Code_C <= 1999 ) AND ( Laermempfindlichkeitsstufe == #ES_II ) ) OR ( ( ( Gde_Code_C >= 3101 AND Gde_Code_C <= 4449 ) OR ( Gde_Code_C == 5511 ) OR ( Gde_Code_C == 5521 ) OR ( Gde_Code_C == 5531 ) OR ( Gde_Code_C >= 6001 AND Gde_Code_C <= 6069 ) OR ( Gde_Code_C == 6301 )  OR ( Gde_Code_C == 6311 ) OR ( Gde_Code_C >= 6901 AND Gde_Code_C <= 6909 ) ) AND ( Laermempfindlichkeitsstufe == #ES_III ) ) OR ( ( Gde_Code_C >= 4501 AND Gde_Code_C <= 4849 ) AND ( Laermempfindlichkeitsstufe == #ES_IV ) ) OR ( ( Gde_Code_C == 6851 ) AND ( Laermempfindlichkeitsstufe == #Keine_ES ) ) OR ( Gde_Code_C >= 2101 AND Gde_Code_C <= 2849 ) OR ( Gde_Code_C >= 5101 AND Gde_Code_C <= 5499 ) OR ( Gde_Code_C >= 5911 AND Gde_Code_C <= 5969 ) OR ( Gde_Code_C >= 6101 AND Gde_Code_C <= 6201 ) OR ( Gde_Code_C >= 6401 AND Gde_Code_C <= 6809 ) OR ( Gde_Code_C >= 6951 AND Gde_Code_C <= 6959 ) OR ( Gde_Code_C == 9999 );
+      !! Gde_Code_C_max_Annahme
+      !!@ cattr="Identifikator, Gde_Code_C, UeZ1_max, UeZ1_max_Annahme, Gesamt_Hoehe_max, Gesamthoehe_max_Annahme, Wohnanteil_max, Wohnanteil_max_Annahme"
+      !!@ cmsg="MANDATORY constraint prüft bezogen auf den <Gde_Codes_C> ob bei den <max-Attributen> der Klasse Grundnutzung entweder (*_max) oder (*_max_Annahme) ausgefüllt sind"
+      MANDATORY CONSTRAINT ( ( Gde_Code_C >= 1101 AND Gde_Code_C <= 3999 ) AND ( DEFINED ( UeZ1_max ) OR DEFINED ( UeZ1_max_Annahme ) ) AND ( DEFINED ( Gesamt_Hoehe_max ) OR DEFINED ( Gesamthoehe_max_Annahme ) ) AND ( DEFINED ( Wohnanteil_max ) OR DEFINED ( Wohnanteil_max_Annahme ) ) ) OR ( Gde_Code_C >= 4101 AND Gde_Code_C <= 6959 ) OR ( Gde_Code_C == 9999 );
+    END Grundnutzung;
+
+    CLASS Ueberlagerung_Flaechen
+    EXTENDS Typ =
+      /** Eine oder mehrere Einzelflächen mit Geraden und Kreisbögen; Überlappung max. 0.050; LV95
+       */
+      Geometrie : MANDATORY Nutzungsplanung_V310.MultiSurface;
+      !! ID_Gde_Code_C_Ueberl_Flaechen
+      !!@ cattr="Identifikator, Gde_Code_C"
+      !!@ cmsg="MANDATORY constraint prüft den Wertebereich für die Attribute <Identifikator> und <Gde_Code_C> der Klasse Ueberlagerung_Flaechen"
+      MANDATORY CONSTRAINT ( Identifikator >= 20000001 AND Identifikator <= 29999999 ) AND ( ( Gde_Code_C >= 7011 AND Gde_Code_C <= 7019 ) OR ( Gde_Code_C >= 7031 AND Gde_Code_C <= 7039 ) OR ( Gde_Code_C >= 7111 AND Gde_Code_C <= 7119 ) OR ( Gde_Code_C >= 7121 AND Gde_Code_C <= 7129 ) OR ( Gde_Code_C == 7131 ) OR ( Gde_Code_C >= 7141 AND Gde_Code_C <= 7149 ) OR ( Gde_Code_C >= 7151 AND Gde_Code_C <= 7154 ) OR ( Gde_Code_C == 7211 ) OR ( Gde_Code_C == 7221 ) OR (Gde_Code_C >= 7231 AND Gde_Code_C <= 7239 ) OR ( Gde_Code_C == 7241 ) OR ( Gde_Code_C >= 7311 AND Gde_Code_C <= 7319 ) OR ( Gde_Code_C == 7321 ) OR ( Gde_Code_C >= 7411 AND Gde_Code_C <= 7414 ) OR ( Gde_Code_C >= 7431 AND Gde_Code_C <= 7434 ) OR ( Gde_Code_C >= 7451 AND Gde_Code_C <= 7454 ) OR ( Gde_Code_C == 7471 ) OR ( Gde_Code_C == 7481 ) OR ( Gde_Code_C == 7511 ) OR ( Gde_Code_C == 7611 ) OR ( Gde_Code_C == 7711 ) OR ( Gde_Code_C >= 7811 AND Gde_Code_C <= 7819 ) OR ( Gde_Code_C >= 7911 AND Gde_Code_C <= 7915 ) OR ( Gde_Code_C >= 7921 AND Gde_Code_C <= 7925 ) OR ( Gde_Code_C >= 8011 AND Gde_Code_C <= 8019 ) OR ( Gde_Code_C >= 8021 AND Gde_Code_C <= 8025 ) OR ( Gde_Code_C >= 8031 AND Gde_Code_C <= 8035 ) OR ( Gde_Code_C >= 8111 AND Gde_Code_C <= 8115 ) OR ( Gde_Code_C >= 8121 AND Gde_Code_C <= 8125 ) OR ( Gde_Code_C >= 8131 AND Gde_Code_C <= 8139 ) OR ( Gde_Code_C == 8511 ) OR (Gde_Code_C >= 8611 AND Gde_Code_C <= 8615 ) );
+    END Ueberlagerung_Flaechen;
+
+    CLASS Ueberlagerung_Linien
+    EXTENDS Typ =
+      /** Eine oder mehrere Linienzüge mit Geraden und Kreisbögen; LV95
+       */
+      Geometrie : MANDATORY GeometryCHLV95_V1.MultiLine;
+      !! ID_Gde_Code_C_Ueberl_Linien
+      !!@ cattr="Identifikator, Gde_Code_C"
+      !!@ cmsg="MANDATORY constraint prüft den Wertebereich für die Attribute <Identifikator> und <Gde_Code_C> der Klasse Ueberlagerung_Linien"
+      MANDATORY CONSTRAINT ( Identifikator >= 20000001 AND Identifikator <= 29999999 ) AND ( ( Gde_Code_C >= 7041 AND Gde_Code_C <= 7049 ) OR ( Gde_Code_C >= 7161 AND Gde_Code_C <= 7169 ) OR ( Gde_Code_C >= 7171 AND Gde_Code_C <= 7175 ) OR ( Gde_Code_C >= 8141 AND Gde_Code_C <= 8149 ) OR ( Gde_Code_C == 8521 ) OR ( Gde_Code_C >= 8621 AND Gde_Code_C <= 8625 ) );
+    END Ueberlagerung_Linien;
+
+    CLASS Ueberlagerung_Punkte
+    EXTENDS Typ =
+      /** Ein oder mehrere Punkte; LV95; pro Punkt kann eine Orientierung angegeben werden; 0.0 bis 399.9 [gon]; Default 100.0
+       */
+      Geometrie : MANDATORY Nutzungsplanung_V310.MultiPoint;
+      !! ID_Gde_Code_C_Ueberl_Punkte
+      !!@ cattr="Identifikator, Gde_Code_C"
+      !!@ cmsg="MANDATORY constraint prüft den Wertebereich für die Attribute <Identifikator> und <Gde_Code_C> der Klasse Ueberlagerung_Punkte"
+      MANDATORY CONSTRAINT ( Identifikator >= 20000001 AND Identifikator <= 29999999 ) AND ( ( Gde_Code_C >= 7051 AND Gde_Code_C <= 7059 ) OR ( Gde_Code_C >= 7181 AND Gde_Code_C <= 7189 ) OR ( Gde_Code_C >= 7191 AND Gde_Code_C <= 7194 ) OR ( Gde_Code_C >= 8161 AND Gde_Code_C <= 8165 ) OR (Gde_Code_C >= 8171 AND Gde_Code_C <= 8175 ) OR (Gde_Code_C >= 8181 AND Gde_Code_C <= 8189 ) OR (Gde_Code_C >= 8631 AND Gde_Code_C <= 8635 ) );
+    END Ueberlagerung_Punkte;
+
+    CLASS Baulinien
+    EXTENDS Typ =
+      /** Eine oder mehrere gerichtete Linienzüge mit Geraden und Kreisbögen; LV95; das bebaubare Gebiet befindet sich rechtsseitig der Baulinien
+       */
+      Geometrie : MANDATORY GeometryCHLV95_V1.MultiDirectedLine;
+      !! ID_Gde_Code_C_Baulinien
+      !!@ cattr="Identifikator, Gde_Code_C"
+      !!@ cmsg="MANDATORY constraint prüft den Wertebereich für die Attribute <Identifikator> und <Gde_Code_C> der Klasse Ueberlagerung_Baulinien"
+      MANDATORY CONSTRAINT ( Identifikator >= 30000001 AND Identifikator <= 39999999 ) AND ( ( Gde_Code_C >= 9111 AND Gde_Code_C <= 9115 ) OR ( Gde_Code_C >= 9121 AND Gde_Code_C <= 9125 ) OR (Gde_Code_C >= 9131 AND Gde_Code_C <= 9135 ) OR (Gde_Code_C >= 9141 AND Gde_Code_C <= 9155 ) OR (Gde_Code_C >= 9151 AND Gde_Code_C <= 9155 ) OR (Gde_Code_C >= 9191 AND Gde_Code_C <= 9199 ) );
+    END Baulinien;
+
+    CLASS Bemassung =
+      /** Definiert in welchem Plan das Mass dargestellt wird.
+       */
+      Plantyp : MANDATORY Nutzungsplanung_V310.Plantypen;
+      /** Polyline mit Geraden; LV95; Darstellung als Linie mit Pfeilsymbol (entspricht Typ 1)
+       */
+      Geometrie : MANDATORY POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
+      /** Mass in Meter
+       */
+      Mass : MANDATORY 0.01 .. 500.00;
+      /** Position des dargestellten Masses.
+       */
+      BemassungPos : MANDATORY GeometryCHLV95_V1.Coord2;
+      /** Definiert die Drehung des dargestellten Masses; 0.0 bis 399.9 [gon]; default 100.0
+       */
+      BemassungOri : MANDATORY Nutzungsplanung_V310.Rotation;
+      /** Beschreibt die horizontale Lage des Textes in Bezug auf die Position (Left, Center, Right); default Center
+       */
+      BemassungHAli : MANDATORY HALIGNMENT;
+      /** Beschreibt die vertikale Lage des Textes in Bezug auf die Position (Top, Cap, Half, Base, Bottom); default Half
+       */
+      BemassungVAli : MANDATORY VALIGNMENT;
+      /** Beschreibt die Grösse des Textes (klein,mittel,gross); default mittel
+       */
+      Schriftgroesse : MANDATORY (
+        klein,
+        mittel,
+        gross
+      );
+    END Bemassung;
+
+    CLASS Bemassung_HLinie =
+      /** Polyline mit Geraden; LV95; Darstellung als einfache Linie (entspricht Typ 2)
+       */
+      Geometrie : MANDATORY POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
+    END Bemassung_HLinie;
+
+    CLASS Beschriftung_Text =
+      /** Text für die dargestellte Beschriftung
+       */
+      Text : MANDATORY TEXT*200;
+    END Beschriftung_Text;
+
+    /** Definiert die Darstellung und Position des Textes, der angezeigt werden soll.
+     */
+    CLASS Beschriftung_Pos =
+      /** Definiert in welchem Plan der Text dargestellt wird.
+       */
+      Plantyp : MANDATORY Nutzungsplanung_V310.Plantypen;
+      /** Position des dargestellten Textes
+       */
+      TextPos : MANDATORY GeometryCHLV95_V1.Coord2;
+      /** Definiert die Drehung des dargestellten Textes; 0.0 bis 399.9 [gon]; default 100.0
+       */
+      TextOri : MANDATORY Nutzungsplanung_V310.Rotation;
+      /** Beschreibt die horizontale Lage des Textes in Bezug auf die Position (Left, Center, Right); default Center
+       */
+      TextHAli : MANDATORY HALIGNMENT;
+      /** Beschreibt die vertikale Lage des Textes in Bezug auf die Position (Top, Cap, Half, Base, Bottom); default Half
+       */
+      TextVAli : MANDATORY VALIGNMENT;
+      /** Beschreibt die Grösse des Textes (klein,mittel,gross); default mittel
+       */
+      Schriftgroesse : MANDATORY (
+        klein,
+        mittel,
+        gross
+      );
+    END Beschriftung_Pos;
+
+    /** Definiert die Darstellung und Position des Textes, der gemäss BZR_Verweis angezeigt werden soll.
+     */
+    CLASS BZR_Verweis_Pos =
+      /** Definiert in welchem Plan der Text dargestellt wird.
+       */
+      Plantyp : MANDATORY Nutzungsplanung_V310.Plantypen;
+      /** Position des dargestellten Textes
+       */
+      BZR_VerweisPos : MANDATORY GeometryCHLV95_V1.Coord2;
+      /** Definiert die Drehung des dargestellten Textes; 0.0 bis 399.9 [gon]; default 100.0
+       */
+      BZR_VerweisOri : MANDATORY Nutzungsplanung_V310.Rotation;
+      /** Beschreibt die horizontale Lage des Textes in Bezug auf die Position (Left, Center, Right); default Center
+       */
+      BZR_VerweisHAli : MANDATORY HALIGNMENT;
+      /** Beschreibt die vertikale Lage des Textes in Bezug auf die Position (Top, Cap, Half, Base, Bottom); default Half
+       */
+      BZR_VerweisVAli : MANDATORY VALIGNMENT;
+      /** Beschreibt die Grösse des Textes (klein,mittel,gross); default mittel
+       */
+      Schriftgroesse : MANDATORY (
+        klein,
+        mittel,
+        gross
+      );
+    END BZR_Verweis_Pos;
+
+    ASSOCIATION Typ_Bemassung =
+      Typ -<#> {1} Typ;
+      Bemassung -- {0..*} Bemassung;
+    END Typ_Bemassung;
+
+    ASSOCIATION Bemassung_Bemassung_HLinie =
+      Bemassung -<#> {1} Bemassung;
+      Bemassung_HLinie -- {0..*} Bemassung_HLinie;
+    END Bemassung_Bemassung_HLinie;
+
+    ASSOCIATION Typ_Beschriftung =
+      Typ -<#> {1} Typ;
+      Beschriftung_Text -- {0..*} Beschriftung_Text;
+    END Typ_Beschriftung;
+
+    ASSOCIATION Beschriftung_Text_Pos =
+      Beschriftung_Pos -- {0..*} Beschriftung_Pos;
+      Beschriftung_Text -<#> {1} Beschriftung_Text;
+    END Beschriftung_Text_Pos;
+
+    ASSOCIATION Typ_BZR_Verweis_Pos =
+      Typ -<#> {1} Typ;
+      BZR_Verweis_Pos -- {0..*} BZR_Verweis_Pos;
+    END Typ_BZR_Verweis_Pos;
+
+  END Nutzungsplanung;
+
+END Nutzungsplanung_V310.
