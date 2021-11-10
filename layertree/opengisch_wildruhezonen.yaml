@@ -1,0 +1,6 @@
+legend:
+  - "Routennetz":
+      featurecount: true
+  - "Wildruhezone_Teilobjekt":
+      expanded: true
+      featurecount: true
