@@ -1473,7 +1473,7 @@
       <!-- end SH Kbs_LV95_V1_4-->
 
       <!-- begin SH KbS_V1_5-->
-      			<DatasetIdx16.DataIndex.DatasetMetadata TID="3e9325a0-6506-419c-a789-3d3418a8bb92">
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="3e9325a0-6506-419c-a789-3d3418a8bb92">
 				<id>SH_KbS_V1_5.qgis_layerdefinition_hindergrundkarten</id>
 				<version>2022-05-18</version>
 				<publishingDate>2022-05-18</publishingDate>
@@ -1548,14 +1548,14 @@
 					<DatasetIdx16.MultilingualText>
 						<LocalisedText>
 							<DatasetIdx16.LocalisedText>
-								<Text>QGIS None file for SH_KbS_V1_5 - KbS_V1_5</Text>
+								<Text>QGIS MetaAttribute file for SH_KbS_V1_5 - KbS_V1_5</Text>
 							</DatasetIdx16.LocalisedText>
 						</LocalisedText>
 					</DatasetIdx16.MultilingualText>
 				</title>
 				<categories>
 					<DatasetIdx16.Code_>
-						<value>http://codes.interlis.ch/type/None</value>
+						<value>http://codes.interlis.ch/type/MetaAttribute</value>
 					</DatasetIdx16.Code_>
 				</categories>
 				<files>
@@ -1587,6 +1587,9 @@
 					<DatasetIdx16.Code_>
 						<value>http://codes.interlis.ch/type/referenceData</value>
 					</DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/model/KbS_V1_5</value>
+          </DatasetIdx16.Code_>
 				</categories>
 				<files>
 					<DatasetIdx16.DataFile>
