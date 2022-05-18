@@ -1540,7 +1540,7 @@
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
 			<DatasetIdx16.DataIndex.DatasetMetadata TID="085faf19-f7ff-4f43-a76d-954374e6315e">
-				<id>SH_KbS_V1_5.qgis_None_KbS_V1_5</id>
+				<id>SH_KbS_V1_5.qgis_metaattribute_KbS_V1_5</id>
 				<version>2022-05-18</version>
 				<publishingDate>2022-05-18</publishingDate>
 				<owner>mailto:romedi@sh.ch</owner>
@@ -1548,14 +1548,14 @@
 					<DatasetIdx16.MultilingualText>
 						<LocalisedText>
 							<DatasetIdx16.LocalisedText>
-								<Text>QGIS MetaAttribute file for SH_KbS_V1_5 - KbS_V1_5</Text>
+								<Text>QGIS metaattributes file for SH_KbS_V1_5 - KbS_V1_5</Text>
 							</DatasetIdx16.LocalisedText>
 						</LocalisedText>
 					</DatasetIdx16.MultilingualText>
 				</title>
 				<categories>
 					<DatasetIdx16.Code_>
-						<value>http://codes.interlis.ch/type/MetaAttribute</value>
+						<value>http://codes.interlis.ch/type/metaattributes</value>
 					</DatasetIdx16.Code_>
 				</categories>
 				<files>
