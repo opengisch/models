@@ -1473,7 +1473,6 @@
       <!-- end SH -->
 
       <!-- begin LG_GeolAssets_V2-->
-   		<DatasetIdx16.DataIndex BID="6bda22c6-51b4-48d0-9e13-4ed64d41e85e">
 			<DatasetIdx16.DataIndex.DatasetMetadata TID="a425df0e-ca3d-49fe-96ff-72ccb8b457d8">
 				<id>lg_geolassets_v2.qgis_metaconfig_lg_geolassets_V2_gpkg</id>
 				<version>2022-05-11</version>
@@ -2450,5 +2449,6 @@
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
       <!-- end LG_GeolAssets_V2-->
+    </<DatasetIdx16.DataIndex>
   </DATASECTION>
 </TRANSFER>
