@@ -1,19 +1,24 @@
 <!DOCTYPE qgis-layer-definition>
 <qlr>
-  <layer-tree-group expanded="1" name="" checked="Qt::Checked">
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties>
       <Option/>
     </customproperties>
-    <layer-tree-group expanded="1" name="Hintergrundkarten" checked="Qt::Checked">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="Hintergrundkarten">
       <customproperties>
         <Option/>
       </customproperties>
-      <layer-tree-layer source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Relief_2013&amp;styles&amp;url=https://wms.geo.sh.ch/raster?" legend_split_behavior="0" providerKey="wms" expanded="0" name="Relief_2013" checked="Qt::Checked" legend_exp="" id="Relief_2013_d3cfc062_36a1_4d0d_8c77_b7a7453d949a" patch_size="0,0">
+      <layer-tree-layer expanded="0" providerKey="wms" legend_split_behavior="0" checked="Qt::Checked" name="Landeskarten (grau)" id="Landeskarten__grau__524f5170_ee07_4cb0_b037_45acda930c27" legend_exp="" patch_size="-1,-1" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-grau&amp;styles&amp;url=https://wms.geo.admin.ch/?%0ASERVICE%3DWMS%0A%26VERSION%3D1.3.0%0A%26REQUEST%3DGetCapabilities">
         <customproperties>
           <Option/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_28&amp;url=https://wmts10.geo.admin.ch/1.0.0/WMTSCapabilities.EPSG.2056.xml" legend_split_behavior="0" providerKey="wms" expanded="0" name="Luftbild 2019" checked="Qt::Checked" legend_exp="" id="Luftbild_2019_3d0061b5_aa2a_41be_a049_2ab153a6d657" patch_size="0,0">
+      <layer-tree-layer expanded="0" providerKey="wms" legend_split_behavior="0" checked="Qt::Checked" name="Relief_2013" id="Relief_2013_a4bddd1e_0cd3_4788_b299_dcf94bda83e3" legend_exp="" patch_size="0,0" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Relief_2013&amp;styles&amp;url=https://wms.geo.sh.ch/raster?">
+        <customproperties>
+          <Option/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="wms" legend_split_behavior="0" checked="Qt::Checked" name="Luftbild 2019" id="Luftbild_2019_a44c3b52_e89d_4f14_8256_f83ed5a4e460" legend_exp="" patch_size="0,0" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_28&amp;url=https://wmts10.geo.admin.ch/1.0.0/WMTSCapabilities.EPSG.2056.xml">
         <customproperties>
           <Option/>
         </customproperties>
@@ -21,7 +26,118 @@
     </layer-tree-group>
   </layer-tree-group>
   <maplayers>
-    <maplayer autoRefreshEnabled="0" styleCategories="AllStyleCategories" type="raster" autoRefreshTime="0" legendPlaceholderImage="" maxScale="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" minScale="1e+08">
+    <maplayer autoRefreshEnabled="0" refreshOnNotifyEnabled="0" legendPlaceholderImage="" autoRefreshTime="0" refreshOnNotifyMessage="" maxScale="0" type="raster" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" minScale="1e+08">
+      <extent>
+        <xmin>2100000</xmin>
+        <ymin>1050000</ymin>
+        <xmax>2850000</xmax>
+        <ymax>1400000</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>0.65996508465563752</xmin>
+        <ymin>45.4182960048150477</ymin>
+        <xmax>10.83435533800907713</xmax>
+        <ymax>48.74953977745925471</ymax>
+      </wgs84extent>
+      <id>Landeskarten__grau__524f5170_ee07_4cb0_b037_45acda930c27</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-grau&amp;styles&amp;url=https://wms.geo.admin.ch/?%0ASERVICE%3DWMS%0A%26VERSION%3D1.3.0%0A%26REQUEST%3DGetCapabilities</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Landeskarten (grau)</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal mode="0" enabled="0" fetchMode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <Option type="Map">
+          <Option name="identify/format" type="QString" value="Undefined"/>
+        </Option>
+      </customproperties>
+      <pipe-data-defined-properties>
+        <Option type="Map">
+          <Option name="name" type="QString" value=""/>
+          <Option name="properties"/>
+          <Option name="type" type="QString" value="collection"/>
+        </Option>
+      </pipe-data-defined-properties>
+      <pipe>
+        <provider>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour" enabled="false" maxOversampling="2"/>
+        </provider>
+        <rasterrenderer opacity="1" nodataColor="" alphaBand="-1" type="singlebandcolordata" band="1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
+        <huesaturation colorizeStrength="100" colorizeOn="0" colorizeGreen="128" saturation="0" grayscaleMode="0" colorizeRed="255" invertColors="0" colorizeBlue="128"/>
+        <rasterresampler maxOversampling="2"/>
+        <resamplingStage>resamplingFilter</resamplingStage>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" refreshOnNotifyEnabled="0" legendPlaceholderImage="" autoRefreshTime="0" refreshOnNotifyMessage="" maxScale="0" type="raster" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" minScale="1e+08">
       <extent>
         <xmin>2672014.5</xmin>
         <ymin>1266948.5</ymin>
@@ -34,7 +150,7 @@
         <xmax>8.88690010021109167</xmax>
         <ymax>47.81443853997336646</ymax>
       </wgs84extent>
-      <id>Relief_2013_d3cfc062_36a1_4d0d_8c77_b7a7453d949a</id>
+      <id>Relief_2013_a4bddd1e_0cd3_4788_b299_dcf94bda83e3</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Relief_2013&amp;styles&amp;url=https://wms.geo.sh.ch/raster?</datasource>
       <keywordList>
         <value></value>
@@ -86,7 +202,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxy="0" dimensions="2" minz="0" maxz="0" miny="0" minx="0" crs="" maxx="0"/>
+          <spatial maxy="0" minx="0" minz="0" maxz="0" maxx="0" miny="0" dimensions="2" crs=""/>
           <temporal>
             <period>
               <start></start>
@@ -97,7 +213,7 @@
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList bandNo="1" useSrcNoData="0"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -109,7 +225,7 @@
         <Searchable>0</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal fetchMode="0" enabled="0" mode="0">
+      <temporal mode="0" enabled="0" fetchMode="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -117,24 +233,24 @@
       </temporal>
       <customproperties>
         <Option type="Map">
-          <Option type="bool" value="false" name="WMSBackgroundLayer"/>
-          <Option type="bool" value="false" name="WMSPublishDataSourceUrl"/>
-          <Option type="int" value="0" name="embeddedWidgets/count"/>
-          <Option type="QString" value="Undefined" name="identify/format"/>
+          <Option name="WMSBackgroundLayer" type="bool" value="false"/>
+          <Option name="WMSPublishDataSourceUrl" type="bool" value="false"/>
+          <Option name="embeddedWidgets/count" type="int" value="0"/>
+          <Option name="identify/format" type="QString" value="Undefined"/>
         </Option>
       </customproperties>
       <pipe-data-defined-properties>
         <Option type="Map">
-          <Option type="QString" value="" name="name"/>
+          <Option name="name" type="QString" value=""/>
           <Option name="properties"/>
-          <Option type="QString" value="collection" name="type"/>
+          <Option name="type" type="QString" value="collection"/>
         </Option>
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling zoomedInResamplingMethod="nearestNeighbour" enabled="false" zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2"/>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour" enabled="false" maxOversampling="2"/>
         </provider>
-        <rasterrenderer band="1" alphaBand="-1" type="singlebandcolordata" nodataColor="" opacity="1">
+        <rasterrenderer opacity="1" nodataColor="" alphaBand="-1" type="singlebandcolordata" band="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -145,14 +261,14 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast contrast="51" brightness="112" gamma="1"/>
-        <huesaturation grayscaleMode="0" colorizeBlue="128" colorizeStrength="100" colorizeGreen="128" saturation="0" colorizeOn="0" colorizeRed="255" invertColors="0"/>
+        <brightnesscontrast brightness="112" gamma="1" contrast="51"/>
+        <huesaturation colorizeStrength="100" colorizeOn="0" colorizeGreen="128" saturation="0" grayscaleMode="0" colorizeRed="255" invertColors="0" colorizeBlue="128"/>
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>6</blendMode>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" styleCategories="AllStyleCategories" type="raster" autoRefreshTime="0" legendPlaceholderImage="" maxScale="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" minScale="1e+08">
+    <maplayer autoRefreshEnabled="0" refreshOnNotifyEnabled="0" legendPlaceholderImage="" autoRefreshTime="0" refreshOnNotifyMessage="" maxScale="0" type="raster" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" minScale="1e+08">
       <extent>
         <xmin>2419995.7488073636777699</xmin>
         <ymin>1027366.07117159338667989</ymin>
@@ -165,7 +281,7 @@
         <xmax>11.69534156594466268</xmax>
         <ymax>48.30010787128173888</ymax>
       </wgs84extent>
-      <id>Luftbild_2019_3d0061b5_aa2a_41be_a049_2ab153a6d657</id>
+      <id>Luftbild_2019_a44c3b52_e89d_4f14_8256_f83ed5a4e460</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.swissimage&amp;styles=ch.swisstopo.swissimage&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=2056_28&amp;url=https://wmts10.geo.admin.ch/1.0.0/WMTSCapabilities.EPSG.2056.xml</datasource>
       <keywordList>
         <value></value>
@@ -211,7 +327,7 @@
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList bandNo="1" useSrcNoData="0"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -223,7 +339,7 @@
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal fetchMode="0" enabled="0" mode="0">
+      <temporal mode="0" enabled="0" fetchMode="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -231,21 +347,21 @@
       </temporal>
       <customproperties>
         <Option type="Map">
-          <Option type="QString" value="Undefined" name="identify/format"/>
+          <Option name="identify/format" type="QString" value="Undefined"/>
         </Option>
       </customproperties>
       <pipe-data-defined-properties>
         <Option type="Map">
-          <Option type="QString" value="" name="name"/>
+          <Option name="name" type="QString" value=""/>
           <Option name="properties"/>
-          <Option type="QString" value="collection" name="type"/>
+          <Option name="type" type="QString" value="collection"/>
         </Option>
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling zoomedInResamplingMethod="nearestNeighbour" enabled="false" zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2"/>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour" enabled="false" maxOversampling="2"/>
         </provider>
-        <rasterrenderer band="1" alphaBand="-1" type="singlebandcolordata" nodataColor="" opacity="1">
+        <rasterrenderer opacity="1" nodataColor="" alphaBand="-1" type="singlebandcolordata" band="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -256,8 +372,8 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast contrast="0" brightness="0" gamma="1"/>
-        <huesaturation grayscaleMode="0" colorizeBlue="128" colorizeStrength="100" colorizeGreen="128" saturation="0" colorizeOn="0" colorizeRed="255" invertColors="0"/>
+        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
+        <huesaturation colorizeStrength="100" colorizeOn="0" colorizeGreen="128" saturation="0" grayscaleMode="0" colorizeRed="255" invertColors="0" colorizeBlue="128"/>
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
