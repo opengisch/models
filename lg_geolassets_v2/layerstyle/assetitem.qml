@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="LayerConfiguration|Fields|Forms" version="3.22.7-Białowieża" readOnly="0">
+<qgis styleCategories="LayerConfiguration|Fields|Forms" readOnly="0" version="3.25.0-Master">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -7,512 +7,512 @@
     <Private>0</Private>
   </flags>
   <fieldConfiguration>
-    <field configurationFlags="None" name="T_Id">
+    <field name="T_Id" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="T_basket">
+    <field name="T_basket" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" value="false" type="bool"/>
-            <Option name="AllowNULL" value="false" type="bool"/>
-            <Option name="ChainFilters" value="false" type="bool"/>
-            <Option name="FilterExpression" value="&quot;topic&quot; = 'LG_GeolAssets_V2.GeolAssets' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'" type="QString"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="false"/>
+            <Option name="ChainFilters" type="bool" value="false"/>
+            <Option name="FilterExpression" type="QString" value="&quot;topic&quot; = 'LG_GeolAssets_V2.GeolAssets' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'"/>
             <Option name="FilterFields" type="invalid"/>
-            <Option name="MapIdentification" value="false" type="bool"/>
-            <Option name="OrderByValue" value="true" type="bool"/>
-            <Option name="ReadOnly" value="false" type="bool"/>
-            <Option name="ReferencedLayerDataSource" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET" type="QString"/>
-            <Option name="ReferencedLayerId" value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" type="QString"/>
-            <Option name="ReferencedLayerName" value="T_ILI2DB_BASKET" type="QString"/>
-            <Option name="ReferencedLayerProviderKey" value="ogr" type="QString"/>
-            <Option name="Relation" value="lg_geolssts_v2geolassets_assetitem_T_basket_T_ILI2DB_BASKET_T_Id" type="QString"/>
-            <Option name="ShowForm" value="false" type="bool"/>
-            <Option name="ShowOpenFormButton" value="false" type="bool"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET"/>
+            <Option name="ReferencedLayerId" type="QString" value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c"/>
+            <Option name="ReferencedLayerName" type="QString" value="T_ILI2DB_BASKET"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="lg_geolssts_v2geolassets_assetitem_T_basket_T_ILI2DB_BASKET_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="T_Ili_Tid">
+    <field name="T_Ili_Tid" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="isnatrel">
+    <field name="isnatrel" configurationFlags="None">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
-            <Option name="CheckedState" value="" type="QString"/>
-            <Option name="TextDisplayMethod" value="0" type="int"/>
-            <Option name="UncheckedState" value="" type="QString"/>
+            <Option name="CheckedState" type="QString" value=""/>
+            <Option name="TextDisplayMethod" type="int" value="0"/>
+            <Option name="UncheckedState" type="QString" value=""/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="datereceipt">
+    <field name="datereceipt" configurationFlags="None">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="true" type="bool"/>
-            <Option name="display_format" value="dd.MM.yyyy" type="QString"/>
-            <Option name="field_format" value="dd.MM.yy" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option name="allow_null" type="bool" value="true"/>
+            <Option name="calendar_popup" type="bool" value="true"/>
+            <Option name="display_format" type="QString" value="dd.MM.yyyy"/>
+            <Option name="field_format" type="QString" value="dd.MM.yy"/>
+            <Option name="field_iso_format" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="municipality">
+    <field name="municipality" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="url">
+    <field name="url" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="relativepath">
+    <field name="relativepath" configurationFlags="None">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="DocumentViewer" value="0" type="int"/>
-            <Option name="DocumentViewerHeight" value="0" type="int"/>
-            <Option name="DocumentViewerWidth" value="0" type="int"/>
-            <Option name="FileWidget" value="true" type="bool"/>
-            <Option name="FileWidgetButton" value="true" type="bool"/>
-            <Option name="FileWidgetFilter" value="" type="QString"/>
+            <Option name="DocumentViewer" type="int" value="0"/>
+            <Option name="DocumentViewerHeight" type="int" value="0"/>
+            <Option name="DocumentViewerWidth" type="int" value="0"/>
+            <Option name="FileWidget" type="bool" value="true"/>
+            <Option name="FileWidgetButton" type="bool" value="true"/>
+            <Option name="FileWidgetFilter" type="QString" value=""/>
             <Option name="PropertyCollection" type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties" type="invalid"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
-            <Option name="RelativeStorage" value="0" type="int"/>
-            <Option name="StorageAuthConfigId" value="" type="QString"/>
-            <Option name="StorageMode" value="0" type="int"/>
-            <Option name="StorageType" value="" type="QString"/>
-            <Option name="UseLink" value="true" type="bool"/>
+            <Option name="RelativeStorage" type="int" value="0"/>
+            <Option name="StorageAuthConfigId" type="QString" value=""/>
+            <Option name="StorageMode" type="int" value="0"/>
+            <Option name="StorageType" type="QString" value=""/>
+            <Option name="UseLink" type="bool" value="true"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="locationanalog">
+    <field name="locationanalog" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="processor">
+    <field name="processor" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="datelastprocessed">
+    <field name="datelastprocessed" configurationFlags="None">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="true" type="bool"/>
-            <Option name="display_format" value="dd.MM.yyyy" type="QString"/>
-            <Option name="field_format" value="dd.MM.yy" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option name="allow_null" type="bool" value="true"/>
+            <Option name="calendar_popup" type="bool" value="true"/>
+            <Option name="display_format" type="QString" value="dd.MM.yyyy"/>
+            <Option name="field_format" type="QString" value="dd.MM.yy"/>
+            <Option name="field_iso_format" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="textbody">
+    <field name="textbody" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="remark">
+    <field name="remark" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="true" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="true"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="idsgs">
+    <field name="idsgs" configurationFlags="None">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="1e+09" type="double"/>
-            <Option name="Min" value="0" type="double"/>
-            <Option name="Precision" value="0" type="int"/>
-            <Option name="Step" value="1" type="double"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option name="AllowNull" type="bool" value="true"/>
+            <Option name="Max" type="double" value="1e+09"/>
+            <Option name="Min" type="double" value="0"/>
+            <Option name="Precision" type="int" value="0"/>
+            <Option name="Step" type="double" value="1"/>
+            <Option name="Style" type="QString" value="SpinBox"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="infogeoldata">
+    <field name="infogeoldata" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="infogeolcontactdata">
+    <field name="infogeolcontactdata" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="infogeolauxdata">
+    <field name="infogeolauxdata" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="titlepublic">
+    <field name="titlepublic" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="titleoriginal">
+    <field name="titleoriginal" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="akind">
+    <field name="akind" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" value="false" type="bool"/>
-            <Option name="AllowNULL" value="true" type="bool"/>
-            <Option name="ChainFilters" value="false" type="bool"/>
-            <Option name="FilterExpression" value="" type="QString"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="true"/>
+            <Option name="ChainFilters" type="bool" value="false"/>
+            <Option name="FilterExpression" type="QString" value=""/>
             <Option name="FilterFields" type="invalid"/>
-            <Option name="MapIdentification" value="false" type="bool"/>
-            <Option name="OrderByValue" value="true" type="bool"/>
-            <Option name="ReadOnly" value="false" type="bool"/>
-            <Option name="ReferencedLayerDataSource" value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=assetkinditem" type="QString"/>
-            <Option name="ReferencedLayerId" value="AssetKindItem_61af4280_529e_4b86_90c5_68df5254d29f" type="QString"/>
-            <Option name="ReferencedLayerName" value="AssetKindItem" type="QString"/>
-            <Option name="ReferencedLayerProviderKey" value="ogr" type="QString"/>
-            <Option name="Relation" value="lg_geolssts_v2geolassets_assetitem_akind_assetkinditem_T_Id" type="QString"/>
-            <Option name="ShowForm" value="false" type="bool"/>
-            <Option name="ShowOpenFormButton" value="false" type="bool"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=assetkinditem"/>
+            <Option name="ReferencedLayerId" type="QString" value="AssetKindItem_61af4280_529e_4b86_90c5_68df5254d29f"/>
+            <Option name="ReferencedLayerName" type="QString" value="AssetKindItem"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="lg_geolssts_v2geolassets_assetitem_akind_assetkinditem_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="datecreation">
+    <field name="datecreation" configurationFlags="None">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="true" type="bool"/>
-            <Option name="display_format" value="dd.MM.yyyy" type="QString"/>
-            <Option name="field_format" value="dd.MM.yy" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option name="allow_null" type="bool" value="true"/>
+            <Option name="calendar_popup" type="bool" value="true"/>
+            <Option name="display_format" type="QString" value="dd.MM.yyyy"/>
+            <Option name="field_format" type="QString" value="dd.MM.yy"/>
+            <Option name="field_iso_format" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="alanguage">
+    <field name="alanguage" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" value="false" type="bool"/>
-            <Option name="AllowNULL" value="true" type="bool"/>
-            <Option name="ChainFilters" value="false" type="bool"/>
-            <Option name="FilterExpression" value="" type="QString"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="true"/>
+            <Option name="ChainFilters" type="bool" value="false"/>
+            <Option name="FilterExpression" type="QString" value=""/>
             <Option name="FilterFields" type="invalid"/>
-            <Option name="MapIdentification" value="false" type="bool"/>
-            <Option name="OrderByValue" value="true" type="bool"/>
-            <Option name="ReadOnly" value="false" type="bool"/>
-            <Option name="ReferencedLayerDataSource" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=languageitem" type="QString"/>
-            <Option name="ReferencedLayerId" value="LanguageItem_cd8d7272_96fc_46df_885d_993bcb12310c" type="QString"/>
-            <Option name="ReferencedLayerName" value="LanguageItem" type="QString"/>
-            <Option name="ReferencedLayerProviderKey" value="ogr" type="QString"/>
-            <Option name="Relation" value="lg_geolssts_v2geolassets_assetitem_alanguage_languageitem_T_Id" type="QString"/>
-            <Option name="ShowForm" value="false" type="bool"/>
-            <Option name="ShowOpenFormButton" value="false" type="bool"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=languageitem"/>
+            <Option name="ReferencedLayerId" type="QString" value="LanguageItem_cd8d7272_96fc_46df_885d_993bcb12310c"/>
+            <Option name="ReferencedLayerName" type="QString" value="LanguageItem"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="lg_geolssts_v2geolassets_assetitem_alanguage_languageitem_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="aformat">
+    <field name="aformat" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" value="false" type="bool"/>
-            <Option name="AllowNULL" value="true" type="bool"/>
-            <Option name="MapIdentification" value="false" type="bool"/>
-            <Option name="OrderByValue" value="true" type="bool"/>
-            <Option name="ReadOnly" value="false" type="bool"/>
-            <Option name="ReferencedLayerDataSource" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=assetformatitem" type="QString"/>
-            <Option name="ReferencedLayerId" value="AssetFormatItem_e25c2079_d9e2_40ec_98c5_efed3e20bfed" type="QString"/>
-            <Option name="ReferencedLayerName" value="AssetFormatItem" type="QString"/>
-            <Option name="ReferencedLayerProviderKey" value="ogr" type="QString"/>
-            <Option name="Relation" value="lg_geolssts_v2geolassets_assetitem_aformat_assetformatitem_T_Id" type="QString"/>
-            <Option name="ShowForm" value="false" type="bool"/>
-            <Option name="ShowOpenFormButton" value="false" type="bool"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="true"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=assetformatitem"/>
+            <Option name="ReferencedLayerId" type="QString" value="AssetFormatItem_e25c2079_d9e2_40ec_98c5_efed3e20bfed"/>
+            <Option name="ReferencedLayerName" type="QString" value="AssetFormatItem"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="lg_geolssts_v2geolassets_assetitem_aformat_assetformatitem_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="authorbiblio">
+    <field name="authorbiblio" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="sourceproject">
+    <field name="sourceproject" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="adescription">
+    <field name="adescription" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="isextract">
+    <field name="isextract" configurationFlags="None">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
-            <Option name="CheckedState" value="" type="QString"/>
-            <Option name="TextDisplayMethod" value="0" type="int"/>
-            <Option name="UncheckedState" value="" type="QString"/>
+            <Option name="CheckedState" type="QString" value=""/>
+            <Option name="TextDisplayMethod" type="int" value="0"/>
+            <Option name="UncheckedState" type="QString" value=""/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="assetitemmain_assetitem">
+    <field name="assetitemmain_assetitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" value="false" type="bool"/>
-            <Option name="AllowNULL" value="false" type="bool"/>
-            <Option name="MapIdentification" value="false" type="bool"/>
-            <Option name="OrderByValue" value="false" type="bool"/>
-            <Option name="ReadOnly" value="false" type="bool"/>
-            <Option name="ReferencedLayerDataSource" value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=assetitem" type="QString"/>
-            <Option name="ReferencedLayerId" value="AssetItem_d7d09df7_c258_42f5_8263_23014de57c8d" type="QString"/>
-            <Option name="ReferencedLayerName" value="AssetItem" type="QString"/>
-            <Option name="ReferencedLayerProviderKey" value="ogr" type="QString"/>
-            <Option name="Relation" value="lg_geolssts_v2geolassets_assetitem_assetitemmain_assetitem_assetitem_T_Id" type="QString"/>
-            <Option name="ShowForm" value="false" type="bool"/>
-            <Option name="ShowOpenFormButton" value="true" type="bool"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="false"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="false"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=assetitem"/>
+            <Option name="ReferencedLayerId" type="QString" value="AssetItem_d7d09df7_c258_42f5_8263_23014de57c8d"/>
+            <Option name="ReferencedLayerName" type="QString" value="AssetItem"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="lg_geolssts_v2geolassets_assetitem_assetitemmain_assetitem_assetitem_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="true"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="assetitemmain_lg_geolssts_v2geolassets_assetitem">
+    <field name="assetitemmain_lg_geolssts_v2geolassets_assetitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" value="true" type="bool"/>
-            <Option name="AllowNULL" value="true" type="bool"/>
-            <Option name="MapIdentification" value="false" type="bool"/>
-            <Option name="OrderByValue" value="false" type="bool"/>
-            <Option name="ReadOnly" value="false" type="bool"/>
-            <Option name="ReferencedLayerDataSource" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=lg_geolssts_v2geolassets_assetitem" type="QString"/>
-            <Option name="ReferencedLayerId" value="AssetItem_655d7d08_f608_4aef_b23f_9bfc2ff514b1" type="QString"/>
-            <Option name="ReferencedLayerName" value="AssetItem" type="QString"/>
-            <Option name="ReferencedLayerProviderKey" value="ogr" type="QString"/>
-            <Option name="Relation" value="lg_geolssts_v2geolassets_assetitem_assetitemmain_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" type="QString"/>
-            <Option name="ShowForm" value="false" type="bool"/>
-            <Option name="ShowOpenFormButton" value="true" type="bool"/>
+            <Option name="AllowAddFeatures" type="bool" value="true"/>
+            <Option name="AllowNULL" type="bool" value="true"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="false"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=lg_geolssts_v2geolassets_assetitem"/>
+            <Option name="ReferencedLayerId" type="QString" value="AssetItem_655d7d08_f608_4aef_b23f_9bfc2ff514b1"/>
+            <Option name="ReferencedLayerName" type="QString" value="AssetItem"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="lg_geolssts_v2geolassets_assetitem_assetitemmain_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="true"/>
           </Option>
         </config>
       </editWidget>
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="T_Id" name="" index="0"/>
-    <alias field="T_basket" name="" index="1"/>
-    <alias field="T_Ili_Tid" name="" index="2"/>
-    <alias field="isnatrel" name="Ist relevant" index="3"/>
-    <alias field="datereceipt" name="Eingangsdatum" index="4"/>
-    <alias field="municipality" name="Gemeinde" index="5"/>
-    <alias field="url" name="URL zu einer Online-Ressource" index="6"/>
-    <alias field="relativepath" name="File" index="7"/>
-    <alias field="locationanalog" name="Physischer Standort des analogen Dokuments" index="8"/>
-    <alias field="processor" name="Bearbeiter" index="9"/>
-    <alias field="datelastprocessed" name="Letztes Bearbeitungsdatum" index="10"/>
-    <alias field="textbody" name="Textkörper" index="11"/>
-    <alias field="remark" name="Sonstige Bemerkungen" index="12"/>
-    <alias field="idsgs" name="IDSGS" index="13"/>
-    <alias field="infogeoldata" name="Daten" index="14"/>
-    <alias field="infogeolcontactdata" name="Kontaktinformationen" index="15"/>
-    <alias field="infogeolauxdata" name="Auxiliary Information" index="16"/>
-    <alias field="titlepublic" name="Öffentlicher Titel" index="17"/>
-    <alias field="titleoriginal" name="Original Titel" index="18"/>
-    <alias field="akind" name="Art" index="19"/>
-    <alias field="datecreation" name="Asset-Erstellungsdatum" index="20"/>
-    <alias field="alanguage" name="Sprache" index="21"/>
-    <alias field="aformat" name="Format" index="22"/>
-    <alias field="authorbiblio" name="Autoren" index="23"/>
-    <alias field="sourceproject" name="Projekt im Rahmen dessen das Asset erstellt wurde" index="24"/>
-    <alias field="adescription" name="Beschreibung" index="25"/>
-    <alias field="isextract" name="IsExtract" index="26"/>
-    <alias field="assetitemmain_assetitem" name="AssetItemMain" index="27"/>
-    <alias field="assetitemmain_lg_geolssts_v2geolassets_assetitem" name="AssetItemMain" index="28"/>
+    <alias name="" index="0" field="T_Id"/>
+    <alias name="" index="1" field="T_basket"/>
+    <alias name="" index="2" field="T_Ili_Tid"/>
+    <alias name="Ist relevant" index="3" field="isnatrel"/>
+    <alias name="Eingangsdatum" index="4" field="datereceipt"/>
+    <alias name="Gemeinde" index="5" field="municipality"/>
+    <alias name="URL zu einer Online-Ressource" index="6" field="url"/>
+    <alias name="File" index="7" field="relativepath"/>
+    <alias name="Physischer Standort des analogen Dokuments" index="8" field="locationanalog"/>
+    <alias name="Bearbeiter" index="9" field="processor"/>
+    <alias name="Letztes Bearbeitungsdatum" index="10" field="datelastprocessed"/>
+    <alias name="Textkörper" index="11" field="textbody"/>
+    <alias name="Sonstige Bemerkungen" index="12" field="remark"/>
+    <alias name="IDSGS" index="13" field="idsgs"/>
+    <alias name="Daten" index="14" field="infogeoldata"/>
+    <alias name="Kontaktinformationen" index="15" field="infogeolcontactdata"/>
+    <alias name="Auxiliary Information" index="16" field="infogeolauxdata"/>
+    <alias name="Öffentlicher Titel" index="17" field="titlepublic"/>
+    <alias name="Original Titel" index="18" field="titleoriginal"/>
+    <alias name="Art" index="19" field="akind"/>
+    <alias name="Asset-Erstellungsdatum" index="20" field="datecreation"/>
+    <alias name="Sprache" index="21" field="alanguage"/>
+    <alias name="Format" index="22" field="aformat"/>
+    <alias name="Autoren" index="23" field="authorbiblio"/>
+    <alias name="Projekt im Rahmen dessen das Asset erstellt wurde" index="24" field="sourceproject"/>
+    <alias name="Beschreibung" index="25" field="adescription"/>
+    <alias name="IsExtract" index="26" field="isextract"/>
+    <alias name="AssetItemMain" index="27" field="assetitemmain_assetitem"/>
+    <alias name="AssetItemMain" index="28" field="assetitemmain_lg_geolssts_v2geolassets_assetitem"/>
   </aliases>
   <defaults>
-    <default field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0"/>
-    <default field="T_basket" expression="@default_basket_lg_geolassets_v2_geolassets" applyOnUpdate="0"/>
-    <default field="T_Ili_Tid" expression="substr(uuid(), 2, 36)" applyOnUpdate="0"/>
-    <default field="isnatrel" expression="" applyOnUpdate="0"/>
-    <default field="datereceipt" expression="" applyOnUpdate="0"/>
-    <default field="municipality" expression="" applyOnUpdate="0"/>
-    <default field="url" expression="" applyOnUpdate="0"/>
-    <default field="relativepath" expression="" applyOnUpdate="0"/>
-    <default field="locationanalog" expression="" applyOnUpdate="0"/>
-    <default field="processor" expression="" applyOnUpdate="0"/>
-    <default field="datelastprocessed" expression="now()" applyOnUpdate="0"/>
-    <default field="textbody" expression="" applyOnUpdate="0"/>
-    <default field="remark" expression="" applyOnUpdate="0"/>
-    <default field="idsgs" expression="" applyOnUpdate="0"/>
-    <default field="infogeoldata" expression="" applyOnUpdate="0"/>
-    <default field="infogeolcontactdata" expression="" applyOnUpdate="0"/>
-    <default field="infogeolauxdata" expression="" applyOnUpdate="0"/>
-    <default field="titlepublic" expression="" applyOnUpdate="0"/>
-    <default field="titleoriginal" expression="" applyOnUpdate="0"/>
-    <default field="akind" expression="" applyOnUpdate="0"/>
-    <default field="datecreation" expression="" applyOnUpdate="0"/>
-    <default field="alanguage" expression="" applyOnUpdate="0"/>
-    <default field="aformat" expression="attribute(get_feature('AssetFormatItem', 'Code', 'pdf'), 'T_Id')" applyOnUpdate="0"/>
-    <default field="authorbiblio" expression="" applyOnUpdate="0"/>
-    <default field="sourceproject" expression="" applyOnUpdate="0"/>
-    <default field="adescription" expression="" applyOnUpdate="0"/>
-    <default field="isextract" expression="false" applyOnUpdate="0"/>
-    <default field="assetitemmain_assetitem" expression="" applyOnUpdate="0"/>
-    <default field="assetitemmain_lg_geolssts_v2geolassets_assetitem" expression="" applyOnUpdate="0"/>
+    <default expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0" field="T_Id"/>
+    <default expression="@default_basket_lg_geolassets_v2_geolassets" applyOnUpdate="0" field="T_basket"/>
+    <default expression="substr(uuid(), 2, 36)" applyOnUpdate="0" field="T_Ili_Tid"/>
+    <default expression="" applyOnUpdate="0" field="isnatrel"/>
+    <default expression="" applyOnUpdate="0" field="datereceipt"/>
+    <default expression="" applyOnUpdate="0" field="municipality"/>
+    <default expression="" applyOnUpdate="0" field="url"/>
+    <default expression="" applyOnUpdate="0" field="relativepath"/>
+    <default expression="" applyOnUpdate="0" field="locationanalog"/>
+    <default expression="" applyOnUpdate="0" field="processor"/>
+    <default expression="now()" applyOnUpdate="0" field="datelastprocessed"/>
+    <default expression="" applyOnUpdate="0" field="textbody"/>
+    <default expression="" applyOnUpdate="0" field="remark"/>
+    <default expression="" applyOnUpdate="0" field="idsgs"/>
+    <default expression="" applyOnUpdate="0" field="infogeoldata"/>
+    <default expression="" applyOnUpdate="0" field="infogeolcontactdata"/>
+    <default expression="" applyOnUpdate="0" field="infogeolauxdata"/>
+    <default expression="" applyOnUpdate="0" field="titlepublic"/>
+    <default expression="" applyOnUpdate="0" field="titleoriginal"/>
+    <default expression="" applyOnUpdate="0" field="akind"/>
+    <default expression="" applyOnUpdate="0" field="datecreation"/>
+    <default expression="" applyOnUpdate="0" field="alanguage"/>
+    <default expression="attribute(get_feature('AssetFormatItem', 'Code', 'pdf'), 'T_Id')" applyOnUpdate="0" field="aformat"/>
+    <default expression="" applyOnUpdate="0" field="authorbiblio"/>
+    <default expression="" applyOnUpdate="0" field="sourceproject"/>
+    <default expression="" applyOnUpdate="0" field="adescription"/>
+    <default expression="false" applyOnUpdate="0" field="isextract"/>
+    <default expression="" applyOnUpdate="0" field="assetitemmain_assetitem"/>
+    <default expression="" applyOnUpdate="0" field="assetitemmain_lg_geolssts_v2geolassets_assetitem"/>
   </defaults>
   <constraints>
-    <constraint field="T_Id" unique_strength="1" notnull_strength="1" constraints="3" exp_strength="0"/>
-    <constraint field="T_basket" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="T_Ili_Tid" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="isnatrel" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="datereceipt" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="municipality" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="url" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="relativepath" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="locationanalog" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="processor" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="datelastprocessed" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="textbody" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="remark" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="idsgs" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="infogeoldata" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="infogeolcontactdata" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="infogeolauxdata" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="titlepublic" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="titleoriginal" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="akind" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="datecreation" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="alanguage" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="aformat" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="authorbiblio" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="sourceproject" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="adescription" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="isextract" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
-    <constraint field="assetitemmain_assetitem" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="assetitemmain_lg_geolssts_v2geolassets_assetitem" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="1" constraints="3" field="T_Id"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="T_basket"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="T_Ili_Tid"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="isnatrel"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="datereceipt"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="municipality"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="url"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="relativepath"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="locationanalog"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="processor"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="datelastprocessed"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="textbody"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="remark"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="idsgs"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="infogeoldata"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="infogeolcontactdata"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="infogeolauxdata"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="titlepublic"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="titleoriginal"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="akind"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="datecreation"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="alanguage"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="aformat"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="authorbiblio"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="sourceproject"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="adescription"/>
+    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" constraints="1" field="isextract"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="assetitemmain_assetitem"/>
+    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="assetitemmain_lg_geolssts_v2geolassets_assetitem"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="T_Id" exp="" desc=""/>
-    <constraint field="T_basket" exp="" desc=""/>
-    <constraint field="T_Ili_Tid" exp="" desc=""/>
-    <constraint field="isnatrel" exp="" desc=""/>
-    <constraint field="datereceipt" exp="" desc=""/>
-    <constraint field="municipality" exp="" desc=""/>
-    <constraint field="url" exp="" desc=""/>
-    <constraint field="relativepath" exp="" desc=""/>
-    <constraint field="locationanalog" exp="" desc=""/>
-    <constraint field="processor" exp="" desc=""/>
-    <constraint field="datelastprocessed" exp="" desc=""/>
-    <constraint field="textbody" exp="" desc=""/>
-    <constraint field="remark" exp="" desc=""/>
-    <constraint field="idsgs" exp="" desc=""/>
-    <constraint field="infogeoldata" exp="" desc=""/>
-    <constraint field="infogeolcontactdata" exp="" desc=""/>
-    <constraint field="infogeolauxdata" exp="" desc=""/>
-    <constraint field="titlepublic" exp="" desc=""/>
-    <constraint field="titleoriginal" exp="" desc=""/>
-    <constraint field="akind" exp="" desc=""/>
-    <constraint field="datecreation" exp="" desc=""/>
-    <constraint field="alanguage" exp="" desc=""/>
-    <constraint field="aformat" exp="" desc=""/>
-    <constraint field="authorbiblio" exp="" desc=""/>
-    <constraint field="sourceproject" exp="" desc=""/>
-    <constraint field="adescription" exp="" desc=""/>
-    <constraint field="isextract" exp="" desc=""/>
-    <constraint field="assetitemmain_assetitem" exp="" desc=""/>
-    <constraint field="assetitemmain_lg_geolssts_v2geolassets_assetitem" exp="" desc=""/>
+    <constraint exp="" field="T_Id" desc=""/>
+    <constraint exp="" field="T_basket" desc=""/>
+    <constraint exp="" field="T_Ili_Tid" desc=""/>
+    <constraint exp="" field="isnatrel" desc=""/>
+    <constraint exp="" field="datereceipt" desc=""/>
+    <constraint exp="" field="municipality" desc=""/>
+    <constraint exp="" field="url" desc=""/>
+    <constraint exp="" field="relativepath" desc=""/>
+    <constraint exp="" field="locationanalog" desc=""/>
+    <constraint exp="" field="processor" desc=""/>
+    <constraint exp="" field="datelastprocessed" desc=""/>
+    <constraint exp="" field="textbody" desc=""/>
+    <constraint exp="" field="remark" desc=""/>
+    <constraint exp="" field="idsgs" desc=""/>
+    <constraint exp="" field="infogeoldata" desc=""/>
+    <constraint exp="" field="infogeolcontactdata" desc=""/>
+    <constraint exp="" field="infogeolauxdata" desc=""/>
+    <constraint exp="" field="titlepublic" desc=""/>
+    <constraint exp="" field="titleoriginal" desc=""/>
+    <constraint exp="" field="akind" desc=""/>
+    <constraint exp="" field="datecreation" desc=""/>
+    <constraint exp="" field="alanguage" desc=""/>
+    <constraint exp="" field="aformat" desc=""/>
+    <constraint exp="" field="authorbiblio" desc=""/>
+    <constraint exp="" field="sourceproject" desc=""/>
+    <constraint exp="" field="adescription" desc=""/>
+    <constraint exp="" field="isextract" desc=""/>
+    <constraint exp="" field="assetitemmain_assetitem" desc=""/>
+    <constraint exp="" field="assetitemmain_lg_geolssts_v2geolassets_assetitem" desc=""/>
   </constraintExpressions>
   <expressionfields/>
   <editform tolerant="1"></editform>
@@ -537,60 +537,60 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorContainer showLabel="1" name="Info" visibilityExpressionEnabled="0" columnCount="2" groupBox="0" visibilityExpression="">
-      <attributeEditorContainer showLabel="1" name="Titel" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorField showLabel="1" name="titleoriginal" index="18"/>
-        <attributeEditorField showLabel="1" name="titlepublic" index="17"/>
-        <attributeEditorField showLabel="1" name="sourceproject" index="24"/>
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Info" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="2" collapsedExpression="" showLabel="1">
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Titel" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorField name="titleoriginal" index="18" showLabel="1"/>
+        <attributeEditorField name="titlepublic" index="17" showLabel="1"/>
+        <attributeEditorField name="sourceproject" index="24" showLabel="1"/>
       </attributeEditorContainer>
-      <attributeEditorContainer showLabel="1" name="Identifikatoren" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorField showLabel="1" name="idsgs" index="13"/>
-        <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="id_lg_glssts_vssts_ssttem_idalternate_lg_geolssts_v2geolassets_assetitem_T_Id" name="id_lg_glssts_vssts_ssttem_idalternate_lg_geolssts_v2geolassets_assetitem_T_Id" label="IDs" nmRelationId="">
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Identifikatoren" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorField name="idsgs" index="13" showLabel="1"/>
+        <attributeEditorRelation name="id_lg_glssts_vssts_ssttem_idalternate_lg_geolssts_v2geolassets_assetitem_T_Id" relation="id_lg_glssts_vssts_ssttem_idalternate_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="IDs" showLabel="1">
           <editor_configuration type="Map">
-            <Option name="buttons" value="AddChildFeature|DeleteChildFeature" type="QString"/>
-            <Option name="show_first_feature" value="true" type="bool"/>
+            <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature"/>
+            <Option name="show_first_feature" type="bool" value="true"/>
           </editor_configuration>
         </attributeEditorRelation>
       </attributeEditorContainer>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Allgemein" visibilityExpressionEnabled="0" columnCount="2" groupBox="0" visibilityExpression="">
-      <attributeEditorContainer showLabel="1" name="Beschreibung" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorField showLabel="1" name="datecreation" index="20"/>
-        <attributeEditorField showLabel="1" name="alanguage" index="21"/>
-        <attributeEditorContainer showLabel="1" backgroundColor="#ffe0b2" name="Manuell vergebe Label (mindestens ein Eintrag)" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-          <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="mancatlabelref_lg_glssts_vssts_ssttem_mancatlabel_lg_geolssts_v2geolassets_assetitem_T_Id" name="mancatlabelref_lg_glssts_vssts_ssttem_mancatlabel_lg_geolssts_v2geolassets_assetitem_T_Id" label="Manuell vergebe Label (mindestens ein Eintrag)" nmRelationId="mancatlabelref_areference_mancatlabelitem_T_Id">
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Allgemein" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="2" collapsedExpression="" showLabel="1">
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Beschreibung" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorField name="datecreation" index="20" showLabel="1"/>
+        <attributeEditorField name="alanguage" index="21" showLabel="1"/>
+        <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Manuell vergebe Label (mindestens ein Eintrag)" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1" backgroundColor="#ffe0b2">
+          <attributeEditorRelation name="mancatlabelref_lg_glssts_vssts_ssttem_mancatlabel_lg_geolssts_v2geolassets_assetitem_T_Id" relation="mancatlabelref_lg_glssts_vssts_ssttem_mancatlabel_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="mancatlabelref_areference_mancatlabelitem_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Manuell vergebe Label (mindestens ein Eintrag)" showLabel="0">
             <editor_configuration type="Map">
-              <Option name="buttons" value="Link|Unlink" type="QString"/>
-              <Option name="show_first_feature" value="true" type="bool"/>
+              <Option name="buttons" type="QString" value="Link|Unlink"/>
+              <Option name="show_first_feature" type="bool" value="true"/>
             </editor_configuration>
           </attributeEditorRelation>
         </attributeEditorContainer>
-        <attributeEditorField showLabel="1" name="adescription" index="25"/>
-        <attributeEditorField showLabel="1" name="authorbiblio" index="23"/>
-        <attributeEditorField showLabel="1" name="remark" index="12"/>
+        <attributeEditorField name="adescription" index="25" showLabel="1"/>
+        <attributeEditorField name="authorbiblio" index="23" showLabel="1"/>
+        <attributeEditorField name="remark" index="12" showLabel="1"/>
       </attributeEditorContainer>
-      <attributeEditorContainer showLabel="1" name="" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorContainer showLabel="1" name="Eigenschaften" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-          <attributeEditorField showLabel="1" name="akind" index="19"/>
-          <attributeEditorField showLabel="1" name="aformat" index="22"/>
-          <attributeEditorContainer showLabel="1" name="Formate der Parts" visibilityExpressionEnabled="1" columnCount="1" groupBox="1" visibilityExpression="attribute(get_feature('AssetKindItem', 't_id', akind),'code') is 'package'">
-            <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetformatref_lg_glssts_vssts_ssttem_formatcomposition_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetformatref_lg_glssts_vssts_ssttem_formatcomposition_lg_geolssts_v2geolassets_assetitem_T_Id" label="Formate der Parts" nmRelationId="assetformatref_areference_assetformatitem_T_Id">
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Eigenschaften" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+          <attributeEditorField name="akind" index="19" showLabel="1"/>
+          <attributeEditorField name="aformat" index="22" showLabel="1"/>
+          <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Formate der Parts" visibilityExpression="attribute(get_feature('AssetKindItem', 't_id', akind),'code') is 'package'" groupBox="1" visibilityExpressionEnabled="1" columnCount="1" collapsedExpression="" showLabel="1">
+            <attributeEditorRelation name="assetformatref_lg_glssts_vssts_ssttem_formatcomposition_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetformatref_lg_glssts_vssts_ssttem_formatcomposition_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="assetformatref_areference_assetformatitem_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Formate der Parts" showLabel="0">
               <editor_configuration type="Map">
-                <Option name="buttons" value="AllButtons" type="QString"/>
-                <Option name="show_first_feature" value="true" type="bool"/>
+                <Option name="buttons" type="QString" value="AllButtons"/>
+                <Option name="show_first_feature" type="bool" value="true"/>
               </editor_configuration>
             </attributeEditorRelation>
           </attributeEditorContainer>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" name="Extract" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-          <attributeEditorField showLabel="1" name="isextract" index="26"/>
-          <attributeEditorContainer showLabel="1" name="AssetPart Attribute" visibilityExpressionEnabled="1" columnCount="1" groupBox="1" visibilityExpression="&quot;isextract&quot;">
-            <attributeEditorField showLabel="1" name="assetitemmain_lg_geolssts_v2geolassets_assetitem" index="28"/>
-            <attributeEditorContainer showLabel="1" backgroundColor="#ffe0b2" name="Asset Part Info (nur ein Eintrag)" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-              <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetobjectinfo_lg_glssts_vssts_ssttem_assetobjectinfo_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetobjectinfo_lg_glssts_vssts_ssttem_assetobjectinfo_lg_geolssts_v2geolassets_assetitem_T_Id" label="Asset Part Info (nur ein Eintrag)" nmRelationId="">
+        <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Extract" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+          <attributeEditorField name="isextract" index="26" showLabel="1"/>
+          <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="AssetPart Attribute" visibilityExpression="&quot;isextract&quot;" groupBox="1" visibilityExpressionEnabled="1" columnCount="1" collapsedExpression="" showLabel="1">
+            <attributeEditorField name="assetitemmain_lg_geolssts_v2geolassets_assetitem" index="28" showLabel="1"/>
+            <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Asset Part Info (nur ein Eintrag)" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1" backgroundColor="#ffe0b2">
+              <attributeEditorRelation name="assetobjectinfo_lg_glssts_vssts_ssttem_assetobjectinfo_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetobjectinfo_lg_glssts_vssts_ssttem_assetobjectinfo_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Asset Part Info (nur ein Eintrag)" showLabel="0">
                 <editor_configuration type="Map">
-                  <Option name="buttons" value="AddChildFeature|DeleteChildFeature" type="QString"/>
-                  <Option name="show_first_feature" value="true" type="bool"/>
+                  <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature"/>
+                  <Option name="show_first_feature" type="bool" value="true"/>
                 </editor_configuration>
               </attributeEditorRelation>
             </attributeEditorContainer>
@@ -598,162 +598,162 @@ def my_form_open(dialog, layer, feature):
         </attributeEditorContainer>
       </attributeEditorContainer>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="AssetMain Attribute" visibilityExpressionEnabled="1" columnCount="1" groupBox="0" visibilityExpression="NOT isextract">
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="lg_geolssts_v2geolassets_assetitem_assetitemmain_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="lg_geolssts_v2geolassets_assetitem_assetitemmain_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="AssetParts" nmRelationId="">
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="AssetMain Attribute" visibilityExpression="NOT isextract" groupBox="0" visibilityExpressionEnabled="1" columnCount="1" collapsedExpression="" showLabel="1">
+      <attributeEditorRelation name="lg_geolssts_v2geolassets_assetitem_assetitemmain_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="lg_geolssts_v2geolassets_assetitem_assetitemmain_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="AssetParts" showLabel="1">
         <editor_configuration type="Map">
-          <Option name="buttons" value="Link|Unlink|AddChildFeature|DeleteChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
+          <Option name="buttons" type="QString" value="Link|Unlink|AddChildFeature|DeleteChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
         </editor_configuration>
       </attributeEditorRelation>
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetkindref_lg_glssts_vssts_ssttem_assetcomposition_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetkindref_lg_glssts_vssts_ssttem_assetcomposition_lg_geolssts_v2geolassets_assetitem_T_Id" label="Arten der Parts" nmRelationId="assetkindref_areference_assetkinditem_T_Id">
+      <attributeEditorRelation name="assetkindref_lg_glssts_vssts_ssttem_assetcomposition_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetkindref_lg_glssts_vssts_ssttem_assetcomposition_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="assetkindref_areference_assetkinditem_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Arten der Parts" showLabel="1">
         <editor_configuration type="Map">
-          <Option name="buttons" value="Link|Unlink" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
+          <Option name="buttons" type="QString" value="Link|Unlink"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
         </editor_configuration>
       </attributeEditorRelation>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Nutzung" visibilityExpressionEnabled="0" columnCount="2" groupBox="0" visibilityExpression="">
-      <attributeEditorContainer showLabel="1" name="Nutzung" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorContainer showLabel="1" backgroundColor="#ffe0b2" name="Interne Nutzung (genau ein Eintrag)" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-          <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="internaluse_lg_glssts_vssts_ssttem_internaluse_lg_geolssts_v2geolassets_assetitem_T_Id" name="internaluse_lg_glssts_vssts_ssttem_internaluse_lg_geolssts_v2geolassets_assetitem_T_Id" label="Interne Nutzung (genau ein Eintrag)" nmRelationId="">
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Nutzung" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="2" collapsedExpression="" showLabel="1">
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Nutzung" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Interne Nutzung (genau ein Eintrag)" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1" backgroundColor="#ffe0b2">
+          <attributeEditorRelation name="internaluse_lg_glssts_vssts_ssttem_internaluse_lg_geolssts_v2geolassets_assetitem_T_Id" relation="internaluse_lg_glssts_vssts_ssttem_internaluse_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Interne Nutzung (genau ein Eintrag)" showLabel="0">
             <editor_configuration type="Map">
-              <Option name="buttons" value="AddChildFeature|DeleteChildFeature" type="QString"/>
-              <Option name="show_first_feature" value="true" type="bool"/>
+              <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature"/>
+              <Option name="show_first_feature" type="bool" value="true"/>
             </editor_configuration>
           </attributeEditorRelation>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" backgroundColor="#ffe0b2" name="Öffentliche Nutzung (genau ein Eintrag)" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-          <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="publicuse_lg_glssts_vssts_ssttem_publicuse_lg_geolssts_v2geolassets_assetitem_T_Id" name="publicuse_lg_glssts_vssts_ssttem_publicuse_lg_geolssts_v2geolassets_assetitem_T_Id" label="Öffentliche Nutzung (genau ein Eintrag)" nmRelationId="">
+        <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Öffentliche Nutzung (genau ein Eintrag)" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1" backgroundColor="#ffe0b2">
+          <attributeEditorRelation name="publicuse_lg_glssts_vssts_ssttem_publicuse_lg_geolssts_v2geolassets_assetitem_T_Id" relation="publicuse_lg_glssts_vssts_ssttem_publicuse_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Öffentliche Nutzung (genau ein Eintrag)" showLabel="1">
             <editor_configuration type="Map">
-              <Option name="buttons" value="AddChildFeature|DeleteChildFeature" type="QString"/>
-              <Option name="show_first_feature" value="true" type="bool"/>
-            </editor_configuration>
-          </attributeEditorRelation>
-        </attributeEditorContainer>
-      </attributeEditorContainer>
-      <attributeEditorContainer showLabel="1" name="Nationale Relevanz" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorField showLabel="1" name="isnatrel" index="3"/>
-        <attributeEditorContainer showLabel="1" name="Type(n)" visibilityExpressionEnabled="1" columnCount="1" groupBox="1" visibilityExpression="&quot;isnatrel&quot;">
-          <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="typenatrel_lg_glssts_vssts_ssttem_typenatrel_lg_geolssts_v2geolassets_assetitem_T_Id" name="typenatrel_lg_glssts_vssts_ssttem_typenatrel_lg_geolssts_v2geolassets_assetitem_T_Id" label="" nmRelationId="typenatrel_typenatrel_natrelitem_T_Id">
-            <editor_configuration type="Map">
-              <Option name="buttons" value="Link|Unlink" type="QString"/>
-              <Option name="show_first_feature" value="true" type="bool"/>
+              <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature"/>
+              <Option name="show_first_feature" type="bool" value="true"/>
             </editor_configuration>
           </attributeEditorRelation>
         </attributeEditorContainer>
       </attributeEditorContainer>
-    </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Lage (Geometrien)" visibilityExpressionEnabled="0" columnCount="1" groupBox="0" visibilityExpression="">
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="studylocation_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="studylocation_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="Study Location" nmRelationId="">
-        <editor_configuration type="Map">
-          <Option name="buttons" value="AddChildFeature|DeleteChildFeature|ZoomToChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
-        </editor_configuration>
-      </attributeEditorRelation>
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="studytrace_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="studytrace_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="Study Trace" nmRelationId="">
-        <editor_configuration type="Map">
-          <Option name="buttons" value="AddChildFeature|DeleteChildFeature|ZoomToChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
-        </editor_configuration>
-      </attributeEditorRelation>
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="studyarea_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="studyarea_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="Study Area" nmRelationId="">
-        <editor_configuration type="Map">
-          <Option name="buttons" value="AddChildFeature|DeleteChildFeature|ZoomToChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
-        </editor_configuration>
-      </attributeEditorRelation>
-      <attributeEditorField showLabel="1" name="municipality" index="5"/>
-    </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Kontakte" visibilityExpressionEnabled="0" columnCount="1" groupBox="0" visibilityExpression="">
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetitem_contact_author_authoredassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetitem_contact_author_authoredassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="Autor" nmRelationId="assetitem_contact_author_author_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id">
-        <editor_configuration type="Map">
-          <Option name="buttons" value="Link|Unlink|AddChildFeature|DeleteChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
-        </editor_configuration>
-      </attributeEditorRelation>
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetitem_contact_supplier_suppliedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetitem_contact_supplier_suppliedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="Supplier" nmRelationId="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id">
-        <editor_configuration type="Map">
-          <Option name="buttons" value="Link|Unlink|AddChildFeature|DeleteChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
-        </editor_configuration>
-      </attributeEditorRelation>
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetitem_contact_initiator_initiatedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetitem_contact_initiator_initiatedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="Initiator" nmRelationId="assetitem_contact_initiator_initiator_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id">
-        <editor_configuration type="Map">
-          <Option name="buttons" value="Link|Unlink|AddChildFeature|DeleteChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
-        </editor_configuration>
-      </attributeEditorRelation>
-    </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Pfade" visibilityExpressionEnabled="0" columnCount="2" groupBox="0" visibilityExpression="">
-      <attributeEditorContainer showLabel="1" name="Ablagen" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorField showLabel="1" name="url" index="6"/>
-        <attributeEditorField showLabel="1" name="relativepath" index="7"/>
-        <attributeEditorField showLabel="1" name="locationanalog" index="8"/>
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Nationale Relevanz" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorField name="isnatrel" index="3" showLabel="1"/>
+        <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Type(n)" visibilityExpression="&quot;isnatrel&quot;" groupBox="1" visibilityExpressionEnabled="1" columnCount="1" collapsedExpression="" showLabel="1">
+          <attributeEditorRelation name="typenatrel_lg_glssts_vssts_ssttem_typenatrel_lg_geolssts_v2geolassets_assetitem_T_Id" relation="typenatrel_lg_glssts_vssts_ssttem_typenatrel_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="typenatrel_typenatrel_natrelitem_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="" showLabel="0">
+            <editor_configuration type="Map">
+              <Option name="buttons" type="QString" value="Link|Unlink"/>
+              <Option name="show_first_feature" type="bool" value="true"/>
+            </editor_configuration>
+          </attributeEditorRelation>
+        </attributeEditorContainer>
       </attributeEditorContainer>
-      <attributeEditorContainer showLabel="1" name="Rechtliche Dokumente" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="legaldoc_lg_glssts_vssts_ssttem_legaldoc_lg_geolssts_v2geolassets_assetitem_T_Id" name="legaldoc_lg_glssts_vssts_ssttem_legaldoc_lg_geolssts_v2geolassets_assetitem_T_Id" label="" nmRelationId="">
+    </attributeEditorContainer>
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Lage (Geometrien)" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+      <attributeEditorRelation name="studylocation_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="studylocation_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Study Location" showLabel="1">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature|ZoomToChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+      <attributeEditorRelation name="studytrace_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="studytrace_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Study Trace" showLabel="1">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature|ZoomToChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+      <attributeEditorRelation name="studyarea_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="studyarea_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Study Area" showLabel="1">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature|ZoomToChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+      <attributeEditorField name="municipality" index="5" showLabel="1"/>
+    </attributeEditorContainer>
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Kontakte" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+      <attributeEditorRelation name="assetitem_contact_author_authoredassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetitem_contact_author_authoredassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="assetitem_contact_author_author_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Autor" showLabel="1">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="Link|Unlink|AddChildFeature|DeleteChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+      <attributeEditorRelation name="assetitem_contact_supplier_suppliedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetitem_contact_supplier_suppliedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Supplier" showLabel="1">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="Link|Unlink|AddChildFeature|DeleteChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+      <attributeEditorRelation name="assetitem_contact_initiator_initiatedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetitem_contact_initiator_initiatedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="assetitem_contact_initiator_initiator_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Initiator" showLabel="1">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="Link|Unlink|AddChildFeature|DeleteChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+    </attributeEditorContainer>
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Pfade" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="2" collapsedExpression="" showLabel="1">
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Ablagen" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorField name="url" index="6" showLabel="1"/>
+        <attributeEditorField name="relativepath" index="7" showLabel="1"/>
+        <attributeEditorField name="locationanalog" index="8" showLabel="1"/>
+      </attributeEditorContainer>
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Rechtliche Dokumente" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorRelation name="legaldoc_lg_glssts_vssts_ssttem_legaldoc_lg_geolssts_v2geolassets_assetitem_T_Id" relation="legaldoc_lg_glssts_vssts_ssttem_legaldoc_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="" showLabel="0">
           <editor_configuration type="Map">
-            <Option name="buttons" value="AddChildFeature|DeleteChildFeature" type="QString"/>
-            <Option name="show_first_feature" value="true" type="bool"/>
+            <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature"/>
+            <Option name="show_first_feature" type="bool" value="true"/>
           </editor_configuration>
         </attributeEditorRelation>
       </attributeEditorContainer>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Publikationen" visibilityExpressionEnabled="0" columnCount="1" groupBox="0" visibilityExpression="">
-      <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetitem_publication_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetitem_publication_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="" nmRelationId="assetitem_publication_publication_publication_T_Id">
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Publikationen" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+      <attributeEditorRelation name="assetitem_publication_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetitem_publication_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="assetitem_publication_publication_publication_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="" showLabel="0">
         <editor_configuration type="Map">
-          <Option name="buttons" value="Link|Unlink|AddChildFeature|DeleteChildFeature|ZoomToChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
+          <Option name="buttons" type="QString" value="Link|Unlink|AddChildFeature|DeleteChildFeature|ZoomToChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
         </editor_configuration>
       </attributeEditorRelation>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Referenzierte Assets" visibilityExpressionEnabled="0" columnCount="1" groupBox="0" visibilityExpression="">
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="linking_relation_editor" relation="assetitemx_assetitemy_assetitemy_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetitemx_assetitemy_assetitemy_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="→ Verlinkte Assets " nmRelationId="assetitemx_assetitemy_assetitemx_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Referenzierte Assets" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+      <attributeEditorRelation name="assetitemx_assetitemy_assetitemy_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetitemx_assetitemy_assetitemy_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="→ Verlinkte Assets " showLabel="1">
         <editor_configuration type="Map">
-          <Option name="buttons" value="Link|Unlink" type="QString"/>
-          <Option name="show_first_feature" value="false" type="bool"/>
+          <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="false"/>
         </editor_configuration>
       </attributeEditorRelation>
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetitemx_assetitemy_assetitemx_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetitemx_assetitemy_assetitemx_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="Assets, die auf diesen Asset Linken" nmRelationId="assetitemx_assetitemy_assetitemy_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
+      <attributeEditorRelation name="assetitemx_assetitemy_assetitemx_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetitemx_assetitemy_assetitemx_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="assetitemx_assetitemy_assetitemy_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Assets, die auf diesen Asset Linken" showLabel="1">
         <editor_configuration type="Map">
-          <Option name="buttons" value="NoButton" type="QString"/>
-          <Option name="show_first_feature" value="false" type="bool"/>
-        </editor_configuration>
-      </attributeEditorRelation>
-    </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Interne Projekte" visibilityExpressionEnabled="0" columnCount="1" groupBox="0" visibilityExpression="">
-      <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="assetitem_usedby_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="assetitem_usedby_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" label="" nmRelationId="assetitem_usedby_usedby_internalproject_T_Id">
-        <editor_configuration type="Map">
-          <Option name="buttons" value="Link|Unlink|SaveChildEdits|AddChildFeature|DeleteChildFeature" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
+          <Option name="buttons" type="QString" value="NoButton"/>
+          <Option name="show_first_feature" type="bool" value="false"/>
         </editor_configuration>
       </attributeEditorRelation>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Info KI" visibilityExpressionEnabled="0" columnCount="1" groupBox="0" visibilityExpression="">
-      <attributeEditorField showLabel="1" name="textbody" index="11"/>
-      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="autocat_lg_glssts_vssts_ssttem_autocatlabel_lg_geolssts_v2geolassets_assetitem_T_Id" name="autocat_lg_glssts_vssts_ssttem_autocatlabel_lg_geolssts_v2geolassets_assetitem_T_Id" label="Automatisch zugewiesene Klasse  (genau ein Eintrag)" nmRelationId="">
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Interne Projekte" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+      <attributeEditorRelation name="assetitem_usedby_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" relation="assetitem_usedby_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="assetitem_usedby_usedby_internalproject_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="" showLabel="0">
         <editor_configuration type="Map">
-          <Option name="buttons" value="AllButtons" type="QString"/>
-          <Option name="show_first_feature" value="true" type="bool"/>
+          <Option name="buttons" type="QString" value="Link|Unlink|SaveChildEdits|AddChildFeature|DeleteChildFeature"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
         </editor_configuration>
       </attributeEditorRelation>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="InfoGeol" visibilityExpressionEnabled="0" columnCount="1" groupBox="0" visibilityExpression="">
-      <attributeEditorField showLabel="1" name="infogeoldata" index="14"/>
-      <attributeEditorField showLabel="1" name="infogeolcontactdata" index="15"/>
-      <attributeEditorField showLabel="1" name="infogeolauxdata" index="16"/>
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Info KI" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+      <attributeEditorField name="textbody" index="11" showLabel="1"/>
+      <attributeEditorRelation name="autocat_lg_glssts_vssts_ssttem_autocatlabel_lg_geolssts_v2geolassets_assetitem_T_Id" relation="autocat_lg_glssts_vssts_ssttem_autocatlabel_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="Automatisch zugewiesene Klasse  (genau ein Eintrag)" showLabel="1">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="AllButtons"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Administration" visibilityExpressionEnabled="0" columnCount="2" groupBox="0" visibilityExpression="">
-      <attributeEditorContainer showLabel="1" name="Bearbeitung" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorField showLabel="1" name="datereceipt" index="4"/>
-        <attributeEditorField showLabel="1" name="processor" index="9"/>
-        <attributeEditorField showLabel="1" name="datelastprocessed" index="10"/>
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="InfoGeol" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+      <attributeEditorField name="infogeoldata" index="14" showLabel="1"/>
+      <attributeEditorField name="infogeolcontactdata" index="15" showLabel="1"/>
+      <attributeEditorField name="infogeolauxdata" index="16" showLabel="1"/>
+    </attributeEditorContainer>
+    <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Administration" visibilityExpression="" groupBox="0" visibilityExpressionEnabled="0" columnCount="2" collapsedExpression="" showLabel="1">
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Bearbeitung" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1">
+        <attributeEditorField name="datereceipt" index="4" showLabel="1"/>
+        <attributeEditorField name="processor" index="9" showLabel="1"/>
+        <attributeEditorField name="datelastprocessed" index="10" showLabel="1"/>
       </attributeEditorContainer>
-      <attributeEditorContainer showLabel="1" backgroundColor="#ffe0b2" name="Bearbeitungsstatus (mindestens ein Eintrag)" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
-        <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="statuswork_lg_glssts_vssts_ssttem_statuswork_lg_geolssts_v2geolassets_assetitem_T_Id" name="statuswork_lg_glssts_vssts_ssttem_statuswork_lg_geolssts_v2geolassets_assetitem_T_Id" label="" nmRelationId="">
+      <attributeEditorContainer collapsed="0" collapsedExpressionEnabled="0" name="Bearbeitungsstatus (mindestens ein Eintrag)" visibilityExpression="" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsedExpression="" showLabel="1" backgroundColor="#ffe0b2">
+        <attributeEditorRelation name="statuswork_lg_glssts_vssts_ssttem_statuswork_lg_geolssts_v2geolassets_assetitem_T_Id" relation="statuswork_lg_glssts_vssts_ssttem_statuswork_lg_geolssts_v2geolassets_assetitem_T_Id" nmRelationId="" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" label="" showLabel="0">
           <editor_configuration type="Map">
-            <Option name="buttons" value="AddChildFeature|DeleteChildFeature" type="QString"/>
-            <Option name="show_first_feature" value="true" type="bool"/>
+            <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature"/>
+            <Option name="show_first_feature" type="bool" value="true"/>
           </editor_configuration>
         </attributeEditorRelation>
       </attributeEditorContainer>
@@ -859,80 +859,80 @@ def my_form_open(dialog, layer, feature):
   <widgets>
     <widget name="assetitem_assetitemmain_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="force-suppress-popup" value="false" type="bool"/>
+        <Option name="force-suppress-popup" type="bool" value="false"/>
         <Option name="nm-rel" type="invalid"/>
       </config>
     </widget>
     <widget name="assetitem_contact_author_authoredassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitem_contact_author_author_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitem_contact_author_author_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id"/>
       </config>
     </widget>
     <widget name="assetitem_contact_author_authoredassetitem_lgassetitem_lgassetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitem_contact_author_author_lgcontact_lgcontact_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitem_contact_author_author_lgcontact_lgcontact_T_Id"/>
       </config>
     </widget>
     <widget name="assetitem_contact_initiator_initiatedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitem_contact_initiator_initiator_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitem_contact_initiator_initiator_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id"/>
       </config>
     </widget>
     <widget name="assetitem_contact_initiator_initiatedassetitem_lgassetitem_lgassetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitem_contact_initiator_initiator_lgcontact_lgcontact_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitem_contact_initiator_initiator_lgcontact_lgcontact_T_Id"/>
       </config>
     </widget>
     <widget name="assetitem_contact_supplier_suppliedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id"/>
       </config>
     </widget>
     <widget name="assetitem_contact_supplier_suppliedassetitem_lgassetitem_lgassetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitem_contact_supplier_supplier_lgcontact_lgcontact_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitem_contact_supplier_supplier_lgcontact_lgcontact_T_Id"/>
       </config>
     </widget>
     <widget name="assetitem_publication_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitem_publication_publication_publication_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitem_publication_publication_publication_T_Id"/>
       </config>
     </widget>
     <widget name="assetitem_usedby_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitem_usedby_usedby_internalproject_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitem_usedby_usedby_internalproject_T_Id"/>
       </config>
     </widget>
     <widget name="assetitemx_assetitemy_assetitemx_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="force-suppress-popup" value="false" type="bool"/>
+        <Option name="force-suppress-popup" type="bool" value="false"/>
         <Option name="nm-rel" type="invalid"/>
       </config>
     </widget>
     <widget name="assetitemx_assetitemy_assetitemx_lgassetitem_lgassetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitemx_assetitemy_assetitemy_lgassetitem_lgassetitem_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitemx_assetitemy_assetitemy_lgassetitem_lgassetitem_T_Id"/>
       </config>
     </widget>
     <widget name="assetitemx_assetitemy_assetitemy_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitemx_assetitemy_assetitemy_assetitem_assetitem_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitemx_assetitemy_assetitemy_assetitem_assetitem_T_Id"/>
       </config>
     </widget>
     <widget name="assetitemx_assetitemy_assetitemy_lgassetitem_lgassetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="assetitemx_assetitemy_assetitemx_lgassetitem_lgassetitem_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="assetitemx_assetitemy_assetitemx_lgassetitem_lgassetitem_T_Id"/>
       </config>
     </widget>
     <widget name="lg_geolssts_v2geolassets_assetitem_assetitemmain_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id">
       <config type="Map">
-        <Option name="force-suppress-popup" value="false" type="bool"/>
+        <Option name="force-suppress-popup" type="bool" value="false"/>
         <Option name="nm-rel" type="invalid"/>
       </config>
     </widget>
     <widget name="lgassetitem_publication_lgassetitem_lgassetitem_T_Id">
       <config type="Map">
-        <Option name="nm-rel" value="lgassetitem_publication_publication_publication_T_Id" type="QString"/>
+        <Option name="nm-rel" type="QString" value="lgassetitem_publication_publication_publication_T_Id"/>
       </config>
     </widget>
   </widgets>
