@@ -12,10 +12,8 @@
       <Option value="offline" name="QFieldSync/cloud_action" type="QString"/>
       <Option value="{}" name="QFieldSync/photo_naming" type="QString"/>
       <Option name="dualview/previewExpressions" type="List">
+        <Option value="coalesce(attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemx_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal'), 'That Asset' ) ||' &lt; '||coalesce(attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemy_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal'),'This Asset')" type="QString"/>
         <Option value="attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemx_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')||' &lt; '||attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemy_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')" type="QString"/>
-        <Option value="attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemx_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')||' > '||attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemy_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')" type="QString"/>
-        <Option value="attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemx_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')" type="QString"/>
-        <Option value="attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemx_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')||' > '||attribute(get_feature('AssetItem', 'T_id',  &quot;assetitemy_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')" type="QString"/>
       </Option>
       <Option value="0" name="embeddedWidgets/count" type="int"/>
       <Option name="variableNames" type="StringList">
@@ -220,6 +218,6 @@ def my_form_open(dialog, layer, feature):
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression>attribute(get_feature('AssetItem', 'T_id',  "assetitemx_lg_geolssts_v2geolassets_assetitem" ),'titleoriginal')||' &lt; '||attribute(get_feature('AssetItem', 'T_id',  "assetitemy_lg_geolssts_v2geolassets_assetitem" ),'titleoriginal')</previewExpression>
+  <previewExpression>coalesce(attribute(get_feature('AssetItem', 'T_id',  "assetitemx_lg_geolssts_v2geolassets_assetitem" ),'titleoriginal'), 'that Asset' ) ||' &lt; '||coalesce(attribute(get_feature('AssetItem', 'T_id',  "assetitemy_lg_geolssts_v2geolassets_assetitem" ),'titleoriginal'),'this Asset')</previewExpression>
   <layerGeometryType>4</layerGeometryType>
 </qgis>
