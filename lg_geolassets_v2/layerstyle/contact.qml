@@ -1,5 +1,11 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="Fields|Forms" version="3.25.0-Master">
+<qgis styleCategories="LayerConfiguration|Fields|Forms" version="3.22.7-Białowieża" readOnly="0">
+  <flags>
+    <Identifiable>1</Identifiable>
+    <Removable>1</Removable>
+    <Searchable>1</Searchable>
+    <Private>0</Private>
+  </flags>
   <fieldConfiguration>
     <field configurationFlags="None" name="T_Id">
       <editWidget type="TextEdit">
@@ -12,21 +18,21 @@
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option type="bool" value="false" name="AllowAddFeatures"/>
-            <Option type="bool" value="false" name="AllowNULL"/>
-            <Option type="bool" value="false" name="ChainFilters"/>
-            <Option type="QString" value="&quot;topic&quot; = 'LG_GeolAssets_V2.GeolAssets' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'" name="FilterExpression"/>
-            <Option type="invalid" name="FilterFields"/>
-            <Option type="bool" value="false" name="MapIdentification"/>
-            <Option type="bool" value="true" name="OrderByValue"/>
-            <Option type="bool" value="false" name="ReadOnly"/>
-            <Option type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET" name="ReferencedLayerDataSource"/>
-            <Option type="QString" value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" name="ReferencedLayerId"/>
-            <Option type="QString" value="T_ILI2DB_BASKET" name="ReferencedLayerName"/>
-            <Option type="QString" value="ogr" name="ReferencedLayerProviderKey"/>
-            <Option type="QString" value="lg_geolssts_v2geolassets_contact_T_basket_T_ILI2DB_BASKET_T_Id" name="Relation"/>
-            <Option type="bool" value="false" name="ShowForm"/>
-            <Option type="bool" value="false" name="ShowOpenFormButton"/>
+            <Option name="AllowAddFeatures" value="false" type="bool"/>
+            <Option name="AllowNULL" value="false" type="bool"/>
+            <Option name="ChainFilters" value="false" type="bool"/>
+            <Option name="FilterExpression" value="&quot;topic&quot; = 'LG_GeolAssets_V2.GeolAssets' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'" type="QString"/>
+            <Option name="FilterFields" type="invalid"/>
+            <Option name="MapIdentification" value="false" type="bool"/>
+            <Option name="OrderByValue" value="true" type="bool"/>
+            <Option name="ReadOnly" value="false" type="bool"/>
+            <Option name="ReferencedLayerDataSource" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET" type="QString"/>
+            <Option name="ReferencedLayerId" value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" type="QString"/>
+            <Option name="ReferencedLayerName" value="T_ILI2DB_BASKET" type="QString"/>
+            <Option name="ReferencedLayerProviderKey" value="ogr" type="QString"/>
+            <Option name="Relation" value="lg_geolssts_v2geolassets_contact_T_basket_T_ILI2DB_BASKET_T_Id" type="QString"/>
+            <Option name="ShowForm" value="false" type="bool"/>
+            <Option name="ShowOpenFormButton" value="false" type="bool"/>
           </Option>
         </config>
       </editWidget>
@@ -42,8 +48,8 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option type="bool" value="false" name="IsMultiline"/>
-            <Option type="bool" value="false" name="UseHtml"/>
+            <Option name="IsMultiline" value="false" type="bool"/>
+            <Option name="UseHtml" value="false" type="bool"/>
           </Option>
         </config>
       </editWidget>
@@ -52,21 +58,21 @@
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option type="bool" value="false" name="AllowAddFeatures"/>
-            <Option type="bool" value="true" name="AllowNULL"/>
-            <Option type="bool" value="false" name="ChainFilters"/>
-            <Option type="QString" value="" name="FilterExpression"/>
-            <Option type="invalid" name="FilterFields"/>
-            <Option type="bool" value="false" name="MapIdentification"/>
-            <Option type="bool" value="true" name="OrderByValue"/>
-            <Option type="bool" value="false" name="ReadOnly"/>
-            <Option type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=contactkinditem" name="ReferencedLayerDataSource"/>
-            <Option type="QString" value="ContactKindItem_bedb9ab1_e3c6_4fd4_81df_5e51153c34c8" name="ReferencedLayerId"/>
-            <Option type="QString" value="ContactKindItem" name="ReferencedLayerName"/>
-            <Option type="QString" value="ogr" name="ReferencedLayerProviderKey"/>
-            <Option type="QString" value="lg_geolssts_v2geolassets_contact_akind_contactkinditem_T_Id" name="Relation"/>
-            <Option type="bool" value="false" name="ShowForm"/>
-            <Option type="bool" value="false" name="ShowOpenFormButton"/>
+            <Option name="AllowAddFeatures" value="false" type="bool"/>
+            <Option name="AllowNULL" value="true" type="bool"/>
+            <Option name="ChainFilters" value="false" type="bool"/>
+            <Option name="FilterExpression" value="" type="QString"/>
+            <Option name="FilterFields" type="invalid"/>
+            <Option name="MapIdentification" value="false" type="bool"/>
+            <Option name="OrderByValue" value="true" type="bool"/>
+            <Option name="ReadOnly" value="false" type="bool"/>
+            <Option name="ReferencedLayerDataSource" value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=contactkinditem" type="QString"/>
+            <Option name="ReferencedLayerId" value="ContactKindItem_bedb9ab1_e3c6_4fd4_81df_5e51153c34c8" type="QString"/>
+            <Option name="ReferencedLayerName" value="ContactKindItem" type="QString"/>
+            <Option name="ReferencedLayerProviderKey" value="ogr" type="QString"/>
+            <Option name="Relation" value="lg_geolssts_v2geolassets_contact_akind_contactkinditem_T_Id" type="QString"/>
+            <Option name="ShowForm" value="false" type="bool"/>
+            <Option name="ShowOpenFormButton" value="false" type="bool"/>
           </Option>
         </config>
       </editWidget>
@@ -75,8 +81,8 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option type="bool" value="false" name="IsMultiline"/>
-            <Option type="bool" value="false" name="UseHtml"/>
+            <Option name="IsMultiline" value="false" type="bool"/>
+            <Option name="UseHtml" value="false" type="bool"/>
           </Option>
         </config>
       </editWidget>
@@ -85,8 +91,8 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option type="bool" value="false" name="IsMultiline"/>
-            <Option type="bool" value="false" name="UseHtml"/>
+            <Option name="IsMultiline" value="false" type="bool"/>
+            <Option name="UseHtml" value="false" type="bool"/>
           </Option>
         </config>
       </editWidget>
@@ -95,8 +101,8 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option type="bool" value="false" name="IsMultiline"/>
-            <Option type="bool" value="false" name="UseHtml"/>
+            <Option name="IsMultiline" value="false" type="bool"/>
+            <Option name="UseHtml" value="false" type="bool"/>
           </Option>
         </config>
       </editWidget>
@@ -105,45 +111,45 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option type="bool" value="false" name="IsMultiline"/>
-            <Option type="bool" value="false" name="UseHtml"/>
+            <Option name="IsMultiline" value="false" type="bool"/>
+            <Option name="UseHtml" value="false" type="bool"/>
           </Option>
         </config>
       </editWidget>
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias index="0" field="T_Id" name=""/>
-    <alias index="1" field="T_basket" name=""/>
-    <alias index="2" field="T_Ili_Tid" name=""/>
-    <alias index="3" field="idzad" name="IDZAD"/>
-    <alias index="4" field="akind" name="Art"/>
-    <alias index="5" field="aname" name="Name"/>
-    <alias index="6" field="telefon" name="Telefon"/>
-    <alias index="7" field="email" name="Email"/>
-    <alias index="8" field="website" name="Website"/>
+    <alias field="T_Id" name="" index="0"/>
+    <alias field="T_basket" name="" index="1"/>
+    <alias field="T_Ili_Tid" name="" index="2"/>
+    <alias field="idzad" name="IDZAD" index="3"/>
+    <alias field="akind" name="Art" index="4"/>
+    <alias field="aname" name="Name" index="5"/>
+    <alias field="telefon" name="Telefon" index="6"/>
+    <alias field="email" name="Email (&quot;mailto:name@domain.ch&quot;)" index="7"/>
+    <alias field="website" name="Website (&quot;http://www.domain.ch&quot;)" index="8"/>
   </aliases>
   <defaults>
-    <default field="T_Id" applyOnUpdate="0" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))"/>
-    <default field="T_basket" applyOnUpdate="0" expression="@default_basket_lg_geolassets_v2_geolassets"/>
-    <default field="T_Ili_Tid" applyOnUpdate="0" expression="substr(uuid(), 2, 36)"/>
-    <default field="idzad" applyOnUpdate="0" expression=""/>
-    <default field="akind" applyOnUpdate="0" expression=""/>
-    <default field="aname" applyOnUpdate="0" expression=""/>
-    <default field="telefon" applyOnUpdate="0" expression=""/>
-    <default field="email" applyOnUpdate="0" expression=""/>
-    <default field="website" applyOnUpdate="0" expression=""/>
+    <default field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0"/>
+    <default field="T_basket" expression="@default_basket_lg_geolassets_v2_geolassets" applyOnUpdate="0"/>
+    <default field="T_Ili_Tid" expression="substr(uuid(), 2, 36)" applyOnUpdate="0"/>
+    <default field="idzad" expression="" applyOnUpdate="0"/>
+    <default field="akind" expression="" applyOnUpdate="0"/>
+    <default field="aname" expression="" applyOnUpdate="0"/>
+    <default field="telefon" expression="" applyOnUpdate="0"/>
+    <default field="email" expression="" applyOnUpdate="0"/>
+    <default field="website" expression="" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint exp_strength="0" constraints="3" unique_strength="1" field="T_Id" notnull_strength="1"/>
-    <constraint exp_strength="0" constraints="1" unique_strength="0" field="T_basket" notnull_strength="1"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_Ili_Tid" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" field="idzad" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="1" unique_strength="0" field="akind" notnull_strength="1"/>
-    <constraint exp_strength="0" constraints="1" unique_strength="0" field="aname" notnull_strength="1"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" field="telefon" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" field="email" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" field="website" notnull_strength="0"/>
+    <constraint field="T_Id" unique_strength="1" notnull_strength="1" constraints="3" exp_strength="0"/>
+    <constraint field="T_basket" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
+    <constraint field="T_Ili_Tid" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="idzad" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="akind" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
+    <constraint field="aname" unique_strength="0" notnull_strength="1" constraints="1" exp_strength="0"/>
+    <constraint field="telefon" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="email" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="website" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint field="T_Id" exp="" desc=""/>
@@ -179,33 +185,33 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" columnCount="2" visibilityExpression="" collapsed="0" collapsedExpressionEnabled="0" collapsedExpression="" name="Allgemein" groupBox="1">
-      <attributeEditorField showLabel="1" index="5" name="aname"/>
-      <attributeEditorField showLabel="1" index="3" name="idzad"/>
-      <attributeEditorField showLabel="1" index="4" name="akind"/>
-      <attributeEditorField showLabel="1" index="6" name="telefon"/>
-      <attributeEditorField showLabel="1" index="7" name="email"/>
-      <attributeEditorField showLabel="1" index="8" name="website"/>
+    <attributeEditorContainer showLabel="1" name="Allgemein" visibilityExpressionEnabled="0" columnCount="2" groupBox="1" visibilityExpression="">
+      <attributeEditorField showLabel="1" name="aname" index="5"/>
+      <attributeEditorField showLabel="1" name="idzad" index="3"/>
+      <attributeEditorField showLabel="1" name="akind" index="4"/>
+      <attributeEditorField showLabel="1" name="email" index="7"/>
+      <attributeEditorField showLabel="1" name="telefon" index="6"/>
+      <attributeEditorField showLabel="1" name="website" index="8"/>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" columnCount="1" visibilityExpression="" collapsed="0" collapsedExpressionEnabled="0" collapsedExpression="" name="Adresse (nur ein Eintrag)" groupBox="1">
-      <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" label="" relation="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id" nmRelationId="" name="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id" relationWidgetTypeId="relation_editor">
+    <attributeEditorContainer showLabel="1" name="Adresse (maximal ein Eintrag)" visibilityExpressionEnabled="0" columnCount="1" groupBox="1" visibilityExpression="">
+      <attributeEditorRelation showLabel="0" forceSuppressFormPopup="0" relationWidgetTypeId="relation_editor" relation="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id" name="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id" label="" nmRelationId="">
         <editor_configuration type="Map">
-          <Option type="QString" value="AddChildFeature|DeleteChildFeature" name="buttons"/>
-          <Option type="bool" value="true" name="show_first_feature"/>
+          <Option name="buttons" value="AddChildFeature|DeleteChildFeature" type="QString"/>
+          <Option name="show_first_feature" value="true" type="bool"/>
         </editor_configuration>
       </attributeEditorRelation>
     </attributeEditorContainer>
   </attributeEditorForm>
   <editable>
-    <field editable="1" name="T_Id"/>
-    <field editable="1" name="T_Ili_Tid"/>
-    <field editable="1" name="T_basket"/>
-    <field editable="1" name="akind"/>
-    <field editable="1" name="aname"/>
-    <field editable="1" name="email"/>
-    <field editable="1" name="idzad"/>
-    <field editable="1" name="telefon"/>
-    <field editable="1" name="website"/>
+    <field name="T_Id" editable="1"/>
+    <field name="T_Ili_Tid" editable="1"/>
+    <field name="T_basket" editable="1"/>
+    <field name="akind" editable="1"/>
+    <field name="aname" editable="1"/>
+    <field name="email" editable="1"/>
+    <field name="idzad" editable="1"/>
+    <field name="telefon" editable="1"/>
+    <field name="website" editable="1"/>
   </editable>
   <labelOnTop>
     <field name="T_Id" labelOnTop="0"/>
@@ -219,42 +225,43 @@ def my_form_open(dialog, layer, feature):
     <field name="website" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
-    <field reuseLastValue="0" name="T_Id"/>
-    <field reuseLastValue="0" name="T_Ili_Tid"/>
-    <field reuseLastValue="0" name="T_basket"/>
-    <field reuseLastValue="0" name="akind"/>
-    <field reuseLastValue="0" name="aname"/>
-    <field reuseLastValue="0" name="email"/>
-    <field reuseLastValue="0" name="idzad"/>
-    <field reuseLastValue="0" name="telefon"/>
-    <field reuseLastValue="0" name="website"/>
+    <field name="T_Id" reuseLastValue="0"/>
+    <field name="T_Ili_Tid" reuseLastValue="0"/>
+    <field name="T_basket" reuseLastValue="0"/>
+    <field name="akind" reuseLastValue="0"/>
+    <field name="aname" reuseLastValue="0"/>
+    <field name="email" reuseLastValue="0"/>
+    <field name="idzad" reuseLastValue="0"/>
+    <field name="telefon" reuseLastValue="0"/>
+    <field name="website" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets>
     <widget name="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id">
       <config type="Map">
-        <Option type="bool" value="false" name="force-suppress-popup"/>
-        <Option type="QString" value="" name="nm-rel"/>
+        <Option name="force-suppress-popup" value="false" type="bool"/>
+        <Option name="nm-rel" value="" type="QString"/>
       </config>
     </widget>
     <widget name="assetitem_contact_author_author_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id">
       <config type="Map">
-        <Option type="bool" value="false" name="force-suppress-popup"/>
-        <Option type="invalid" name="nm-rel"/>
+        <Option name="force-suppress-popup" value="false" type="bool"/>
+        <Option name="nm-rel" type="invalid"/>
       </config>
     </widget>
     <widget name="assetitem_contact_initiator_initiator_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id">
       <config type="Map">
-        <Option type="bool" value="false" name="force-suppress-popup"/>
-        <Option type="invalid" name="nm-rel"/>
+        <Option name="force-suppress-popup" value="false" type="bool"/>
+        <Option name="nm-rel" type="invalid"/>
       </config>
     </widget>
     <widget name="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id">
       <config type="Map">
-        <Option type="bool" value="false" name="force-suppress-popup"/>
-        <Option type="invalid" name="nm-rel"/>
+        <Option name="force-suppress-popup" value="false" type="bool"/>
+        <Option name="nm-rel" type="invalid"/>
       </config>
     </widget>
   </widgets>
+  <previewExpression>"aname"</previewExpression>
   <layerGeometryType>4</layerGeometryType>
 </qgis>
