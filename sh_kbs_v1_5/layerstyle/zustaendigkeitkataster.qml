@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.22.6-Białowieża" styleCategories="LayerConfiguration|Fields|Forms" readOnly="0">
+<qgis version="3.22.7-Białowieża" styleCategories="LayerConfiguration|Symbology|Fields|Forms" readOnly="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -14,26 +14,13 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="t_basket">
-      <editWidget type="RelationReference">
-        <config>
-          <Option type="Map">
-            <Option name="AllowAddFeatures" type="bool" value="false"/>
-            <Option name="AllowNULL" type="bool" value="true"/>
-            <Option name="FilterExpression" type="QString" value="&quot;topic&quot; = 'KbS_V1_5.Belastete_Standorte' and attribute(get_feature('t_ili2db_dataset', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'"/>
-            <Option name="FilterFields"/>
-            <Option name="OrderByValue" type="bool" value="true"/>
-            <Option name="Relation" type="QString" value="zustaendigkeitkataster_t_basket_fkey"/>
-            <Option name="ShowForm" type="bool" value="false"/>
-            <Option name="ShowOpenFormButton" type="bool" value="false"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
     <field configurationFlags="None" name="t_ili_tid">
       <editWidget type="TextEdit">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -214,98 +201,94 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" field="t_id" index="0"/>
-    <alias name="" field="t_basket" index="1"/>
-    <alias name="" field="t_ili_tid" index="2"/>
-    <alias name="Zustaendige_Behoerde" field="zustaendige_behoerde" index="3"/>
-    <alias name="" field="zustaendige_behoerde_de" index="4"/>
-    <alias name="" field="zustaendige_behoerde_fr" index="5"/>
-    <alias name="" field="zustaendige_behoerde_rm" index="6"/>
-    <alias name="" field="zustaendige_behoerde_it" index="7"/>
-    <alias name="" field="zustaendige_behoerde_en" index="8"/>
-    <alias name="URL_Behoerde" field="url_behoerde" index="9"/>
-    <alias name="" field="url_behoerde_de" index="10"/>
-    <alias name="" field="url_behoerde_fr" index="11"/>
-    <alias name="" field="url_behoerde_rm" index="12"/>
-    <alias name="" field="url_behoerde_it" index="13"/>
-    <alias name="" field="url_behoerde_en" index="14"/>
-    <alias name="UID" field="auid" index="15"/>
-    <alias name="Katastername" field="katastername" index="16"/>
-    <alias name="" field="katastername_de" index="17"/>
-    <alias name="" field="katastername_fr" index="18"/>
-    <alias name="" field="katastername_rm" index="19"/>
-    <alias name="" field="katastername_it" index="20"/>
-    <alias name="" field="katastername_en" index="21"/>
-    <alias name="URL_Kataster" field="url_kataster" index="22"/>
-    <alias name="" field="url_kataster_de" index="23"/>
-    <alias name="" field="url_kataster_fr" index="24"/>
-    <alias name="" field="url_kataster_rm" index="25"/>
-    <alias name="" field="url_kataster_it" index="26"/>
-    <alias name="" field="url_kataster_en" index="27"/>
+    <alias index="0" field="t_id" name=""/>
+    <alias index="1" field="t_ili_tid" name=""/>
+    <alias index="2" field="zustaendige_behoerde" name="Zustaendige_Behoerde"/>
+    <alias index="3" field="zustaendige_behoerde_de" name=""/>
+    <alias index="4" field="zustaendige_behoerde_fr" name=""/>
+    <alias index="5" field="zustaendige_behoerde_rm" name=""/>
+    <alias index="6" field="zustaendige_behoerde_it" name=""/>
+    <alias index="7" field="zustaendige_behoerde_en" name=""/>
+    <alias index="8" field="url_behoerde" name="URL_Behoerde"/>
+    <alias index="9" field="url_behoerde_de" name=""/>
+    <alias index="10" field="url_behoerde_fr" name=""/>
+    <alias index="11" field="url_behoerde_rm" name=""/>
+    <alias index="12" field="url_behoerde_it" name=""/>
+    <alias index="13" field="url_behoerde_en" name=""/>
+    <alias index="14" field="auid" name="UID"/>
+    <alias index="15" field="katastername" name="Katastername"/>
+    <alias index="16" field="katastername_de" name=""/>
+    <alias index="17" field="katastername_fr" name=""/>
+    <alias index="18" field="katastername_rm" name=""/>
+    <alias index="19" field="katastername_it" name=""/>
+    <alias index="20" field="katastername_en" name=""/>
+    <alias index="21" field="url_kataster" name="URL_Kataster"/>
+    <alias index="22" field="url_kataster_de" name=""/>
+    <alias index="23" field="url_kataster_fr" name=""/>
+    <alias index="24" field="url_kataster_rm" name=""/>
+    <alias index="25" field="url_kataster_it" name=""/>
+    <alias index="26" field="url_kataster_en" name=""/>
   </aliases>
   <defaults>
-    <default applyOnUpdate="0" expression="" field="t_id"/>
-    <default applyOnUpdate="0" expression="@default_basket_kbs_v1_5_belastete_standorte" field="t_basket"/>
-    <default applyOnUpdate="0" expression="" field="t_ili_tid"/>
-    <default applyOnUpdate="0" expression="" field="zustaendige_behoerde"/>
-    <default applyOnUpdate="0" expression="" field="zustaendige_behoerde_de"/>
-    <default applyOnUpdate="0" expression="" field="zustaendige_behoerde_fr"/>
-    <default applyOnUpdate="0" expression="" field="zustaendige_behoerde_rm"/>
-    <default applyOnUpdate="0" expression="" field="zustaendige_behoerde_it"/>
-    <default applyOnUpdate="0" expression="" field="zustaendige_behoerde_en"/>
-    <default applyOnUpdate="0" expression="" field="url_behoerde"/>
-    <default applyOnUpdate="0" expression="" field="url_behoerde_de"/>
-    <default applyOnUpdate="0" expression="" field="url_behoerde_fr"/>
-    <default applyOnUpdate="0" expression="" field="url_behoerde_rm"/>
-    <default applyOnUpdate="0" expression="" field="url_behoerde_it"/>
-    <default applyOnUpdate="0" expression="" field="url_behoerde_en"/>
-    <default applyOnUpdate="0" expression="" field="auid"/>
-    <default applyOnUpdate="0" expression="" field="katastername"/>
-    <default applyOnUpdate="0" expression="" field="katastername_de"/>
-    <default applyOnUpdate="0" expression="" field="katastername_fr"/>
-    <default applyOnUpdate="0" expression="" field="katastername_rm"/>
-    <default applyOnUpdate="0" expression="" field="katastername_it"/>
-    <default applyOnUpdate="0" expression="" field="katastername_en"/>
-    <default applyOnUpdate="0" expression="" field="url_kataster"/>
-    <default applyOnUpdate="0" expression="" field="url_kataster_de"/>
-    <default applyOnUpdate="0" expression="" field="url_kataster_fr"/>
-    <default applyOnUpdate="0" expression="" field="url_kataster_rm"/>
-    <default applyOnUpdate="0" expression="" field="url_kataster_it"/>
-    <default applyOnUpdate="0" expression="" field="url_kataster_en"/>
+    <default field="t_id" applyOnUpdate="0" expression=""/>
+    <default field="t_ili_tid" applyOnUpdate="0" expression="substr(uuid(), 2, 36)"/>
+    <default field="zustaendige_behoerde" applyOnUpdate="0" expression=""/>
+    <default field="zustaendige_behoerde_de" applyOnUpdate="0" expression=""/>
+    <default field="zustaendige_behoerde_fr" applyOnUpdate="0" expression=""/>
+    <default field="zustaendige_behoerde_rm" applyOnUpdate="0" expression=""/>
+    <default field="zustaendige_behoerde_it" applyOnUpdate="0" expression=""/>
+    <default field="zustaendige_behoerde_en" applyOnUpdate="0" expression=""/>
+    <default field="url_behoerde" applyOnUpdate="0" expression=""/>
+    <default field="url_behoerde_de" applyOnUpdate="0" expression=""/>
+    <default field="url_behoerde_fr" applyOnUpdate="0" expression=""/>
+    <default field="url_behoerde_rm" applyOnUpdate="0" expression=""/>
+    <default field="url_behoerde_it" applyOnUpdate="0" expression=""/>
+    <default field="url_behoerde_en" applyOnUpdate="0" expression=""/>
+    <default field="auid" applyOnUpdate="0" expression=""/>
+    <default field="katastername" applyOnUpdate="0" expression=""/>
+    <default field="katastername_de" applyOnUpdate="0" expression=""/>
+    <default field="katastername_fr" applyOnUpdate="0" expression=""/>
+    <default field="katastername_rm" applyOnUpdate="0" expression=""/>
+    <default field="katastername_it" applyOnUpdate="0" expression=""/>
+    <default field="katastername_en" applyOnUpdate="0" expression=""/>
+    <default field="url_kataster" applyOnUpdate="0" expression=""/>
+    <default field="url_kataster_de" applyOnUpdate="0" expression=""/>
+    <default field="url_kataster_fr" applyOnUpdate="0" expression=""/>
+    <default field="url_kataster_rm" applyOnUpdate="0" expression=""/>
+    <default field="url_kataster_it" applyOnUpdate="0" expression=""/>
+    <default field="url_kataster_en" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
-    <constraint unique_strength="1" exp_strength="0" notnull_strength="1" constraints="3" field="t_id"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="1" constraints="1" field="t_basket"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="t_ili_tid"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="zustaendige_behoerde"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="zustaendige_behoerde_de"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="zustaendige_behoerde_fr"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="zustaendige_behoerde_rm"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="zustaendige_behoerde_it"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="zustaendige_behoerde_en"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_behoerde"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_behoerde_de"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_behoerde_fr"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_behoerde_rm"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_behoerde_it"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_behoerde_en"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="auid"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="katastername"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="katastername_de"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="katastername_fr"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="katastername_rm"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="katastername_it"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="katastername_en"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_kataster"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_kataster_de"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_kataster_fr"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_kataster_rm"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_kataster_it"/>
-    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="url_kataster_en"/>
+    <constraint field="t_id" unique_strength="1" notnull_strength="1" constraints="3" exp_strength="0"/>
+    <constraint field="t_ili_tid" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="zustaendige_behoerde" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="zustaendige_behoerde_de" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="zustaendige_behoerde_fr" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="zustaendige_behoerde_rm" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="zustaendige_behoerde_it" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="zustaendige_behoerde_en" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_behoerde" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_behoerde_de" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_behoerde_fr" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_behoerde_rm" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_behoerde_it" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_behoerde_en" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="auid" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="katastername" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="katastername_de" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="katastername_fr" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="katastername_rm" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="katastername_it" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="katastername_en" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_kataster" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_kataster_de" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_kataster_fr" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_kataster_rm" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_kataster_it" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="url_kataster_en" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint exp="" field="t_id" desc=""/>
-    <constraint exp="" field="t_basket" desc=""/>
     <constraint exp="" field="t_ili_tid" desc=""/>
     <constraint exp="" field="zustaendige_behoerde" desc=""/>
     <constraint exp="" field="zustaendige_behoerde_de" desc=""/>
@@ -356,42 +339,46 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorContainer visibilityExpressionEnabled="0" groupBox="0" name="General" columnCount="2" showLabel="1" visibilityExpression="">
-      <attributeEditorField name="auid" showLabel="1" index="15"/>
-      <attributeEditorField name="katastername" showLabel="1" index="16"/>
-      <attributeEditorField name="katastername_de" showLabel="1" index="17"/>
-      <attributeEditorField name="katastername_en" showLabel="1" index="21"/>
-      <attributeEditorField name="katastername_fr" showLabel="1" index="18"/>
-      <attributeEditorField name="katastername_it" showLabel="1" index="20"/>
-      <attributeEditorField name="katastername_rm" showLabel="1" index="19"/>
-      <attributeEditorField name="t_basket" showLabel="1" index="1"/>
-      <attributeEditorField name="url_behoerde" showLabel="1" index="9"/>
-      <attributeEditorField name="url_behoerde_de" showLabel="1" index="10"/>
-      <attributeEditorField name="url_behoerde_en" showLabel="1" index="14"/>
-      <attributeEditorField name="url_behoerde_fr" showLabel="1" index="11"/>
-      <attributeEditorField name="url_behoerde_it" showLabel="1" index="13"/>
-      <attributeEditorField name="url_behoerde_rm" showLabel="1" index="12"/>
-      <attributeEditorField name="url_kataster" showLabel="1" index="22"/>
-      <attributeEditorField name="url_kataster_de" showLabel="1" index="23"/>
-      <attributeEditorField name="url_kataster_en" showLabel="1" index="27"/>
-      <attributeEditorField name="url_kataster_fr" showLabel="1" index="24"/>
-      <attributeEditorField name="url_kataster_it" showLabel="1" index="26"/>
-      <attributeEditorField name="url_kataster_rm" showLabel="1" index="25"/>
-      <attributeEditorField name="zustaendige_behoerde" showLabel="1" index="3"/>
-      <attributeEditorField name="zustaendige_behoerde_de" showLabel="1" index="4"/>
-      <attributeEditorField name="zustaendige_behoerde_en" showLabel="1" index="8"/>
-      <attributeEditorField name="zustaendige_behoerde_fr" showLabel="1" index="5"/>
-      <attributeEditorField name="zustaendige_behoerde_it" showLabel="1" index="7"/>
-      <attributeEditorField name="zustaendige_behoerde_rm" showLabel="1" index="6"/>
+    <attributeEditorContainer columnCount="2" showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="General" groupBox="0">
+      <attributeEditorField index="14" showLabel="1" name="auid"/>
+      <attributeEditorField index="15" showLabel="1" name="katastername"/>
+      <attributeEditorField index="16" showLabel="1" name="katastername_de"/>
+      <attributeEditorField index="20" showLabel="1" name="katastername_en"/>
+      <attributeEditorField index="17" showLabel="1" name="katastername_fr"/>
+      <attributeEditorField index="19" showLabel="1" name="katastername_it"/>
+      <attributeEditorField index="18" showLabel="1" name="katastername_rm"/>
+      <attributeEditorField index="-1" showLabel="1" name="t_basket"/>
+      <attributeEditorField index="8" showLabel="1" name="url_behoerde"/>
+      <attributeEditorField index="9" showLabel="1" name="url_behoerde_de"/>
+      <attributeEditorField index="13" showLabel="1" name="url_behoerde_en"/>
+      <attributeEditorField index="10" showLabel="1" name="url_behoerde_fr"/>
+      <attributeEditorField index="12" showLabel="1" name="url_behoerde_it"/>
+      <attributeEditorField index="11" showLabel="1" name="url_behoerde_rm"/>
+      <attributeEditorField index="21" showLabel="1" name="url_kataster"/>
+      <attributeEditorField index="22" showLabel="1" name="url_kataster_de"/>
+      <attributeEditorField index="26" showLabel="1" name="url_kataster_en"/>
+      <attributeEditorField index="23" showLabel="1" name="url_kataster_fr"/>
+      <attributeEditorField index="25" showLabel="1" name="url_kataster_it"/>
+      <attributeEditorField index="24" showLabel="1" name="url_kataster_rm"/>
+      <attributeEditorField index="2" showLabel="1" name="zustaendige_behoerde"/>
+      <attributeEditorField index="3" showLabel="1" name="zustaendige_behoerde_de"/>
+      <attributeEditorField index="7" showLabel="1" name="zustaendige_behoerde_en"/>
+      <attributeEditorField index="4" showLabel="1" name="zustaendige_behoerde_fr"/>
+      <attributeEditorField index="6" showLabel="1" name="zustaendige_behoerde_it"/>
+      <attributeEditorField index="5" showLabel="1" name="zustaendige_behoerde_rm"/>
     </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="0" groupBox="0" name="belasteter_standort" columnCount="1" showLabel="1" visibilityExpression="">
-      <attributeEditorRelation relation="belasteter_standort_zustaendigkeitkataster_fkey" nmRelationId="" relationWidgetTypeId="linking_relation_editor" forceSuppressFormPopup="0" name="belasteter_standort_zustaendigkeitkataster_fkey" showLabel="1" label="">
-        <editor_configuration/>
+    <attributeEditorContainer columnCount="1" showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="belasteter_standort" groupBox="0">
+      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="linking_relation_editor" name="belasteter_standort_zustaendigkeitkataster_fkey" relation="belasteter_standort_zustaendigkeitkataster_fkey" nmRelationId="" label="">
+        <editor_configuration type="Map">
+          <Option value="AllButtons" name="buttons" type="QString"/>
+        </editor_configuration>
       </attributeEditorRelation>
     </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="0" groupBox="0" name="belasteter_standort" columnCount="1" showLabel="1" visibilityExpression="">
-      <attributeEditorRelation relation="belasteter_standort_zustaendigkeitkataster_fkey_1" nmRelationId="" relationWidgetTypeId="linking_relation_editor" forceSuppressFormPopup="0" name="belasteter_standort_zustaendigkeitkataster_fkey_1" showLabel="1" label="">
-        <editor_configuration/>
+    <attributeEditorContainer columnCount="1" showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="belasteter_standort" groupBox="0">
+      <attributeEditorRelation showLabel="1" forceSuppressFormPopup="0" relationWidgetTypeId="linking_relation_editor" name="belasteter_standort_zustaendigkeitkataster_fkey_1" relation="belasteter_standort_zustaendigkeitkataster_fkey_1" nmRelationId="" label="">
+        <editor_configuration type="Map">
+          <Option value="AllButtons" name="buttons" type="QString"/>
+        </editor_configuration>
       </attributeEditorRelation>
     </attributeEditorContainer>
   </attributeEditorForm>
@@ -426,34 +413,34 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="zustaendige_behoerde_rm"/>
   </editable>
   <labelOnTop>
-    <field name="auid" labelOnTop="0"/>
-    <field name="katastername" labelOnTop="0"/>
-    <field name="katastername_de" labelOnTop="0"/>
-    <field name="katastername_en" labelOnTop="0"/>
-    <field name="katastername_fr" labelOnTop="0"/>
-    <field name="katastername_it" labelOnTop="0"/>
-    <field name="katastername_rm" labelOnTop="0"/>
-    <field name="t_basket" labelOnTop="0"/>
-    <field name="t_id" labelOnTop="0"/>
-    <field name="t_ili_tid" labelOnTop="0"/>
-    <field name="url_behoerde" labelOnTop="0"/>
-    <field name="url_behoerde_de" labelOnTop="0"/>
-    <field name="url_behoerde_en" labelOnTop="0"/>
-    <field name="url_behoerde_fr" labelOnTop="0"/>
-    <field name="url_behoerde_it" labelOnTop="0"/>
-    <field name="url_behoerde_rm" labelOnTop="0"/>
-    <field name="url_kataster" labelOnTop="0"/>
-    <field name="url_kataster_de" labelOnTop="0"/>
-    <field name="url_kataster_en" labelOnTop="0"/>
-    <field name="url_kataster_fr" labelOnTop="0"/>
-    <field name="url_kataster_it" labelOnTop="0"/>
-    <field name="url_kataster_rm" labelOnTop="0"/>
-    <field name="zustaendige_behoerde" labelOnTop="0"/>
-    <field name="zustaendige_behoerde_de" labelOnTop="0"/>
-    <field name="zustaendige_behoerde_en" labelOnTop="0"/>
-    <field name="zustaendige_behoerde_fr" labelOnTop="0"/>
-    <field name="zustaendige_behoerde_it" labelOnTop="0"/>
-    <field name="zustaendige_behoerde_rm" labelOnTop="0"/>
+    <field labelOnTop="0" name="auid"/>
+    <field labelOnTop="0" name="katastername"/>
+    <field labelOnTop="0" name="katastername_de"/>
+    <field labelOnTop="0" name="katastername_en"/>
+    <field labelOnTop="0" name="katastername_fr"/>
+    <field labelOnTop="0" name="katastername_it"/>
+    <field labelOnTop="0" name="katastername_rm"/>
+    <field labelOnTop="0" name="t_basket"/>
+    <field labelOnTop="0" name="t_id"/>
+    <field labelOnTop="0" name="t_ili_tid"/>
+    <field labelOnTop="0" name="url_behoerde"/>
+    <field labelOnTop="0" name="url_behoerde_de"/>
+    <field labelOnTop="0" name="url_behoerde_en"/>
+    <field labelOnTop="0" name="url_behoerde_fr"/>
+    <field labelOnTop="0" name="url_behoerde_it"/>
+    <field labelOnTop="0" name="url_behoerde_rm"/>
+    <field labelOnTop="0" name="url_kataster"/>
+    <field labelOnTop="0" name="url_kataster_de"/>
+    <field labelOnTop="0" name="url_kataster_en"/>
+    <field labelOnTop="0" name="url_kataster_fr"/>
+    <field labelOnTop="0" name="url_kataster_it"/>
+    <field labelOnTop="0" name="url_kataster_rm"/>
+    <field labelOnTop="0" name="zustaendige_behoerde"/>
+    <field labelOnTop="0" name="zustaendige_behoerde_de"/>
+    <field labelOnTop="0" name="zustaendige_behoerde_en"/>
+    <field labelOnTop="0" name="zustaendige_behoerde_fr"/>
+    <field labelOnTop="0" name="zustaendige_behoerde_it"/>
+    <field labelOnTop="0" name="zustaendige_behoerde_rm"/>
   </labelOnTop>
   <reuseLastValue>
     <field name="auid" reuseLastValue="0"/>
