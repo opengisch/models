@@ -1,262 +1,270 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="Fields|Forms" version="3.25.0-Master">
+<qgis readOnly="1" styleCategories="LayerConfiguration|Fields|Forms" version="3.24.3-Tisler">
+  <flags>
+    <Identifiable>1</Identifiable>
+    <Removable>1</Removable>
+    <Searchable>1</Searchable>
+    <Private>0</Private>
+  </flags>
   <fieldConfiguration>
-    <field configurationFlags="None" name="T_Id">
+    <field name="T_Id" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="T_basket">
+    <field name="T_basket" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option value="false" type="bool" name="AllowAddFeatures"/>
-            <Option value="true" type="bool" name="AllowNULL"/>
-            <Option value="false" type="bool" name="ChainFilters"/>
-            <Option value="&quot;topic&quot; = 'GeolAssetsCatalogues_V2.Catalogues' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'" type="QString" name="FilterExpression"/>
-            <Option type="invalid" name="FilterFields"/>
-            <Option value="false" type="bool" name="MapIdentification"/>
-            <Option value="true" type="bool" name="OrderByValue"/>
-            <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" type="QString" name="ReferencedLayerId"/>
-            <Option value="T_ILI2DB_BASKET" type="QString" name="ReferencedLayerName"/>
-            <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
-            <Option value="assetformatitem_T_basket_T_ILI2DB_BASKET_T_Id" type="QString" name="Relation"/>
-            <Option value="false" type="bool" name="ShowForm"/>
-            <Option value="false" type="bool" name="ShowOpenFormButton"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="true"/>
+            <Option name="FilterExpression" type="QString" value="&quot;topic&quot; = 'GeolAssetsCatalogues_V2.Catalogues' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'"/>
+            <Option name="FilterFields" type="invalid"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="Relation" type="QString" value="assetkinditem_T_basket_T_ILI2DB_BASKET_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="T_Ili_Tid">
+    <field name="T_Ili_Tid" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="acode">
+    <field name="acode" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="geolcode" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="aname" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="aname_de" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" type="bool" name="IsMultiline"/>
-            <Option value="false" type="bool" name="UseHtml"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="geolcode">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="aname">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="aname_de">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="aname_fr">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="aname_rm">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="aname_it">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="aname_en">
+    <field name="aname_fr" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" type="bool" name="IsMultiline"/>
-            <Option value="false" type="bool" name="UseHtml"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="adescription">
+    <field name="aname_rm" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" type="bool" name="IsMultiline"/>
-            <Option value="false" type="bool" name="UseHtml"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="adescription_de">
+    <field name="aname_it" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" type="bool" name="IsMultiline"/>
-            <Option value="false" type="bool" name="UseHtml"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="adescription_fr">
+    <field name="aname_en" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" type="bool" name="IsMultiline"/>
-            <Option value="false" type="bool" name="UseHtml"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="adescription_rm">
+    <field name="adescription" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="adescription_it">
+    <field name="adescription_de" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field name="adescription_fr" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field name="adescription_rm" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="adescription_en">
+    <field name="adescription_it" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="mime">
+    <field name="adescription_en" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field name="mime" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="issuperitem">
+    <field name="issuperitem" configurationFlags="None">
       <editWidget type="CheckBox">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="isuseable">
+    <field name="isuseable" configurationFlags="None">
       <editWidget type="CheckBox">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_statusworkitem">
+    <field name="parent_statusworkitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_natrelitem">
+    <field name="parent_assetkinditem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_languageitem">
+    <field name="parent_languageitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_legaldocitem">
+    <field name="parent_natrelitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_assetkinditem">
+    <field name="parent_mancatlabelitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_statusassetuseitem">
+    <field name="parent_autocatlabelitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_autoobjectcatitem">
+    <field name="parent_contactkinditem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_contactkinditem">
+    <field name="parent_assetformatitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_assetformatitem">
+    <field name="parent_statusassetuseitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_mancatlabelitem">
+    <field name="parent_legaldocitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_autocatlabelitem">
+    <field name="parent_geomqualityitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_pubchannelitem">
+    <field name="parent_autoobjectcatitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="parent_geomqualityitem">
+    <field name="parent_pubchannelitem" configurationFlags="None">
       <editWidget type="RelationReference">
         <config>
           <Option/>
@@ -265,39 +273,39 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="T_Id" index="0" name=""/>
-    <alias field="T_basket" index="1" name=""/>
-    <alias field="T_Ili_Tid" index="2" name=""/>
-    <alias field="acode" index="3" name="Code"/>
-    <alias field="geolcode" index="4" name="GeolCode"/>
-    <alias field="aname" index="5" name="Name"/>
-    <alias field="aname_de" index="6" name=""/>
-    <alias field="aname_fr" index="7" name=""/>
-    <alias field="aname_rm" index="8" name=""/>
-    <alias field="aname_it" index="9" name=""/>
-    <alias field="aname_en" index="10" name=""/>
-    <alias field="adescription" index="11" name="Description"/>
-    <alias field="adescription_de" index="12" name=""/>
-    <alias field="adescription_fr" index="13" name=""/>
-    <alias field="adescription_rm" index="14" name=""/>
-    <alias field="adescription_it" index="15" name=""/>
-    <alias field="adescription_en" index="16" name=""/>
-    <alias field="mime" index="17" name="MIME"/>
-    <alias field="issuperitem" index="18" name="IsSuperItem"/>
-    <alias field="isuseable" index="19" name="IsUseable"/>
-    <alias field="parent_statusworkitem" index="20" name="Parent"/>
-    <alias field="parent_natrelitem" index="21" name="Parent"/>
-    <alias field="parent_languageitem" index="22" name="Parent"/>
-    <alias field="parent_legaldocitem" index="23" name="Parent"/>
-    <alias field="parent_assetkinditem" index="24" name="Parent"/>
-    <alias field="parent_statusassetuseitem" index="25" name="Parent"/>
-    <alias field="parent_autoobjectcatitem" index="26" name="Parent"/>
-    <alias field="parent_contactkinditem" index="27" name="Parent"/>
-    <alias field="parent_assetformatitem" index="28" name="Parent"/>
-    <alias field="parent_mancatlabelitem" index="29" name="Parent"/>
-    <alias field="parent_autocatlabelitem" index="30" name="Parent"/>
-    <alias field="parent_pubchannelitem" index="31" name="Parent"/>
-    <alias field="parent_geomqualityitem" index="32" name="Parent"/>
+    <alias name="" field="T_Id" index="0"/>
+    <alias name="" field="T_basket" index="1"/>
+    <alias name="" field="T_Ili_Tid" index="2"/>
+    <alias name="Code" field="acode" index="3"/>
+    <alias name="GeolCode" field="geolcode" index="4"/>
+    <alias name="Name" field="aname" index="5"/>
+    <alias name="" field="aname_de" index="6"/>
+    <alias name="" field="aname_fr" index="7"/>
+    <alias name="" field="aname_rm" index="8"/>
+    <alias name="" field="aname_it" index="9"/>
+    <alias name="" field="aname_en" index="10"/>
+    <alias name="Description" field="adescription" index="11"/>
+    <alias name="" field="adescription_de" index="12"/>
+    <alias name="" field="adescription_fr" index="13"/>
+    <alias name="" field="adescription_rm" index="14"/>
+    <alias name="" field="adescription_it" index="15"/>
+    <alias name="" field="adescription_en" index="16"/>
+    <alias name="MIME" field="mime" index="17"/>
+    <alias name="IsSuperItem" field="issuperitem" index="18"/>
+    <alias name="IsUseable" field="isuseable" index="19"/>
+    <alias name="Parent" field="parent_statusworkitem" index="20"/>
+    <alias name="Parent" field="parent_assetkinditem" index="21"/>
+    <alias name="Parent" field="parent_languageitem" index="22"/>
+    <alias name="Parent" field="parent_natrelitem" index="23"/>
+    <alias name="Parent" field="parent_mancatlabelitem" index="24"/>
+    <alias name="Parent" field="parent_autocatlabelitem" index="25"/>
+    <alias name="Parent" field="parent_contactkinditem" index="26"/>
+    <alias name="Parent" field="parent_assetformatitem" index="27"/>
+    <alias name="Parent" field="parent_statusassetuseitem" index="28"/>
+    <alias name="Parent" field="parent_legaldocitem" index="29"/>
+    <alias name="Parent" field="parent_geomqualityitem" index="30"/>
+    <alias name="Parent" field="parent_autoobjectcatitem" index="31"/>
+    <alias name="Parent" field="parent_pubchannelitem" index="32"/>
   </aliases>
   <defaults>
     <default field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0"/>
@@ -321,88 +329,88 @@
     <default field="issuperitem" expression="" applyOnUpdate="0"/>
     <default field="isuseable" expression="" applyOnUpdate="0"/>
     <default field="parent_statusworkitem" expression="" applyOnUpdate="0"/>
-    <default field="parent_natrelitem" expression="" applyOnUpdate="0"/>
-    <default field="parent_languageitem" expression="" applyOnUpdate="0"/>
-    <default field="parent_legaldocitem" expression="" applyOnUpdate="0"/>
     <default field="parent_assetkinditem" expression="" applyOnUpdate="0"/>
-    <default field="parent_statusassetuseitem" expression="" applyOnUpdate="0"/>
-    <default field="parent_autoobjectcatitem" expression="" applyOnUpdate="0"/>
-    <default field="parent_contactkinditem" expression="" applyOnUpdate="0"/>
-    <default field="parent_assetformatitem" expression="" applyOnUpdate="0"/>
+    <default field="parent_languageitem" expression="" applyOnUpdate="0"/>
+    <default field="parent_natrelitem" expression="" applyOnUpdate="0"/>
     <default field="parent_mancatlabelitem" expression="" applyOnUpdate="0"/>
     <default field="parent_autocatlabelitem" expression="" applyOnUpdate="0"/>
-    <default field="parent_pubchannelitem" expression="" applyOnUpdate="0"/>
+    <default field="parent_contactkinditem" expression="" applyOnUpdate="0"/>
+    <default field="parent_assetformatitem" expression="" applyOnUpdate="0"/>
+    <default field="parent_statusassetuseitem" expression="" applyOnUpdate="0"/>
+    <default field="parent_legaldocitem" expression="" applyOnUpdate="0"/>
     <default field="parent_geomqualityitem" expression="" applyOnUpdate="0"/>
+    <default field="parent_autoobjectcatitem" expression="" applyOnUpdate="0"/>
+    <default field="parent_pubchannelitem" expression="" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint unique_strength="1" notnull_strength="1" field="T_Id" exp_strength="0" constraints="3"/>
-    <constraint unique_strength="0" notnull_strength="1" field="T_basket" exp_strength="0" constraints="1"/>
-    <constraint unique_strength="0" notnull_strength="0" field="T_Ili_Tid" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="1" field="acode" exp_strength="0" constraints="1"/>
-    <constraint unique_strength="0" notnull_strength="0" field="geolcode" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="aname" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="aname_de" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="aname_fr" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="aname_rm" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="aname_it" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="aname_en" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="adescription" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="adescription_de" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="adescription_fr" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="adescription_rm" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="adescription_it" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="adescription_en" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="mime" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="1" field="issuperitem" exp_strength="0" constraints="1"/>
-    <constraint unique_strength="0" notnull_strength="1" field="isuseable" exp_strength="0" constraints="1"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_statusworkitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_natrelitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_languageitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_legaldocitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_assetkinditem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_statusassetuseitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_autoobjectcatitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_contactkinditem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_assetformatitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_mancatlabelitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_autocatlabelitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_pubchannelitem" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="parent_geomqualityitem" exp_strength="0" constraints="0"/>
+    <constraint constraints="3" field="T_Id" unique_strength="1" exp_strength="0" notnull_strength="1"/>
+    <constraint constraints="1" field="T_basket" unique_strength="0" exp_strength="0" notnull_strength="1"/>
+    <constraint constraints="0" field="T_Ili_Tid" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="1" field="acode" unique_strength="0" exp_strength="0" notnull_strength="1"/>
+    <constraint constraints="0" field="geolcode" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="aname" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="aname_de" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="aname_fr" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="aname_rm" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="aname_it" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="aname_en" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="adescription" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="adescription_de" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="adescription_fr" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="adescription_rm" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="adescription_it" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="adescription_en" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="mime" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="1" field="issuperitem" unique_strength="0" exp_strength="0" notnull_strength="1"/>
+    <constraint constraints="1" field="isuseable" unique_strength="0" exp_strength="0" notnull_strength="1"/>
+    <constraint constraints="0" field="parent_statusworkitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_assetkinditem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_languageitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_natrelitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_mancatlabelitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_autocatlabelitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_contactkinditem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_assetformatitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_statusassetuseitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_legaldocitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_geomqualityitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_autoobjectcatitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" field="parent_pubchannelitem" unique_strength="0" exp_strength="0" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="T_Id" desc="" exp=""/>
-    <constraint field="T_basket" desc="" exp=""/>
-    <constraint field="T_Ili_Tid" desc="" exp=""/>
-    <constraint field="acode" desc="" exp=""/>
-    <constraint field="geolcode" desc="" exp=""/>
-    <constraint field="aname" desc="" exp=""/>
-    <constraint field="aname_de" desc="" exp=""/>
-    <constraint field="aname_fr" desc="" exp=""/>
-    <constraint field="aname_rm" desc="" exp=""/>
-    <constraint field="aname_it" desc="" exp=""/>
-    <constraint field="aname_en" desc="" exp=""/>
-    <constraint field="adescription" desc="" exp=""/>
-    <constraint field="adescription_de" desc="" exp=""/>
-    <constraint field="adescription_fr" desc="" exp=""/>
-    <constraint field="adescription_rm" desc="" exp=""/>
-    <constraint field="adescription_it" desc="" exp=""/>
-    <constraint field="adescription_en" desc="" exp=""/>
-    <constraint field="mime" desc="" exp=""/>
-    <constraint field="issuperitem" desc="" exp=""/>
-    <constraint field="isuseable" desc="" exp=""/>
-    <constraint field="parent_statusworkitem" desc="" exp=""/>
-    <constraint field="parent_natrelitem" desc="" exp=""/>
-    <constraint field="parent_languageitem" desc="" exp=""/>
-    <constraint field="parent_legaldocitem" desc="" exp=""/>
-    <constraint field="parent_assetkinditem" desc="" exp=""/>
-    <constraint field="parent_statusassetuseitem" desc="" exp=""/>
-    <constraint field="parent_autoobjectcatitem" desc="" exp=""/>
-    <constraint field="parent_contactkinditem" desc="" exp=""/>
-    <constraint field="parent_assetformatitem" desc="" exp=""/>
-    <constraint field="parent_mancatlabelitem" desc="" exp=""/>
-    <constraint field="parent_autocatlabelitem" desc="" exp=""/>
-    <constraint field="parent_pubchannelitem" desc="" exp=""/>
-    <constraint field="parent_geomqualityitem" desc="" exp=""/>
+    <constraint exp="" field="T_Id" desc=""/>
+    <constraint exp="" field="T_basket" desc=""/>
+    <constraint exp="" field="T_Ili_Tid" desc=""/>
+    <constraint exp="" field="acode" desc=""/>
+    <constraint exp="" field="geolcode" desc=""/>
+    <constraint exp="" field="aname" desc=""/>
+    <constraint exp="" field="aname_de" desc=""/>
+    <constraint exp="" field="aname_fr" desc=""/>
+    <constraint exp="" field="aname_rm" desc=""/>
+    <constraint exp="" field="aname_it" desc=""/>
+    <constraint exp="" field="aname_en" desc=""/>
+    <constraint exp="" field="adescription" desc=""/>
+    <constraint exp="" field="adescription_de" desc=""/>
+    <constraint exp="" field="adescription_fr" desc=""/>
+    <constraint exp="" field="adescription_rm" desc=""/>
+    <constraint exp="" field="adescription_it" desc=""/>
+    <constraint exp="" field="adescription_en" desc=""/>
+    <constraint exp="" field="mime" desc=""/>
+    <constraint exp="" field="issuperitem" desc=""/>
+    <constraint exp="" field="isuseable" desc=""/>
+    <constraint exp="" field="parent_statusworkitem" desc=""/>
+    <constraint exp="" field="parent_assetkinditem" desc=""/>
+    <constraint exp="" field="parent_languageitem" desc=""/>
+    <constraint exp="" field="parent_natrelitem" desc=""/>
+    <constraint exp="" field="parent_mancatlabelitem" desc=""/>
+    <constraint exp="" field="parent_autocatlabelitem" desc=""/>
+    <constraint exp="" field="parent_contactkinditem" desc=""/>
+    <constraint exp="" field="parent_assetformatitem" desc=""/>
+    <constraint exp="" field="parent_statusassetuseitem" desc=""/>
+    <constraint exp="" field="parent_legaldocitem" desc=""/>
+    <constraint exp="" field="parent_geomqualityitem" desc=""/>
+    <constraint exp="" field="parent_autoobjectcatitem" desc=""/>
+    <constraint exp="" field="parent_pubchannelitem" desc=""/>
   </constraintExpressions>
   <expressionfields/>
   <editform tolerant="1"></editform>
@@ -411,28 +419,36 @@
   <editforminitfilepath></editforminitfilepath>
   <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
-QGIS-Formulare können eine Python-Funktion haben,, die aufgerufen wird, wenn sich das Formular öffnet
+QGIS forms can have a Python function that is called when the form is
+opened.
 
-Diese Funktion kann verwendet werden um dem Formular Extralogik hinzuzufügen.
+Use this function to add extra logic to your forms.
 
-Der Name der Funktion wird im Feld "Python Init-Function" angegeben
-Ein Beispiel folgt:
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
 """
 from qgis.PyQt.QtWidgets import QWidget
 
 def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
 ]]></editforminitcode>
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorField showLabel="1" name="acode" index="3"/>
-    <attributeEditorField showLabel="1" name="geolcode" index="4"/>
-    <attributeEditorField showLabel="1" name="aname" index="5"/>
-    <attributeEditorField showLabel="1" name="aname_de" index="6"/>
-    <attributeEditorField showLabel="1" name="adescription" index="11"/>
-    <attributeEditorField showLabel="1" name="adescription_de" index="12"/>
+    <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" name="English" columnCount="1" groupBox="1" showLabel="1">
+      <attributeEditorField name="aname_en" index="10" showLabel="0"/>
+      <attributeEditorField name="adescription_en" index="16" showLabel="0"/>
+    </attributeEditorContainer>
+    <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" name="French" columnCount="1" groupBox="1" showLabel="1">
+      <attributeEditorField name="aname_fr" index="7" showLabel="0"/>
+      <attributeEditorField name="adescription_fr" index="13" showLabel="0"/>
+    </attributeEditorContainer>
+    <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" name="German" columnCount="1" groupBox="1" showLabel="1">
+      <attributeEditorField name="aname_de" index="6" showLabel="0"/>
+      <attributeEditorField name="adescription_de" index="12" showLabel="0"/>
+    </attributeEditorContainer>
   </attributeEditorForm>
   <editable>
     <field name="T_Id" editable="1"/>
@@ -440,15 +456,15 @@ def my_form_open(dialog, layer, feature):
     <field name="T_basket" editable="1"/>
     <field name="acode" editable="1"/>
     <field name="adescription" editable="1"/>
-    <field name="adescription_de" editable="1"/>
-    <field name="adescription_en" editable="1"/>
-    <field name="adescription_fr" editable="1"/>
+    <field name="adescription_de" editable="0"/>
+    <field name="adescription_en" editable="0"/>
+    <field name="adescription_fr" editable="0"/>
     <field name="adescription_it" editable="1"/>
     <field name="adescription_rm" editable="1"/>
     <field name="aname" editable="1"/>
-    <field name="aname_de" editable="1"/>
+    <field name="aname_de" editable="0"/>
     <field name="aname_en" editable="1"/>
-    <field name="aname_fr" editable="1"/>
+    <field name="aname_fr" editable="0"/>
     <field name="aname_it" editable="1"/>
     <field name="aname_rm" editable="1"/>
     <field name="geolcode" editable="1"/>
@@ -470,76 +486,77 @@ def my_form_open(dialog, layer, feature):
     <field name="parent_statusworkitem" editable="1"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="T_Id"/>
-    <field labelOnTop="0" name="T_Ili_Tid"/>
-    <field labelOnTop="0" name="T_basket"/>
-    <field labelOnTop="0" name="acode"/>
-    <field labelOnTop="0" name="adescription"/>
-    <field labelOnTop="0" name="adescription_de"/>
-    <field labelOnTop="0" name="adescription_en"/>
-    <field labelOnTop="0" name="adescription_fr"/>
-    <field labelOnTop="0" name="adescription_it"/>
-    <field labelOnTop="0" name="adescription_rm"/>
-    <field labelOnTop="0" name="aname"/>
-    <field labelOnTop="0" name="aname_de"/>
-    <field labelOnTop="0" name="aname_en"/>
-    <field labelOnTop="0" name="aname_fr"/>
-    <field labelOnTop="0" name="aname_it"/>
-    <field labelOnTop="0" name="aname_rm"/>
-    <field labelOnTop="0" name="geolcode"/>
-    <field labelOnTop="0" name="issuperitem"/>
-    <field labelOnTop="0" name="isuseable"/>
-    <field labelOnTop="0" name="mime"/>
-    <field labelOnTop="0" name="parent_assetformatitem"/>
-    <field labelOnTop="0" name="parent_assetkinditem"/>
-    <field labelOnTop="0" name="parent_autocatlabelitem"/>
-    <field labelOnTop="0" name="parent_autoobjectcatitem"/>
-    <field labelOnTop="0" name="parent_contactkinditem"/>
-    <field labelOnTop="0" name="parent_geomqualityitem"/>
-    <field labelOnTop="0" name="parent_languageitem"/>
-    <field labelOnTop="0" name="parent_legaldocitem"/>
-    <field labelOnTop="0" name="parent_mancatlabelitem"/>
-    <field labelOnTop="0" name="parent_natrelitem"/>
-    <field labelOnTop="0" name="parent_pubchannelitem"/>
-    <field labelOnTop="0" name="parent_statusassetuseitem"/>
-    <field labelOnTop="0" name="parent_statusworkitem"/>
+    <field name="T_Id" labelOnTop="0"/>
+    <field name="T_Ili_Tid" labelOnTop="0"/>
+    <field name="T_basket" labelOnTop="0"/>
+    <field name="acode" labelOnTop="0"/>
+    <field name="adescription" labelOnTop="0"/>
+    <field name="adescription_de" labelOnTop="0"/>
+    <field name="adescription_en" labelOnTop="0"/>
+    <field name="adescription_fr" labelOnTop="0"/>
+    <field name="adescription_it" labelOnTop="0"/>
+    <field name="adescription_rm" labelOnTop="0"/>
+    <field name="aname" labelOnTop="0"/>
+    <field name="aname_de" labelOnTop="0"/>
+    <field name="aname_en" labelOnTop="0"/>
+    <field name="aname_fr" labelOnTop="0"/>
+    <field name="aname_it" labelOnTop="0"/>
+    <field name="aname_rm" labelOnTop="0"/>
+    <field name="geolcode" labelOnTop="0"/>
+    <field name="issuperitem" labelOnTop="0"/>
+    <field name="isuseable" labelOnTop="0"/>
+    <field name="mime" labelOnTop="0"/>
+    <field name="parent_assetformatitem" labelOnTop="0"/>
+    <field name="parent_assetkinditem" labelOnTop="0"/>
+    <field name="parent_autocatlabelitem" labelOnTop="0"/>
+    <field name="parent_autoobjectcatitem" labelOnTop="0"/>
+    <field name="parent_contactkinditem" labelOnTop="0"/>
+    <field name="parent_geomqualityitem" labelOnTop="0"/>
+    <field name="parent_languageitem" labelOnTop="0"/>
+    <field name="parent_legaldocitem" labelOnTop="0"/>
+    <field name="parent_mancatlabelitem" labelOnTop="0"/>
+    <field name="parent_natrelitem" labelOnTop="0"/>
+    <field name="parent_pubchannelitem" labelOnTop="0"/>
+    <field name="parent_statusassetuseitem" labelOnTop="0"/>
+    <field name="parent_statusworkitem" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
-    <field reuseLastValue="0" name="T_Id"/>
-    <field reuseLastValue="0" name="T_Ili_Tid"/>
-    <field reuseLastValue="0" name="T_basket"/>
-    <field reuseLastValue="0" name="acode"/>
-    <field reuseLastValue="0" name="adescription"/>
-    <field reuseLastValue="0" name="adescription_de"/>
-    <field reuseLastValue="0" name="adescription_en"/>
-    <field reuseLastValue="0" name="adescription_fr"/>
-    <field reuseLastValue="0" name="adescription_it"/>
-    <field reuseLastValue="0" name="adescription_rm"/>
-    <field reuseLastValue="0" name="aname"/>
-    <field reuseLastValue="0" name="aname_de"/>
-    <field reuseLastValue="0" name="aname_en"/>
-    <field reuseLastValue="0" name="aname_fr"/>
-    <field reuseLastValue="0" name="aname_it"/>
-    <field reuseLastValue="0" name="aname_rm"/>
-    <field reuseLastValue="0" name="geolcode"/>
-    <field reuseLastValue="0" name="issuperitem"/>
-    <field reuseLastValue="0" name="isuseable"/>
-    <field reuseLastValue="0" name="mime"/>
-    <field reuseLastValue="0" name="parent_assetformatitem"/>
-    <field reuseLastValue="0" name="parent_assetkinditem"/>
-    <field reuseLastValue="0" name="parent_autocatlabelitem"/>
-    <field reuseLastValue="0" name="parent_autoobjectcatitem"/>
-    <field reuseLastValue="0" name="parent_contactkinditem"/>
-    <field reuseLastValue="0" name="parent_geomqualityitem"/>
-    <field reuseLastValue="0" name="parent_languageitem"/>
-    <field reuseLastValue="0" name="parent_legaldocitem"/>
-    <field reuseLastValue="0" name="parent_mancatlabelitem"/>
-    <field reuseLastValue="0" name="parent_natrelitem"/>
-    <field reuseLastValue="0" name="parent_pubchannelitem"/>
-    <field reuseLastValue="0" name="parent_statusassetuseitem"/>
-    <field reuseLastValue="0" name="parent_statusworkitem"/>
+    <field name="T_Id" reuseLastValue="0"/>
+    <field name="T_Ili_Tid" reuseLastValue="0"/>
+    <field name="T_basket" reuseLastValue="0"/>
+    <field name="acode" reuseLastValue="0"/>
+    <field name="adescription" reuseLastValue="0"/>
+    <field name="adescription_de" reuseLastValue="0"/>
+    <field name="adescription_en" reuseLastValue="0"/>
+    <field name="adescription_fr" reuseLastValue="0"/>
+    <field name="adescription_it" reuseLastValue="0"/>
+    <field name="adescription_rm" reuseLastValue="0"/>
+    <field name="aname" reuseLastValue="0"/>
+    <field name="aname_de" reuseLastValue="0"/>
+    <field name="aname_en" reuseLastValue="0"/>
+    <field name="aname_fr" reuseLastValue="0"/>
+    <field name="aname_it" reuseLastValue="0"/>
+    <field name="aname_rm" reuseLastValue="0"/>
+    <field name="geolcode" reuseLastValue="0"/>
+    <field name="issuperitem" reuseLastValue="0"/>
+    <field name="isuseable" reuseLastValue="0"/>
+    <field name="mime" reuseLastValue="0"/>
+    <field name="parent_assetformatitem" reuseLastValue="0"/>
+    <field name="parent_assetkinditem" reuseLastValue="0"/>
+    <field name="parent_autocatlabelitem" reuseLastValue="0"/>
+    <field name="parent_autoobjectcatitem" reuseLastValue="0"/>
+    <field name="parent_contactkinditem" reuseLastValue="0"/>
+    <field name="parent_geomqualityitem" reuseLastValue="0"/>
+    <field name="parent_languageitem" reuseLastValue="0"/>
+    <field name="parent_legaldocitem" reuseLastValue="0"/>
+    <field name="parent_mancatlabelitem" reuseLastValue="0"/>
+    <field name="parent_natrelitem" reuseLastValue="0"/>
+    <field name="parent_pubchannelitem" reuseLastValue="0"/>
+    <field name="parent_statusassetuseitem" reuseLastValue="0"/>
+    <field name="parent_statusworkitem" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
+  <previewExpression>"aname_de"</previewExpression>
   <layerGeometryType>4</layerGeometryType>
 </qgis>
