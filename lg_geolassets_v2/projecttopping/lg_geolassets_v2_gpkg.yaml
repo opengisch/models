@@ -49,6 +49,7 @@ layertree:
                         qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetobjectinfo"
                     - "LegalDoc":
                         qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_legaldoc"
+                    - "ManCatLabelRef":
             - "Domänentabellen":
                 group: true
                 expanded: false
