@@ -14,6 +14,7 @@ layertree:
     - "StudyLocation":
         iliname: "GeolAssets_V2.GeolAssets.StudyLocation"
         qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_studylocation"
+        checked: false
     - "StudyTrace":
         iliname: "GeolAssets_V2.GeolAssets.StudyTrace"
         qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_studytrace"

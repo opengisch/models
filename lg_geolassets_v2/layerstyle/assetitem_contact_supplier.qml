@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="LayerConfiguration|Fields|Forms|CustomProperties" readOnly="0" version="3.24.3-Tisler">
+<qgis readOnly="0" version="3.22.11-Białowieża" styleCategories="LayerConfiguration|Fields|Forms|CustomProperties">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -8,155 +8,155 @@
   </flags>
   <customproperties>
     <Option type="Map">
-      <Option name="QFieldSync/action" type="QString" value="copy"/>
-      <Option name="QFieldSync/cloud_action" type="QString" value="offline"/>
-      <Option name="QFieldSync/photo_naming" type="QString" value="{}"/>
-      <Option name="dualview/previewExpressions" type="List">
-        <Option type="QString" value="attribute(get_feature('AssetItem', 'T_Id',  &quot;suppliedassetitem_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')"/>
-        <Option type="QString" value="&quot;T_Id&quot;"/>
-        <Option type="QString" value="attribute(get_feature('AssetItem', 'T_Id', &quot;authoredassetitem_lg_geolssts_v2geolassets_assetitem&quot;),'titleoriginal')"/>
+      <Option value="copy" type="QString" name="QFieldSync/action"/>
+      <Option value="offline" type="QString" name="QFieldSync/cloud_action"/>
+      <Option value="{}" type="QString" name="QFieldSync/photo_naming"/>
+      <Option type="List" name="dualview/previewExpressions">
+        <Option value="attribute(get_feature('AssetItem', 'T_Id',  &quot;suppliedassetitem_lg_geolssts_v2geolassets_assetitem&quot; ),'titleoriginal')" type="QString"/>
+        <Option value="&quot;T_Id&quot;" type="QString"/>
+        <Option value="attribute(get_feature('AssetItem', 'T_Id', &quot;authoredassetitem_lg_geolssts_v2geolassets_assetitem&quot;),'titleoriginal')" type="QString"/>
       </Option>
-      <Option name="embeddedWidgets/count" type="int" value="0"/>
-      <Option name="variableNames" type="StringList">
-        <Option type="QString" value="interlis_topic"/>
+      <Option value="0" type="int" name="embeddedWidgets/count"/>
+      <Option type="StringList" name="variableNames">
+        <Option value="interlis_topic" type="QString"/>
       </Option>
-      <Option name="variableValues" type="StringList">
-        <Option type="QString" value="LG_GeolAssets_V2.GeolAssets"/>
+      <Option type="StringList" name="variableValues">
+        <Option value="LG_GeolAssets_V2.GeolAssets" type="QString"/>
       </Option>
     </Option>
   </customproperties>
   <fieldConfiguration>
-    <field name="T_Id" configurationFlags="None">
+    <field configurationFlags="None" name="T_Id">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="T_basket" configurationFlags="None">
+    <field configurationFlags="None" name="T_basket">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" type="bool" value="false"/>
-            <Option name="AllowNULL" type="bool" value="false"/>
-            <Option name="MapIdentification" type="bool" value="false"/>
-            <Option name="OrderByValue" type="bool" value="false"/>
-            <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=T_ILI2DB_BASKET"/>
-            <Option name="ReferencedLayerId" type="QString" value="T_ILI2DB_BASKET_9a69fa2e_5fe3_4394_b675_9254fd08b57b"/>
-            <Option name="ReferencedLayerName" type="QString" value="T_ILI2DB_BASKET"/>
-            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
-            <Option name="Relation" type="QString" value="assetitem_contact_supplier_T_basket_T_ILI2DB_BASKET_T_Id"/>
-            <Option name="ShowForm" type="bool" value="false"/>
-            <Option name="ShowOpenFormButton" type="bool" value="true"/>
+            <Option value="false" type="bool" name="AllowAddFeatures"/>
+            <Option value="false" type="bool" name="AllowNULL"/>
+            <Option value="false" type="bool" name="MapIdentification"/>
+            <Option value="false" type="bool" name="OrderByValue"/>
+            <Option value="false" type="bool" name="ReadOnly"/>
+            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=T_ILI2DB_BASKET" type="QString" name="ReferencedLayerDataSource"/>
+            <Option value="T_ILI2DB_BASKET_9a69fa2e_5fe3_4394_b675_9254fd08b57b" type="QString" name="ReferencedLayerId"/>
+            <Option value="T_ILI2DB_BASKET" type="QString" name="ReferencedLayerName"/>
+            <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
+            <Option value="assetitem_contact_supplier_T_basket_T_ILI2DB_BASKET_T_Id" type="QString" name="Relation"/>
+            <Option value="false" type="bool" name="ShowForm"/>
+            <Option value="true" type="bool" name="ShowOpenFormButton"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="suppliedassetitem_assetitem" configurationFlags="None">
+    <field configurationFlags="None" name="suppliedassetitem_assetitem">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" type="bool" value="false"/>
-            <Option name="AllowNULL" type="bool" value="false"/>
-            <Option name="MapIdentification" type="bool" value="false"/>
-            <Option name="OrderByValue" type="bool" value="false"/>
-            <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=assetitem"/>
-            <Option name="ReferencedLayerId" type="QString" value="AssetItem_881b3b01_524b_4b04_8156_c2e457353572"/>
-            <Option name="ReferencedLayerName" type="QString" value="AssetItem"/>
-            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
-            <Option name="Relation" type="QString" value="assetitem_contact_supplier_suppliedassetitem_assetitem_assetitem_T_Id"/>
-            <Option name="ShowForm" type="bool" value="false"/>
-            <Option name="ShowOpenFormButton" type="bool" value="true"/>
+            <Option value="false" type="bool" name="AllowAddFeatures"/>
+            <Option value="false" type="bool" name="AllowNULL"/>
+            <Option value="false" type="bool" name="MapIdentification"/>
+            <Option value="false" type="bool" name="OrderByValue"/>
+            <Option value="false" type="bool" name="ReadOnly"/>
+            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=assetitem" type="QString" name="ReferencedLayerDataSource"/>
+            <Option value="AssetItem_881b3b01_524b_4b04_8156_c2e457353572" type="QString" name="ReferencedLayerId"/>
+            <Option value="AssetItem" type="QString" name="ReferencedLayerName"/>
+            <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
+            <Option value="assetitem_contact_supplier_suppliedassetitem_assetitem_assetitem_T_Id" type="QString" name="Relation"/>
+            <Option value="false" type="bool" name="ShowForm"/>
+            <Option value="true" type="bool" name="ShowOpenFormButton"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" configurationFlags="None">
+    <field configurationFlags="None" name="suppliedassetitem_lg_geolssts_v2geolassets_assetitem">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" type="bool" value="false"/>
-            <Option name="AllowNULL" type="bool" value="false"/>
-            <Option name="MapIdentification" type="bool" value="false"/>
-            <Option name="OrderByValue" type="bool" value="false"/>
-            <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=lg_geolssts_v2geolassets_assetitem"/>
-            <Option name="ReferencedLayerId" type="QString" value="AssetItem_28a29ea9_d85d_45e9_ad11_c4bf841d4e5d"/>
-            <Option name="ReferencedLayerName" type="QString" value="AssetItem"/>
-            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
-            <Option name="Relation" type="QString" value="assetitem_contact_supplier_suppliedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id"/>
-            <Option name="ShowForm" type="bool" value="false"/>
-            <Option name="ShowOpenFormButton" type="bool" value="true"/>
+            <Option value="false" type="bool" name="AllowAddFeatures"/>
+            <Option value="false" type="bool" name="AllowNULL"/>
+            <Option value="false" type="bool" name="MapIdentification"/>
+            <Option value="false" type="bool" name="OrderByValue"/>
+            <Option value="false" type="bool" name="ReadOnly"/>
+            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=lg_geolssts_v2geolassets_assetitem" type="QString" name="ReferencedLayerDataSource"/>
+            <Option value="AssetItem_28a29ea9_d85d_45e9_ad11_c4bf841d4e5d" type="QString" name="ReferencedLayerId"/>
+            <Option value="AssetItem" type="QString" name="ReferencedLayerName"/>
+            <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
+            <Option value="assetitem_contact_supplier_suppliedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" type="QString" name="Relation"/>
+            <Option value="false" type="bool" name="ShowForm"/>
+            <Option value="true" type="bool" name="ShowOpenFormButton"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="supplier_contact" configurationFlags="None">
+    <field configurationFlags="None" name="supplier_contact">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" type="bool" value="false"/>
-            <Option name="AllowNULL" type="bool" value="false"/>
-            <Option name="MapIdentification" type="bool" value="false"/>
-            <Option name="OrderByValue" type="bool" value="false"/>
-            <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=contact"/>
-            <Option name="ReferencedLayerId" type="QString" value="Contact_c10e01b5_6f3e_4b43_bfd7_998c10d7d4ba"/>
-            <Option name="ReferencedLayerName" type="QString" value="Contact"/>
-            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
-            <Option name="Relation" type="QString" value="assetitem_contact_supplier_supplier_contact_contact_T_Id"/>
-            <Option name="ShowForm" type="bool" value="false"/>
-            <Option name="ShowOpenFormButton" type="bool" value="true"/>
+            <Option value="false" type="bool" name="AllowAddFeatures"/>
+            <Option value="false" type="bool" name="AllowNULL"/>
+            <Option value="false" type="bool" name="MapIdentification"/>
+            <Option value="false" type="bool" name="OrderByValue"/>
+            <Option value="false" type="bool" name="ReadOnly"/>
+            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=contact" type="QString" name="ReferencedLayerDataSource"/>
+            <Option value="Contact_c10e01b5_6f3e_4b43_bfd7_998c10d7d4ba" type="QString" name="ReferencedLayerId"/>
+            <Option value="Contact" type="QString" name="ReferencedLayerName"/>
+            <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
+            <Option value="assetitem_contact_supplier_supplier_contact_contact_T_Id" type="QString" name="Relation"/>
+            <Option value="false" type="bool" name="ShowForm"/>
+            <Option value="true" type="bool" name="ShowOpenFormButton"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="supplier_lg_geolssts_v2geolassets_contact" configurationFlags="None">
+    <field configurationFlags="None" name="supplier_lg_geolssts_v2geolassets_contact">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option name="AllowAddFeatures" type="bool" value="false"/>
-            <Option name="AllowNULL" type="bool" value="false"/>
-            <Option name="MapIdentification" type="bool" value="false"/>
-            <Option name="OrderByValue" type="bool" value="false"/>
-            <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=lg_geolssts_v2geolassets_contact"/>
-            <Option name="ReferencedLayerId" type="QString" value="Contact_c7ed9e21_34ff_45ef_9ca6_0556cc627cd5"/>
-            <Option name="ReferencedLayerName" type="QString" value="Contact"/>
-            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
-            <Option name="Relation" type="QString" value="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id"/>
-            <Option name="ShowForm" type="bool" value="false"/>
-            <Option name="ShowOpenFormButton" type="bool" value="true"/>
+            <Option value="false" type="bool" name="AllowAddFeatures"/>
+            <Option value="false" type="bool" name="AllowNULL"/>
+            <Option value="false" type="bool" name="MapIdentification"/>
+            <Option value="false" type="bool" name="OrderByValue"/>
+            <Option value="false" type="bool" name="ReadOnly"/>
+            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=lg_geolssts_v2geolassets_contact" type="QString" name="ReferencedLayerDataSource"/>
+            <Option value="Contact_c7ed9e21_34ff_45ef_9ca6_0556cc627cd5" type="QString" name="ReferencedLayerId"/>
+            <Option value="Contact" type="QString" name="ReferencedLayerName"/>
+            <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
+            <Option value="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" type="QString" name="Relation"/>
+            <Option value="false" type="bool" name="ShowForm"/>
+            <Option value="true" type="bool" name="ShowOpenFormButton"/>
           </Option>
         </config>
       </editWidget>
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" index="0" field="T_Id"/>
-    <alias name="" index="1" field="T_basket"/>
-    <alias name="SuppliedAssetItem" index="2" field="suppliedassetitem_assetitem"/>
-    <alias name="Asset Item" index="3" field="suppliedassetitem_lg_geolssts_v2geolassets_assetitem"/>
-    <alias name="Supplier" index="4" field="supplier_contact"/>
-    <alias name="Supplier  LG" index="5" field="supplier_lg_geolssts_v2geolassets_contact"/>
+    <alias field="T_Id" index="0" name=""/>
+    <alias field="T_basket" index="1" name=""/>
+    <alias field="suppliedassetitem_assetitem" index="2" name="SuppliedAssetItem"/>
+    <alias field="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" index="3" name="Asset Item"/>
+    <alias field="supplier_contact" index="4" name="Supplier"/>
+    <alias field="supplier_lg_geolssts_v2geolassets_contact" index="5" name="Supplier  LG"/>
   </aliases>
   <defaults>
-    <default applyOnUpdate="0" field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))"/>
-    <default applyOnUpdate="0" field="T_basket" expression="@default_basket_lg_geolassets_v2_geolassets"/>
-    <default applyOnUpdate="0" field="suppliedassetitem_assetitem" expression=""/>
-    <default applyOnUpdate="0" field="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" expression=""/>
-    <default applyOnUpdate="0" field="supplier_contact" expression=""/>
-    <default applyOnUpdate="0" field="supplier_lg_geolssts_v2geolassets_contact" expression=""/>
+    <default expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" field="T_Id" applyOnUpdate="0"/>
+    <default expression="@default_basket_lg_geolassets_v2_geolassets" field="T_basket" applyOnUpdate="0"/>
+    <default expression="" field="suppliedassetitem_assetitem" applyOnUpdate="0"/>
+    <default expression="" field="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" applyOnUpdate="0"/>
+    <default expression="" field="supplier_contact" applyOnUpdate="0"/>
+    <default expression="" field="supplier_lg_geolssts_v2geolassets_contact" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint unique_strength="1" constraints="3" field="T_Id" notnull_strength="1" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="1" field="T_basket" notnull_strength="1" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="suppliedassetitem_assetitem" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="supplier_contact" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="supplier_lg_geolssts_v2geolassets_contact" notnull_strength="0" exp_strength="0"/>
+    <constraint field="T_Id" exp_strength="0" unique_strength="1" notnull_strength="1" constraints="3"/>
+    <constraint field="T_basket" exp_strength="0" unique_strength="0" notnull_strength="1" constraints="1"/>
+    <constraint field="suppliedassetitem_assetitem" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="supplier_contact" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="supplier_lg_geolssts_v2geolassets_contact" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
   </constraints>
   <constraintExpressions>
     <constraint exp="" field="T_Id" desc=""/>
@@ -191,23 +191,23 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorField name="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" index="3" showLabel="1"/>
+    <attributeEditorField index="3" showLabel="1" name="suppliedassetitem_lg_geolssts_v2geolassets_assetitem"/>
   </attributeEditorForm>
   <editable>
-    <field name="T_Id" editable="1"/>
-    <field name="T_basket" editable="1"/>
-    <field name="suppliedassetitem_assetitem" editable="1"/>
-    <field name="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" editable="0"/>
-    <field name="supplier_contact" editable="1"/>
-    <field name="supplier_lg_geolssts_v2geolassets_contact" editable="1"/>
+    <field editable="1" name="T_Id"/>
+    <field editable="1" name="T_basket"/>
+    <field editable="1" name="suppliedassetitem_assetitem"/>
+    <field editable="0" name="suppliedassetitem_lg_geolssts_v2geolassets_assetitem"/>
+    <field editable="1" name="supplier_contact"/>
+    <field editable="1" name="supplier_lg_geolssts_v2geolassets_contact"/>
   </editable>
   <labelOnTop>
-    <field name="T_Id" labelOnTop="0"/>
-    <field name="T_basket" labelOnTop="0"/>
-    <field name="suppliedassetitem_assetitem" labelOnTop="0"/>
-    <field name="suppliedassetitem_lg_geolssts_v2geolassets_assetitem" labelOnTop="0"/>
-    <field name="supplier_contact" labelOnTop="0"/>
-    <field name="supplier_lg_geolssts_v2geolassets_contact" labelOnTop="0"/>
+    <field labelOnTop="0" name="T_Id"/>
+    <field labelOnTop="0" name="T_basket"/>
+    <field labelOnTop="0" name="suppliedassetitem_assetitem"/>
+    <field labelOnTop="0" name="suppliedassetitem_lg_geolssts_v2geolassets_assetitem"/>
+    <field labelOnTop="0" name="supplier_contact"/>
+    <field labelOnTop="0" name="supplier_lg_geolssts_v2geolassets_contact"/>
   </labelOnTop>
   <reuseLastValue>
     <field reuseLastValue="0" name="T_Id"/>
@@ -219,6 +219,6 @@ def my_form_open(dialog, layer, feature):
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression>attribute(get_feature('AssetItem', 'T_Id',  "suppliedassetitem_lg_geolssts_v2geolassets_assetitem" ),'titleoriginal')</previewExpression>
+  <previewExpression>coalesce( attribute(get_feature('AssetItem', 'T_Id', "suppliedassetitem_lg_geolssts_v2geolassets_assetitem"),'titlepublic'),'Kein Öffentlicher Titel vorhanden' )</previewExpression>
   <layerGeometryType>4</layerGeometryType>
 </qgis>
