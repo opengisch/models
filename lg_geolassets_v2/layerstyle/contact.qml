@@ -4,7 +4,10 @@
     <field name="T_Id" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -34,7 +37,10 @@
     <field name="T_Ili_Tid" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -113,37 +119,37 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" field="T_Id" index="0"/>
-    <alias name="" field="T_basket" index="1"/>
-    <alias name="" field="T_Ili_Tid" index="2"/>
-    <alias name="IDZAD" field="idzad" index="3"/>
-    <alias name="Art" field="akind" index="4"/>
-    <alias name="Name" field="aname" index="5"/>
-    <alias name="Telefon" field="telefon" index="6"/>
-    <alias name="Email (&quot;mailto:name@domain.ch&quot;)" field="email" index="7"/>
-    <alias name="Website (&quot;http://www.domain.ch&quot;)" field="website" index="8"/>
+    <alias name="" index="0" field="T_Id"/>
+    <alias name="" index="1" field="T_basket"/>
+    <alias name="" index="2" field="T_Ili_Tid"/>
+    <alias name="IDZAD" index="3" field="idzad"/>
+    <alias name="Art" index="4" field="akind"/>
+    <alias name="Name" index="5" field="aname"/>
+    <alias name="Telefon" index="6" field="telefon"/>
+    <alias name="Email (&quot;mailto:name@domain.ch&quot;)" index="7" field="email"/>
+    <alias name="Website (&quot;http://www.domain.ch&quot;)" index="8" field="website"/>
   </aliases>
   <defaults>
-    <default field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0"/>
-    <default field="T_basket" expression="@default_basket_lg_geolassets_v2_geolassets" applyOnUpdate="0"/>
-    <default field="T_Ili_Tid" expression="substr(uuid(), 2, 36)" applyOnUpdate="0"/>
-    <default field="idzad" expression="" applyOnUpdate="0"/>
-    <default field="akind" expression="" applyOnUpdate="0"/>
-    <default field="aname" expression="" applyOnUpdate="0"/>
-    <default field="telefon" expression="" applyOnUpdate="0"/>
-    <default field="email" expression="" applyOnUpdate="0"/>
-    <default field="website" expression="" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))"/>
+    <default applyOnUpdate="0" field="T_basket" expression="@default_basket_lg_geolassets_v2_geolassets"/>
+    <default applyOnUpdate="0" field="T_Ili_Tid" expression="substr(uuid(), 2, 36)"/>
+    <default applyOnUpdate="0" field="idzad" expression=""/>
+    <default applyOnUpdate="0" field="akind" expression=""/>
+    <default applyOnUpdate="0" field="aname" expression=""/>
+    <default applyOnUpdate="0" field="telefon" expression=""/>
+    <default applyOnUpdate="0" field="email" expression=""/>
+    <default applyOnUpdate="0" field="website" expression=""/>
   </defaults>
   <constraints>
-    <constraint constraints="3" field="T_Id" unique_strength="1" exp_strength="0" notnull_strength="1"/>
-    <constraint constraints="1" field="T_basket" unique_strength="0" exp_strength="0" notnull_strength="1"/>
-    <constraint constraints="0" field="T_Ili_Tid" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="idzad" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="1" field="akind" unique_strength="0" exp_strength="0" notnull_strength="1"/>
-    <constraint constraints="1" field="aname" unique_strength="0" exp_strength="0" notnull_strength="1"/>
-    <constraint constraints="0" field="telefon" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="email" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="website" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="1" constraints="3" field="T_Id" notnull_strength="1" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="1" field="T_basket" notnull_strength="1" exp_strength="0"/>
+    <constraint unique_strength="1" constraints="2" field="T_Ili_Tid" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="idzad" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="1" field="akind" notnull_strength="1" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="1" field="aname" notnull_strength="1" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="telefon" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="email" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="website" notnull_strength="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint exp="" field="T_Id" desc=""/>
@@ -179,7 +185,7 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" name="Allgemein *" columnCount="2" groupBox="0" showLabel="1">
+    <attributeEditorContainer name="Allgemein *" visibilityExpression="" columnCount="2" visibilityExpressionEnabled="0" groupBox="0" showLabel="1">
       <attributeEditorField name="aname" index="5" showLabel="1"/>
       <attributeEditorField name="idzad" index="3" showLabel="1"/>
       <attributeEditorField name="akind" index="4" showLabel="1"/>
@@ -187,11 +193,35 @@ def my_form_open(dialog, layer, feature):
       <attributeEditorField name="telefon" index="6" showLabel="1"/>
       <attributeEditorField name="website" index="8" showLabel="1"/>
     </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" name="Adresse" columnCount="1" groupBox="0" showLabel="1">
-      <attributeEditorRelation forceSuppressFormPopup="0" name="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id" label="" relationWidgetTypeId="linking_relation_editor" nmRelationId="one_to_one" showLabel="0" relation="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id">
+    <attributeEditorContainer name="Adresse" visibilityExpression="" columnCount="1" visibilityExpressionEnabled="0" groupBox="0" showLabel="1">
+      <attributeEditorRelation name="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id" nmRelationId="one_to_one" label="" relation="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id" relationWidgetTypeId="linking_relation_editor" forceSuppressFormPopup="0" showLabel="0">
         <editor_configuration type="Map">
           <Option name="buttons" type="QString" value="AddChildFeature|DeleteChildFeature"/>
           <Option name="one_to_one" type="bool" value="true"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+    </attributeEditorContainer>
+    <attributeEditorContainer name="Supplied Assets" visibilityExpression="" columnCount="1" visibilityExpressionEnabled="0" groupBox="0" showLabel="1">
+      <attributeEditorRelation name="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" nmRelationId="" label="" relation="assetitem_contact_supplier_supplier_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" showLabel="0">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="NoButton"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+    </attributeEditorContainer>
+    <attributeEditorContainer name="Initiated Assets" visibilityExpression="" columnCount="1" visibilityExpressionEnabled="0" groupBox="0" showLabel="1">
+      <attributeEditorRelation name="assetitem_contact_initiator_initiator_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" nmRelationId="" label="" relation="assetitem_contact_initiator_initiator_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" showLabel="0">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="NoButton"/>
+          <Option name="show_first_feature" type="bool" value="true"/>
+        </editor_configuration>
+      </attributeEditorRelation>
+    </attributeEditorContainer>
+    <attributeEditorContainer name="Authored Assets" visibilityExpression="" columnCount="1" visibilityExpressionEnabled="0" groupBox="0" showLabel="1">
+      <attributeEditorRelation name="assetitem_contact_author_author_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" nmRelationId="" label="" relation="assetitem_contact_author_author_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" relationWidgetTypeId="relation_editor" forceSuppressFormPopup="0" showLabel="0">
+        <editor_configuration type="Map">
+          <Option name="buttons" type="QString" value="NoButton"/>
           <Option name="show_first_feature" type="bool" value="true"/>
         </editor_configuration>
       </attributeEditorRelation>
@@ -220,15 +250,15 @@ def my_form_open(dialog, layer, feature):
     <field name="website" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
-    <field name="T_Id" reuseLastValue="0"/>
-    <field name="T_Ili_Tid" reuseLastValue="0"/>
-    <field name="T_basket" reuseLastValue="0"/>
-    <field name="akind" reuseLastValue="0"/>
-    <field name="aname" reuseLastValue="0"/>
-    <field name="email" reuseLastValue="0"/>
-    <field name="idzad" reuseLastValue="0"/>
-    <field name="telefon" reuseLastValue="0"/>
-    <field name="website" reuseLastValue="0"/>
+    <field reuseLastValue="0" name="T_Id"/>
+    <field reuseLastValue="0" name="T_Ili_Tid"/>
+    <field reuseLastValue="0" name="T_basket"/>
+    <field reuseLastValue="0" name="akind"/>
+    <field reuseLastValue="0" name="aname"/>
+    <field reuseLastValue="0" name="email"/>
+    <field reuseLastValue="0" name="idzad"/>
+    <field reuseLastValue="0" name="telefon"/>
+    <field reuseLastValue="0" name="website"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets>

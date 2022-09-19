@@ -2187,6 +2187,36 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="bf9fd010-50ae-402b-b757-d7e1293b9874">
+				<id>lg_geolassets_v2.qgis_layerstyle_mancatlabelref</id>
+				<version>2022-05-11</version>
+				<publishingDate>2022-08-31</publishingDate>
+				<owner>mailto:info@swisstopo.ch</owner>
+				<title>
+					<DatasetIdx16.MultilingualText>
+						<LocalisedText>
+							<DatasetIdx16.LocalisedText>
+								<Text>QGIS layerstyle file for lg_geolassets_v2 - mancatlabelref</Text>
+							</DatasetIdx16.LocalisedText>
+						</LocalisedText>
+					</DatasetIdx16.MultilingualText>
+				</title>
+				<categories>
+					<DatasetIdx16.Code_>
+						<value>http://codes.interlis.ch/type/layerstyle</value>
+					</DatasetIdx16.Code_>
+				</categories>
+				<files>
+					<DatasetIdx16.DataFile>
+						<fileFormat>text/plain</fileFormat>
+						<file>
+							<DatasetIdx16.File>
+								<path>./lg_geolassets_v2/layerstyle/mancatlabelref.qml</path>
+							</DatasetIdx16.File>
+						</file>
+					</DatasetIdx16.DataFile>
+				</files>
+			</DatasetIdx16.DataIndex.DatasetMetadata>
 			<DatasetIdx16.DataIndex.DatasetMetadata TID="19a39a6f-d3c5-45b3-8f6c-125009528684">
 				<id>lg_geolassets_v2.qgis_layerstyle_assetitemx_assetitemy</id>
 				<version>2022-05-11</version>

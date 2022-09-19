@@ -14,6 +14,7 @@ layertree:
     - "StudyLocation":
         iliname: "GeolAssets_V2.GeolAssets.StudyLocation"
         qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_studylocation"
+        checked: false
     - "StudyTrace":
         iliname: "GeolAssets_V2.GeolAssets.StudyTrace"
         qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_studytrace"
@@ -27,59 +28,111 @@ layertree:
         group: true
         expanded: false
         child-nodes:
-            - "Strukturtabellen":
+        - "Strukturen":
+            group: true
+            expanded: false
+            child-nodes:
+            - "Address":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_address"
+            - "ID":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_id"
+            - "TypeNatRel":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_typenatrel"
+            - "StatusWork":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_statuswork"
+            - "AutoCat":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_autocat"
+            - "InternalUse":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_internaluse"
+            - "PublicUse":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_publicuse"
+            - "AssetObjectInfo":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetobjectinfo"
+            - "LegalDoc":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_legaldoc"
+        - "Domänen":
+            group: true
+            expanded: false
+            child-nodes:
+            - "Items":
                 group: true
                 expanded: false
                 child-nodes:
-                    - "Address":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_address"
-                    - "ID":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_id"
-                    - "TypeNatRel":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_typenatrel"
-                    - "StatusWork":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_statuswork"
-                    - "AutoCat":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_autocat"
-                    - "InternalUse":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_internaluse"
-                    - "PublicUse":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_publicuse"
-                    - "AssetObjectInfo":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetobjectinfo"
-                    - "LegalDoc":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_legaldoc"
-                    - "ManCatLabelRef":
-            - "Domänentabellen":
+                - "ManCatLabelItem":
+                    qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_mancatlabelitem"
+                - "AssetKindItem":
+                    qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetkinditem"
+                - "AssetFormatItem":
+                    qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetformatitem"
+                - "NatRelItem":
+                    qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_natrelitem"
+                - "StatusWorkItem":
+                    qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_statusworkitem"
+                - "GeomQualityItem":
+                - "LanguageItem":
+                - "ContactKindItem":
+                - "StatusAssetUseItem":
+                - "LegalDocItem":
+                - "PubChannelItem":
+                - "AutoObjectCatItem":
+                - "AutoCatLabelItem:"
+                - "LanguageCode_ISO639_1":
+            - "References":
                 group: true
                 expanded: false
                 child-nodes:
-                    - "ManCatLabelItem":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_mancatlabelitem"
-                    - "AssetKindItem":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetkinditem"
-                    - "AssetFormatItem":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetformatitem"
-                    - "NatRelItem":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_natrelitem"
-                    - "StatusWorkItem":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_statusworkitem"
-            - "Verknüpfungstabellen":
+                - "ManCatLabelRef":
+                    qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_mancatlabelref"
+                - "AssetKindRef":
+                - "AssetFormatRef":
+                - "NatRelRef":
+                - "StatusWorkRef":
+                - "GeomQualityRef":
+                - "LanguageRef":
+                - "ContactKindRef":
+                - "StatusAssetUseRef":
+                - "LegalDocRef":
+                - "PubChannelRef":
+                - "AutoObjectCatRef":
+                - "AutoCatLabelRef":
+            - "Others":
                 group: true
                 expanded: false
                 child-nodes:
-                    - "AssetItem_Contact_Author":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_author"
-                    - "AssetItem_Contact_Initiator":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_initiator"
-                    - "AssetItem_Contact_Supplier":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_supplier"
-                    - "AssetItem_Publication":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_publication"
-                    - "AssetItem_UsedBy":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_usedby"
-                    - "AssetItemX_AssetItemY":
-                        qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitemx_assetitemy"
+                - "MultilingualMText":
+                - "MultilingualText":
+                - "LocalisedMText":
+                - "LocalisedText":
+        - "Verknüpfungen":
+            group: true
+            expanded: false
+            child-nodes:
+            - "AssetItem_Contact_Author":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_author"
+            - "AssetItem_Contact_Initiator":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_initiator"
+            - "AssetItem_Contact_Supplier":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_supplier"
+            - "AssetItem_Publication":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_publication"
+            - "AssetItem_UsedBy":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_usedby"
+            - "AssetItemX_AssetItemY":
+                qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitemx_assetitemy"
+        - "Basismodell":
+            group: true
+            expanded: false
+            child-nodes:
+            - "AssetItem (GeolAssets_V2)":
+                iliname: "GeolAssets_V2.GeolAssets.AssetItem"
+            - "Contact (GeolAssets_V2)":
+                iliname: "GeolAssets_V2.GeolAssets.Contact"
+        - "System":
+            group: true
+            expanded: false
+            child-nodes:
+            - "T_ILI2DB_DATASET":
+            - "T_ILI2DB_BASKET":
 
 properties:
     transaction_mode: "AutomaticGroups"
