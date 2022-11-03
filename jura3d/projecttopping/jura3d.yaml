@@ -1,0 +1,215 @@
+layerorder: []
+layertree:
+- AssetItem:
+    checked: true
+    expanded: true
+    featurecount: true
+    qmlstylefile: ilidata:layerstyle_jura3d_assetitem_qml_001
+    iliname: "NGMPROD_GeolAssets_V2.GeolAssets.AssetItem"
+- StudyLocation:
+    checked: true
+    expanded: true
+    qmlstylefile: ilidata:layerstyle_jura3d_studylocation_qml_001
+- StudyTrace:
+    checked: true
+    expanded: true
+    qmlstylefile: ilidata:layerstyle_jura3d_studytrace_qml_001
+- StudyArea:
+    checked: false
+    expanded: true
+    qmlstylefile: ilidata:layerstyle_jura3d_studyarea_qml_001
+- Tables:
+    checked: true
+    child-nodes:
+    - ID:
+        checked: true
+        expanded: true
+        qmlstylefile: ilidata:layerstyle_jura3d_id_qml_001
+    - Scope_Scope:
+        checked: true
+        expanded: true
+        qmlstylefile: ilidata:layerstyle_jura3d_scope_scope_qml_001
+    - Status_Status:
+        checked: true
+        expanded: true
+        qmlstylefile: ilidata:layerstyle_jura3d_status_status_qml_001
+    - AssetItemX_AssetItemY:
+        checked: true
+        expanded: true
+        qmlstylefile: ilidata:layerstyle_jura3d_assetitemx_assetitemy_qml_001
+    - AssetFormatItem:
+        checked: true
+        expanded: true
+        qmlstylefile: ilidata:layerstyle_jura3d_assetformatitem_qml_001
+    - ManCatLabelItem:
+        checked: true
+        expanded: true
+        qmlstylefile: ilidata:layerstyle_jura3d_mancatlabelitem_qml_001
+    - Lookup and Domain Tables:
+        checked: false
+        child-nodes:
+        - tables:
+            checked: true
+            child-nodes:
+            - Status:
+                checked: true
+                expanded: true
+            - Scope:
+                checked: true
+                expanded: true
+            - AssetItem_Contact_Supplier:
+                checked: true
+                expanded: true
+            - AssetItem_Contact_Initiator:
+                checked: true
+                expanded: true
+            - AssetItem_Contact_Author:
+                checked: true
+                expanded: true
+            - AssetKindItem:
+                checked: true
+                expanded: true
+            - Contact:
+                checked: true
+                expanded: true
+            - AssetItem:
+                checked: true
+                expanded: true
+            - Address:
+                checked: true
+                expanded: true
+            - GeomQualityRef:
+                checked: true
+                expanded: true
+            - LanguageRef:
+                checked: true
+                expanded: true
+            - ContactKindRef:
+                checked: true
+                expanded: true
+            - AssetFormatRef:
+                checked: true
+                expanded: true
+            - ManCatLabelRef:
+                checked: true
+                expanded: true
+            - AssetKindRef:
+                checked: true
+                expanded: true
+            - MultilingualMText:
+                checked: true
+                expanded: true
+            - MultilingualText:
+                checked: true
+                expanded: true
+            - LocalisedMText:
+                checked: true
+                expanded: true
+            - LocalisedText:
+                checked: true
+                expanded: true
+            expanded: true
+            group: true
+        - domains:
+            checked: true
+            child-nodes:
+            - AssetItem_StatusUpdated:
+                checked: true
+                expanded: true
+            - AssetItem_ConsistencyTecto:
+                checked: true
+                expanded: true
+            - AssetItem_Priority:
+                checked: true
+                expanded: true
+            - AssetItem_DataQuality:
+                checked: true
+                expanded: true
+            - LanguageCode_ISO639_1:
+                checked: true
+                expanded: true
+            - GeomQualityItem:
+                checked: true
+                expanded: true
+            - LanguageItem:
+                checked: true
+                expanded: true
+            - ContactKindItem:
+                checked: true
+                expanded: true
+            expanded: true
+            group: true
+        - system:
+            checked: true
+            child-nodes:
+            - T_ILI2DB_DATASET:
+                checked: true
+                expanded: true
+            - T_ILI2DB_BASKET:
+                checked: true
+                expanded: true
+            expanded: true
+            group: true
+        - basemodel:
+            checked: true
+            child-nodes:
+            - AssetItem (GeolAssets_V2):
+                checked: true
+                expanded: true
+                iliname: "GeolAssets_V2.GeolAssets.AssetItem"
+            expanded: true
+            group: true
+        expanded: false
+        group: true
+    expanded: false
+    group: true
+- Hintergrundkarten:
+    checked: true
+    child-nodes:
+    - Landeskarten (grau):
+        checked: true
+        expanded: true
+        provider: wms
+        uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.pixelkarte-grau&styles&url=https://wms.geo.admin.ch/?%0ASERVICE%3DWMS%0A%26VERSION%3D1.3.0%0A%26REQUEST%3DGetCapabilities
+    - Landeskarten (farbig):
+        checked: false
+        expanded: true
+        provider: wms
+        uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.pixelkarte-farbe&styles&url=https://wms.geo.admin.ch/
+    - SWISSIMAGE HIST 1946:
+        checked: false
+        expanded: true
+        provider: wms
+        uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.swissimage-product_1946&styles&url=https://wms.geo.admin.ch/
+    - swissALTI3D multidirektionales Relief:
+        checked: false
+        expanded: true
+        provider: wms
+        uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.swissalti3d-reliefschattierung&styles&url=https://wms.geo.admin.ch/
+    - GeoCover - Vektordaten:
+        checked: false
+        expanded: true
+        provider: wms
+        uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.geologie-geocover&styles&url=https://wms.geo.admin.ch/
+    - Geologischer Atlas GA25:
+        checked: false
+        expanded: true
+        provider: wms
+        uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.geologie-geologischer_atlas&styles&url=https://wms.geo.admin.ch/
+    - Tektonik 500:
+        checked: false
+        expanded: true
+        provider: wms
+        uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.geologie-tektonische_karte&styles&url=https://wms.geo.admin.ch/
+    - Geologie 500:
+        checked: false
+        expanded: true
+        provider: wms
+        uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.geologie-geologische_karte&styles&url=https://wms.geo.admin.ch/
+    expanded: false
+    group: true
+    mutually-exclusive: true
+    mutually-exclusive-child: 0
+
+properties:
+    transaction_mode: "AutomaticGroups"
