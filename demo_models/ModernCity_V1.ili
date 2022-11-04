@@ -1,0 +1,67 @@
+INTERLIS 2.3;
+
+MODEL ModernCity_V1 (en)
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2022-06-22" =
+    IMPORTS GeometryCHLV95_V1;
+
+    DOMAIN
+        Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
+
+    STRUCTURE Address =
+        Street: TEXT;
+        Number: TEXT;
+    END Address;
+
+    TOPIC Living =
+        BASKET OID AS INTERLIS.UUIDOID;
+        OID AS INTERLIS.UUIDOID;
+
+        CLASS Resident =
+          !!a mandatory constraint
+          ID: MANDATORY TEXT;
+          Name: TEXT;
+          !! a type constraint
+          Email: URI;
+          IsHuman: BOOLEAN;
+          !!a logical constraint
+          !!@ name = MandatoryHumanName
+          SET CONSTRAINT WHERE IsHuman:
+            DEFINED(Name);
+        END Resident;
+
+        CLASS Building  =
+            !! a mandatory constraint
+            Code : MANDATORY TEXT*15;
+            Description : TEXT;
+            !! a type constraint
+            Address : Address;
+            !! a type constraint
+            Geometry: Surface;
+            !! a range constraint
+            Levels: 0 .. 200;
+        END Building;
+
+        ASSOCIATION Resident_Building =
+          !! a reference constraint
+          Resident -- {1..*} Resident;
+          Building -- {1} Building;
+        END Resident_Building;
+
+    END Living;
+
+    TOPIC Nature =
+        BASKET OID AS INTERLIS.UUIDOID;
+        OID AS INTERLIS.UUIDOID;
+
+        CLASS Park  =
+            !! a mandatory constraint
+            Name : MANDATORY TEXT*99;
+            !! a type constraint
+            Address : Address;
+            Geometry: Surface;
+        END Park;
+
+    END Nature;
+
+END ModernCity_V1.
