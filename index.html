@@ -16,7 +16,7 @@
 <script>
     (async () => {
         const path = window.location.pathname.split('/')[1]
-        const extensions = ['xml', 'ini', 'toml', 'qml', 'sql', 'yaml']
+        const extensions = ['xml', 'ini', 'toml', 'qml', 'sql', 'yaml', 'ili']
 
         const response = await fetch('https://api.github.com/repos/opengisch/models/contents/' + path);
         const data = await response.json();
