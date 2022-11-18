@@ -378,8 +378,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2012&quot;.&quot;plantypen&quot;" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Plantypen_e949338c_1df3_4a0f_a3eb_aeb5cc889073" type="QString" name="ReferencedLayerId"/>
             <Option value="Plantypen" type="QString" name="ReferencedLayerName"/>
             <Option value="postgres" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="beschriftung_pos_plantyp_fkey" type="QString" name="Relation"/>
@@ -412,8 +410,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2012&quot;.&quot;halignment&quot;" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="HALIGNMENT_01091eb4_cb75_4131_a1ba_70211ae4eb93" type="QString" name="ReferencedLayerId"/>
             <Option value="HALIGNMENT" type="QString" name="ReferencedLayerName"/>
             <Option value="postgres" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="beschriftung_pos_texthali_fkey" type="QString" name="Relation"/>
@@ -432,8 +428,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2012&quot;.&quot;valignment&quot;" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="VALIGNMENT_24d9d301_5f63_488a_b1ac_857f2d07017b" type="QString" name="ReferencedLayerId"/>
             <Option value="VALIGNMENT" type="QString" name="ReferencedLayerName"/>
             <Option value="postgres" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="beschriftung_pos_textvali_fkey" type="QString" name="Relation"/>
@@ -452,8 +446,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2012&quot;.&quot;beschriftung_pos_schriftgroesse&quot;" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Beschriftung_Pos_Schriftgroesse_0c8cf224_5beb_4402_a55b_ebb1adb8a9ee" type="QString" name="ReferencedLayerId"/>
             <Option value="Beschriftung_Pos_Schriftgroesse" type="QString" name="ReferencedLayerName"/>
             <Option value="postgres" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="beschriftung_pos_schriftgroesse_fkey" type="QString" name="Relation"/>
@@ -472,8 +464,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2012&quot;.&quot;beschriftung_text&quot;" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Beschriftung_Text_441abe25_6e46_403e_ba05_2a651b2a8ae3" type="QString" name="ReferencedLayerId"/>
             <Option value="Beschriftung_Text" type="QString" name="ReferencedLayerName"/>
             <Option value="postgres" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="beschriftung_pos_beschriftung_text_fkey" type="QString" name="Relation"/>

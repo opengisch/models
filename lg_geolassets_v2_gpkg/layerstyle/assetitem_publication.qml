@@ -37,8 +37,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="false" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=T_ILI2DB_BASKET" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="T_ILI2DB_BASKET_9a69fa2e_5fe3_4394_b675_9254fd08b57b" type="QString" name="ReferencedLayerId"/>
             <Option value="T_ILI2DB_BASKET" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="assetitem_publication_T_basket_T_ILI2DB_BASKET_T_Id" type="QString" name="Relation"/>
@@ -57,8 +55,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="false" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=lg_geolssts_v2geolassets_assetitem" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="AssetItem_28a29ea9_d85d_45e9_ad11_c4bf841d4e5d" type="QString" name="ReferencedLayerId"/>
             <Option value="AssetItem" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="assetitem_publication_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" type="QString" name="Relation"/>
@@ -77,8 +73,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="false" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=publication" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Publication_f5b43e58_e7c2_4d5e_8145_0ef94c8e30dc" type="QString" name="ReferencedLayerId"/>
             <Option value="Publication" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="assetitem_publication_publication_publication_T_Id" type="QString" name="Relation"/>

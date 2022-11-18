@@ -230,8 +230,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="dbname='bakery' host=localhost user='postgres' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='1' table=&quot;nutztest2012&quot;.&quot;bemassung&quot; (geometrie)" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Bemassung__Geometrie__eee69f8d_33e3_4609_978e_909b19504a72" type="QString" name="ReferencedLayerId"/>
             <Option value="Bemassung (Geometrie)" type="QString" name="ReferencedLayerName"/>
             <Option value="postgres" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="bemassung_hlinie_bemassung_fkey" type="QString" name="Relation"/>

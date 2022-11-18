@@ -1905,8 +1905,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2012&quot;.&quot;rechtsstatus&quot;" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Rechtsstatus_c14e1d39_d9bb_4846_b590_b3f7e76db502" type="QString" name="ReferencedLayerId"/>
             <Option value="Rechtsstatus" type="QString" name="ReferencedLayerName"/>
             <Option value="postgres" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="ueberlagerung_flaechen_rechtsstatus_fkey" type="QString" name="Relation"/>
@@ -1991,8 +1989,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2012&quot;.&quot;av_qualitaeten&quot;" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="AV_Qualitaeten_44a39bcf_6078_409a_b6ac_08964ea9f21e" type="QString" name="ReferencedLayerId"/>
             <Option value="AV_Qualitaeten" type="QString" name="ReferencedLayerName"/>
             <Option value="postgres" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="ueberlagerung_flaechen_av_qualitaet_fkey" type="QString" name="Relation"/>

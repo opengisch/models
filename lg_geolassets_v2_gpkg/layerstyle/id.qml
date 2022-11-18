@@ -26,8 +26,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" type="QString" name="ReferencedLayerId"/>
             <Option value="T_ILI2DB_BASKET" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="id_T_basket_T_ILI2DB_BASKET_T_Id" type="QString" name="Relation"/>
@@ -80,8 +78,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=assetitem" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="AssetItem_d7d09df7_c258_42f5_8263_23014de57c8d" type="QString" name="ReferencedLayerId"/>
             <Option value="AssetItem" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="id_assetitem_idalternate_assetitem_T_Id" type="QString" name="Relation"/>
@@ -100,8 +96,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=lg_geolssts_v2geolassets_assetitem" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="AssetItem_0136352c_7637_4b76_9c5c_c1c927cab0af" type="QString" name="ReferencedLayerId"/>
             <Option value="AssetItem" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="id_lg_glssts_vssts_ssttem_idalternate_lg_geolssts_v2geolassets_assetitem_T_Id" type="QString" name="Relation"/>

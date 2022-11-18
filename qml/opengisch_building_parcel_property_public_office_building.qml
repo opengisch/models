@@ -286,8 +286,6 @@
             <Option name="MapIdentification" type="bool" value="true"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;parcel&quot; (geometrie)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Parcel_b47b3a8c_8665_4e62_8a47_fc06b5cf5261"/>
             <Option name="ReferencedLayerName" type="QString" value="Parcel"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="public_office_building_parcel_fkey"/>

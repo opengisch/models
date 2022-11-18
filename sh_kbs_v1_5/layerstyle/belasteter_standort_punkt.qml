@@ -705,8 +705,6 @@
             <Option value="false" name="MapIdentification" type="bool"/>
             <Option value="false" name="OrderByValue" type="bool"/>
             <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="dbname='daves_bakery' host=localhost port=5432 user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;smart1test232&quot;.&quot;zustaendigkeitkataster&quot;" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="ZustaendigkeitKataster_963993fe_6aa0_488d_b5ae_79865c24f153" name="ReferencedLayerId" type="QString"/>
             <Option value="ZustaendigkeitKataster" name="ReferencedLayerName" type="QString"/>
             <Option value="postgres" name="ReferencedLayerProviderKey" type="QString"/>
             <Option value="belasteter_standort_zustaendigkeitkataster_fkey_1" name="Relation" type="QString"/>

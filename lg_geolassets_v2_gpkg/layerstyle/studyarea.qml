@@ -837,8 +837,6 @@
             <Option value="false" name="MapIdentification" type="bool"/>
             <Option value="true" name="OrderByValue" type="bool"/>
             <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" name="ReferencedLayerId" type="QString"/>
             <Option value="T_ILI2DB_BASKET" name="ReferencedLayerName" type="QString"/>
             <Option value="ogr" name="ReferencedLayerProviderKey" type="QString"/>
             <Option value="studyarea_T_basket_T_ILI2DB_BASKET_T_Id" name="Relation" type="QString"/>
@@ -870,8 +868,6 @@
             <Option value="false" name="MapIdentification" type="bool"/>
             <Option value="true" name="OrderByValue" type="bool"/>
             <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=geomqualityitem" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="GeomQualityItem_d5e58ca5_2d80_4618_8ce6_3a17f2dcbed8" name="ReferencedLayerId" type="QString"/>
             <Option value="GeomQualityItem" name="ReferencedLayerName" type="QString"/>
             <Option value="ogr" name="ReferencedLayerProviderKey" type="QString"/>
             <Option value="studyarea_geomquality_geomqualityitem_T_Id" name="Relation" type="QString"/>
@@ -890,8 +886,6 @@
             <Option value="false" name="MapIdentification" type="bool"/>
             <Option value="true" name="OrderByValue" type="bool"/>
             <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=assetitem" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="AssetItem_f833c131_b74c_463e_9eba_18f17a3cf41e" name="ReferencedLayerId" type="QString"/>
             <Option value="AssetItem" name="ReferencedLayerName" type="QString"/>
             <Option value="ogr" name="ReferencedLayerProviderKey" type="QString"/>
             <Option value="studyarea_assetitem_assetitem_assetitem_T_Id" name="Relation" type="QString"/>
@@ -910,8 +904,6 @@
             <Option value="false" name="MapIdentification" type="bool"/>
             <Option value="true" name="OrderByValue" type="bool"/>
             <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=lg_geolssts_v2geolassets_assetitem" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="AssetItem_28a29ea9_d85d_45e9_ad11_c4bf841d4e5d" name="ReferencedLayerId" type="QString"/>
             <Option value="AssetItem" name="ReferencedLayerName" type="QString"/>
             <Option value="ogr" name="ReferencedLayerProviderKey" type="QString"/>
             <Option value="studyarea_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" name="Relation" type="QString"/>

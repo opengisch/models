@@ -23,8 +23,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET"/>
-            <Option name="ReferencedLayerId" type="QString" value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c"/>
             <Option name="ReferencedLayerName" type="QString" value="T_ILI2DB_BASKET"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
             <Option name="Relation" type="QString" value="lg_geolssts_v2geolassets_contact_T_basket_T_ILI2DB_BASKET_T_Id"/>
@@ -66,8 +64,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=contactkinditem"/>
-            <Option name="ReferencedLayerId" type="QString" value="ContactKindItem_bedb9ab1_e3c6_4fd4_81df_5e51153c34c8"/>
             <Option name="ReferencedLayerName" type="QString" value="ContactKindItem"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
             <Option name="Relation" type="QString" value="lg_geolssts_v2geolassets_contact_akind_contactkinditem_T_Id"/>

@@ -26,8 +26,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;t_ili2db_basket&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="t_ili2db_basket_5f57fab3_9585_42b3_9d53_70bc32af4a59"/>
             <Option name="ReferencedLayerName" type="QString" value="t_ili2db_basket"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="address_t_basket_fkey"/>
@@ -114,8 +112,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;contact&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="Contact_45d4cd29_770f_4e35_af0a_7443d9571b15"/>
             <Option name="ReferencedLayerName" type="QString" value="Contact (GeolAssets_V2)"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="address_contact_address_fkey"/>
@@ -134,8 +130,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;lg_geolssts_v2geolassets_contact&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="Contact_233ca1bf_a7b7_4a48_b61b_af8819f4d31f"/>
             <Option name="ReferencedLayerName" type="QString" value="Contact"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="address_lg_glssts_vss_cntct_ddress_fkey"/>

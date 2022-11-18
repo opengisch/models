@@ -42,8 +42,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="false" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=T_ILI2DB_BASKET" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="T_ILI2DB_BASKET_9a69fa2e_5fe3_4394_b675_9254fd08b57b" type="QString" name="ReferencedLayerId"/>
             <Option value="T_ILI2DB_BASKET" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="assetitem_contact_initiator_T_basket_T_ILI2DB_BASKET_T_Id" type="QString" name="Relation"/>
@@ -62,8 +60,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="false" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=assetitem" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="AssetItem_881b3b01_524b_4b04_8156_c2e457353572" type="QString" name="ReferencedLayerId"/>
             <Option value="AssetItem" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="assetitem_contact_initiator_initiatedassetitem_assetitem_assetitem_T_Id" type="QString" name="Relation"/>
@@ -82,8 +78,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="false" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=lg_geolssts_v2geolassets_assetitem" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="AssetItem_28a29ea9_d85d_45e9_ad11_c4bf841d4e5d" type="QString" name="ReferencedLayerId"/>
             <Option value="AssetItem" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="assetitem_contact_initiator_initiatedassetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" type="QString" name="Relation"/>
@@ -102,8 +96,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="false" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=contact" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Contact_c10e01b5_6f3e_4b43_bfd7_998c10d7d4ba" type="QString" name="ReferencedLayerId"/>
             <Option value="Contact" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="assetitem_contact_initiator_initiator_contact_contact_T_Id" type="QString" name="Relation"/>
@@ -122,8 +114,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="false" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/cheapdave/qgis_projects/geolassets_followup/version_20220830/data.gpkg|layername=lg_geolssts_v2geolassets_contact" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Contact_c7ed9e21_34ff_45ef_9ca6_0556cc627cd5" type="QString" name="ReferencedLayerId"/>
             <Option value="Contact" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="assetitem_contact_initiator_initiator_lg_geolssts_v2geolassets_contact_lg_geolssts_v2geolassets_contact_T_Id" type="QString" name="Relation"/>

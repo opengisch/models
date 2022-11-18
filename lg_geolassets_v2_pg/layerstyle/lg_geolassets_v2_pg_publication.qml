@@ -20,8 +20,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;t_ili2db_basket&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="t_ili2db_basket_5f57fab3_9585_42b3_9d53_70bc32af4a59"/>
             <Option name="ReferencedLayerName" type="QString" value="t_ili2db_basket"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="publication_t_basket_fkey"/>
@@ -63,8 +61,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;pubchannelitem&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="PubChannelItem_668d599f_1664_4152_952b_757c4119f8ee"/>
             <Option name="ReferencedLayerName" type="QString" value="PubChannelItem"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="publication_achannel_fkey"/>

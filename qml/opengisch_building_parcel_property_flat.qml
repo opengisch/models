@@ -85,8 +85,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;residential_building&quot; (ageometry)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Residential_Building_65fc9df7_ff22_4165_8f20_a8faaa056ac6"/>
             <Option name="ReferencedLayerName" type="QString" value="Residential Building"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="flat_residentialbuilding_fkey"/>

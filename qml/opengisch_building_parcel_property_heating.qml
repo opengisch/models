@@ -84,8 +84,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;office_building&quot; (ageometry)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Office_Building_6164f8cf_8642_432e_9e56_acee3e163234"/>
             <Option name="ReferencedLayerName" type="QString" value="Office Building"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="heating_office_building_heating_fkey"/>
@@ -104,8 +102,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;residential_building&quot; (ageometry)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Residential_Building_a42fbf43_9914_417c_822f_528cd1fb5546"/>
             <Option name="ReferencedLayerName" type="QString" value="Residential Building"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="heating_residential_building_hting_fkey"/>
@@ -124,8 +120,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test' host=localhost port=5432 user='bjsvwneu' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;building_parcel_property_smart2&quot;.&quot;public_office_building&quot; (ageometry)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Public_Office_Building_7c7d2ad5_f7f8_4c71_8369_5312a02bc573"/>
             <Option name="ReferencedLayerName" type="QString" value="Public Office Building"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="heating_public_office_buldng_hting_fkey"/>

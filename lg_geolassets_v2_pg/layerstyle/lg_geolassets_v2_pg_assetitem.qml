@@ -29,8 +29,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;t_ili2db_basket&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="t_ili2db_basket_5f57fab3_9585_42b3_9d53_70bc32af4a59"/>
             <Option name="ReferencedLayerName" type="QString" value="t_ili2db_basket"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="lg_gelssts_v2glssts_ssttem_t_basket_fkey"/>
@@ -247,8 +245,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;assetkinditem&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="AssetKindItem_54f8cf2c_df56_440c_8a0e_f21aa8c55909"/>
             <Option name="ReferencedLayerName" type="QString" value="AssetKindItem"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="lg_gelssts_v2glssts_ssttem_akind_fkey"/>
@@ -283,8 +279,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;languageitem&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="LanguageItem_d6c626b5_2779_4643_874c_e44d9c3567b5"/>
             <Option name="ReferencedLayerName" type="QString" value="LanguageItem"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="lg_gelssts_v2glssts_ssttem_alanguage_fkey"/>
@@ -303,8 +297,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;assetformatitem&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="AssetFormatItem_72bbaf74_1584_4217_81a1_9f53aa764f14"/>
             <Option name="ReferencedLayerName" type="QString" value="AssetFormatItem"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="lg_gelssts_v2glssts_ssttem_aformat_fkey"/>
@@ -371,8 +363,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="false"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='test data' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;geologicalassets_01&quot;.&quot;lg_geolssts_v2geolassets_assetitem&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="AssetItem_acea0d6f_5e2a_4757_96f0_61bccc9532dc"/>
             <Option name="ReferencedLayerName" type="QString" value="AssetItem"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="lg_gelssts_v2glssts_ssttem_assttmmn_lg_gglssts_ssttem_fkey"/>

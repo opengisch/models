@@ -885,8 +885,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;plantypen&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="Plantypen_2b117009_142b_4ee9_9618_d497a01de06a"/>
             <Option name="ReferencedLayerName" type="QString" value="Plantypen"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_plantyp_fkey"/>
@@ -919,8 +917,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;halignment&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="HALIGNMENT_e2cf18b3_461d_4f32_8a9f_7b21527e177e"/>
             <Option name="ReferencedLayerName" type="QString" value="HALIGNMENT"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_bzr_verweishali_fkey"/>
@@ -939,8 +935,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;valignment&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="VALIGNMENT_eed368e5_880d_4c9c_9a34_e65d1f65e367"/>
             <Option name="ReferencedLayerName" type="QString" value="VALIGNMENT"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_bzr_verweisvali_fkey"/>
@@ -959,8 +953,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;bzr_verweis_pos_schriftgroesse&quot;"/>
-            <Option name="ReferencedLayerId" type="QString" value="BZR_Verweis_Pos_Schriftgroesse_a93df013_9d08_4845_afa3_c2c1412e1bab"/>
             <Option name="ReferencedLayerName" type="QString" value="BZR_Verweis_Pos_Schriftgroesse"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_schriftgroesse_fkey"/>
@@ -979,8 +971,6 @@
             <Option name="MapIdentification" type="bool" value="true"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' srid=2056 type=MultiLineString checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;ueberlagerung_linien&quot; (geometrie)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Ueberlagerung_Linien_1ca4f950_390b_4485_901a_f25515dcbf57"/>
             <Option name="ReferencedLayerName" type="QString" value="Ueberlagerung_Linien"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_typ_ueberlagerung_linien_fkey"/>
@@ -999,8 +989,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' srid=2056 type=MultiPoint checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;ueberlagerung_punkte&quot; (geometrie)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Ueberlagerung_Punkte_96194605_a14d_418b_8b50_deb47541d8eb"/>
             <Option name="ReferencedLayerName" type="QString" value="Ueberlagerung_Punkte"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_typ_ueberlagerung_punkte_fkey"/>
@@ -1019,8 +1007,6 @@
             <Option name="MapIdentification" type="bool" value="true"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;grundnutzung&quot; (geometrie)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Grundnutzung_77f51abb_bbe2_45d6_8ae3_a16d8bed8ca9"/>
             <Option name="ReferencedLayerName" type="QString" value="Grundnutzung"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_typ_grundnutzung_fkey"/>
@@ -1039,8 +1025,6 @@
             <Option name="MapIdentification" type="bool" value="true"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' srid=2056 type=MultiPolygon checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;ueberlagerung_flaechen&quot; (geometrie)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Ueberlagerung_Flaechen_99019239_c2b1_481a_8d0c_34b9d8e3ee64"/>
             <Option name="ReferencedLayerName" type="QString" value="Ueberlagerung_Flaechen"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_typ_ueberlagerung_flaechen_fkey"/>
@@ -1059,8 +1043,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="dbname='bakery' host=localhost user='postgres' key='t_id' srid=2056 type=MultiLineString checkPrimaryKeyUnicity='1' table=&quot;nutztest2006&quot;.&quot;baulinien&quot; (geometrie)"/>
-            <Option name="ReferencedLayerId" type="QString" value="Baulinien_50ed1109_c4a8_4afc_828c_1f99e62ff521"/>
             <Option name="ReferencedLayerName" type="QString" value="Baulinien"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="postgres"/>
             <Option name="Relation" type="QString" value="bzr_verweis_pos_typ_baulinien_fkey"/>

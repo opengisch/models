@@ -20,8 +20,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=T_ILI2DB_BASKET"/>
-            <Option type="QString" name="ReferencedLayerId" value="T_ILI2DB_BASKET_574f1354_2050_4f66_aebe_fd77aca3fbe5"/>
             <Option type="QString" name="ReferencedLayerName" value="T_ILI2DB_BASKET"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="id_T_basket_T_ILI2DB_BASKET_T_Id"/>
@@ -74,8 +72,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=assetitem"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetItem_d7d09df7_c258_42f5_8263_23014de57c8d"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetItem"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="id_assetitem_idalternate_assetitem_T_Id"/>

@@ -26,8 +26,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" type="QString" name="ReferencedLayerId"/>
             <Option value="T_ILI2DB_BASKET" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="address_T_basket_T_ILI2DB_BASKET_T_Id" type="QString" name="Relation"/>
@@ -114,8 +112,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=contact" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Contact_ac5fb811_64bf_4d51_b7f4_dcf0138658c9" type="QString" name="ReferencedLayerId"/>
             <Option value="Contact" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="address_contact_address_contact_T_Id" type="QString" name="Relation"/>
@@ -134,8 +130,6 @@
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
-            <Option value="/home/dave/qgis_project/lg_geolAssets_v2/lg_geolAssets_v2_data.gpkg|layername=lg_geolssts_v2geolassets_contact" type="QString" name="ReferencedLayerDataSource"/>
-            <Option value="Contact_b63ec320_c95b_422f_ab59_4ab25a928f8b" type="QString" name="ReferencedLayerId"/>
             <Option value="Contact" type="QString" name="ReferencedLayerName"/>
             <Option value="ogr" type="QString" name="ReferencedLayerProviderKey"/>
             <Option value="address_lg_glssts_vssts_cntact_address_lg_geolssts_v2geolassets_contact_T_Id" type="QString" name="Relation"/>

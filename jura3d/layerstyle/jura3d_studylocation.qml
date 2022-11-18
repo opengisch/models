@@ -287,8 +287,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=T_ILI2DB_BASKET"/>
-            <Option type="QString" name="ReferencedLayerId" value="T_ILI2DB_BASKET_574f1354_2050_4f66_aebe_fd77aca3fbe5"/>
             <Option type="QString" name="ReferencedLayerName" value="T_ILI2DB_BASKET"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="studylocation_T_basket_T_ILI2DB_BASKET_T_Id"/>
@@ -320,8 +318,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=geomqualityitem"/>
-            <Option type="QString" name="ReferencedLayerId" value="GeomQualityItem_6dc4cf08_a904_469b_8500_0239c276eefe"/>
             <Option type="QString" name="ReferencedLayerName" value="GeomQualityItem"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="studylocation_geomquality_geomqualityitem_T_Id"/>
@@ -340,8 +336,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=assetitem"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetItem_f833c131_b74c_463e_9eba_18f17a3cf41e"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetItem"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="studylocation_assetitem_assetitem_assetitem_T_Id"/>
@@ -360,8 +354,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="/home/cheapdave/qgis_projects/ngmprod_geolassets/Jura3D_MA1_with_GeolAssets_data/Jura3D_MA1.gpkg|layername=ngmprd_ssts_v2geolassets_assetitem"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetItem_273c23c3_9714_4ae8_b321_aa03c75e9b54"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetItem"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="studylocation_assetitem_ngmprd_ssts_v2geolassets_assetitem_ngmprd_ssts_v2geolassets_assetitem_T_Id"/>

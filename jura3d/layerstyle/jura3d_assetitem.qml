@@ -26,8 +26,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=T_ILI2DB_BASKET"/>
-            <Option type="QString" name="ReferencedLayerId" value="T_ILI2DB_BASKET_7c5407e9_5d9c_4b38_9588_f9077f4c3add"/>
             <Option type="QString" name="ReferencedLayerName" value="T_ILI2DB_BASKET"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="ngmprd_ssts_v2geolassets_assetitem_T_basket_T_ILI2DB_BASKET_T_Id"/>
@@ -59,8 +57,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=assetitem_dataquality"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetItem_DataQuality_549fb918_7e3f_43fa_817b_4efa908d9468"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetItem_DataQuality"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="ngmprd_ssts_v2geolassets_assetitem_dataquality_assetitem_dataquality_T_Id"/>
@@ -82,8 +78,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=assetitem_consistencytecto"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetItem_ConsistencyTecto_d620fd25_5144_40b8_bf3c_35af71390aba"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetItem_ConsistencyTecto"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="ngmprd_ssts_v2geolassets_assetitem_consistencytecto_assetitem_consistencytecto_T_Id"/>
@@ -105,8 +99,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=assetitem_priority"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetItem_Priority_e82fe129_a41a_4ce7_8fc1_42790c475f5e"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetItem_Priority"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="ngmprd_ssts_v2geolassets_assetitem_priority_assetitem_priority_T_Id"/>
@@ -128,8 +120,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=assetitem_statusupdated"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetItem_StatusUpdated_e7231230_0562_4276_83f7_f11bd16b9137"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetItem_StatusUpdated"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="ngmprd_ssts_v2geolassets_assetitem_statusupdated_assetitem_statusupdated_T_Id"/>
@@ -212,8 +202,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="./Jura3D_MA1.gpkg|layername=assetkinditem"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetKindItem_71917460_c85b_4a12_bcc0_1a2908d8a92d"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetKindItem"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="ngmprd_ssts_v2geolassets_assetitem_akind_assetkinditem_T_Id"/>
@@ -248,8 +236,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="/home/cheapdave/qgis_projects/ngmprod_geolassets/Jura3D_MA1.gpkg|layername=languageitem"/>
-            <Option type="QString" name="ReferencedLayerId" value="LanguageItem_4660bf16_3b73_49ba_b84d_f5aec140f1ab"/>
             <Option type="QString" name="ReferencedLayerName" value="LanguageItem"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="ngmprd_ssts_v2geolassets_assetitem_alanguage_languageitem_T_Id"/>
@@ -271,8 +257,6 @@
             <Option type="bool" name="MapIdentification" value="false"/>
             <Option type="bool" name="OrderByValue" value="true"/>
             <Option type="bool" name="ReadOnly" value="false"/>
-            <Option type="QString" name="ReferencedLayerDataSource" value="/home/cheapdave/qgis_projects/ngmprod_geolassets/Jura3D_MA1.gpkg|layername=assetformatitem"/>
-            <Option type="QString" name="ReferencedLayerId" value="AssetFormatItem_580c1d78_dd50_4b05_98c9_b4588df6a7a5"/>
             <Option type="QString" name="ReferencedLayerName" value="AssetFormatItem"/>
             <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
             <Option type="QString" name="Relation" value="ngmprd_ssts_v2geolassets_assetitem_aformat_assetformatitem_T_Id"/>

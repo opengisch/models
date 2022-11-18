@@ -20,8 +20,6 @@
             <Option name="MapIdentification" type="bool" value="false"/>
             <Option name="OrderByValue" type="bool" value="true"/>
             <Option name="ReadOnly" type="bool" value="false"/>
-            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_project/lg_geolAssets_v2_5/lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET"/>
-            <Option name="ReferencedLayerId" type="QString" value="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c"/>
             <Option name="ReferencedLayerName" type="QString" value="T_ILI2DB_BASKET"/>
             <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
             <Option name="Relation" type="QString" value="internalproject_T_basket_T_ILI2DB_BASKET_T_Id"/>
