@@ -1814,7 +1814,7 @@
       </DatasetIdx16.DataIndex.DatasetMetadata>
       <!-- end SH KbS_V1_5-->
 
-      <!-- begin LG_GeolAssets_V2-->
+      <!-- begin LG_GeolAssets_V2 for GPKG-->
       <DatasetIdx16.DataIndex.DatasetMetadata TID="a425df0e-ca3d-49fe-96ff-72ccb8b457d8">
         <id>lg_geolassets_v2.qgis_metaconfig_lg_geolassets_V2_gpkg</id>
         <version>2022-05-11</version>
@@ -1824,7 +1824,7 @@
           <DatasetIdx16.MultilingualText>
             <LocalisedText>
               <DatasetIdx16.LocalisedText>
-                <Text>QGIS Topping Metaconfig für LG_GeolAssets_V2 auf GeoPackage</Text>
+                <Text>QGIS Topping für LG_GeolAssets_V2 auf GeoPackage</Text>
               </DatasetIdx16.LocalisedText>
             </LocalisedText>
           </DatasetIdx16.MultilingualText>
@@ -1851,7 +1851,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/metaconfig/lg_geolassets_V2_gpkg.ini</path>
+                <path>lg_geolassets_v2_gpkg/metaconfig/lg_geolassets_V2_gpkg.ini</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -1881,7 +1881,7 @@
             <fileFormat>application/xml</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/referencedata/LG_GeolAssetsCatalogues_V2.xml</path>
+                <path>lg_geolassets_v2_gpkg/referencedata/LG_GeolAssetsCatalogues_V2.xml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -1911,7 +1911,7 @@
             <fileFormat>application/xml</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/referencedata/GeolAssetsCatalogues_V2.xml</path>
+                <path>lg_geolassets_v2_gpkg/referencedata/GeolAssetsCatalogues_V2.xml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -1941,7 +1941,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/projecttopping/lg_geolassets_v2_gpkg.yaml</path>
+                <path>lg_geolassets_v2_gpkg/projecttopping/lg_geolassets_v2_gpkg.yaml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -1971,7 +1971,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/id.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/id.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2001,7 +2001,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetformatitem.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetformatitem.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2031,7 +2031,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/publication.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/publication.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2061,7 +2061,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetitem_contact_author.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetitem_contact_author.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2091,7 +2091,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetobjectinfo.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetobjectinfo.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2121,7 +2121,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/legaldoc.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/legaldoc.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2151,7 +2151,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/address.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/address.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2181,7 +2181,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/mancatlabelitem.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/mancatlabelitem.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2211,7 +2211,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/mancatlabelref.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/mancatlabelref.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2241,7 +2241,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetitemx_assetitemy.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetitemx_assetitemy.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2271,7 +2271,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetitem_contact_supplier.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetitem_contact_supplier.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2301,7 +2301,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/studyarea.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/studyarea.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2331,7 +2331,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetitem_usedby.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetitem_usedby.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2361,7 +2361,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/internaluse.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/internaluse.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2391,7 +2391,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/contact.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/contact.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2421,7 +2421,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetitem.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetitem.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2451,7 +2451,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/statuswork.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/statuswork.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2481,7 +2481,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetitem_publication.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetitem_publication.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2511,7 +2511,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/autocat.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/autocat.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2541,7 +2541,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetkinditem.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetkinditem.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2571,7 +2571,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/assetitem_contact_initiator.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/assetitem_contact_initiator.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2601,7 +2601,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/statusworkitem.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/statusworkitem.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2631,7 +2631,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/typenatrel.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/typenatrel.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2661,7 +2661,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/natrelitem.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/natrelitem.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2691,7 +2691,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/internalproject.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/internalproject.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2721,7 +2721,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/publicuse.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/publicuse.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2751,7 +2751,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/studylocation.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/studylocation.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2781,7 +2781,7 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerstyle/studytrace.qml</path>
+                <path>lg_geolassets_v2_gpkg/layerstyle/studytrace.qml</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
@@ -2814,13 +2814,985 @@
             <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>./lg_geolassets_v2/layerdefinition/hintergrundkarten.qlr</path>
+                <path>lg_geolassets_v2_gpkg/layerdefinition/hintergrundkarten.qlr</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
-      <!-- end LG_GeolAssets_V2-->
+      <!-- end LG_GeolAssets_V2 for GPKG-->
+
+      <!-- begin LG_GeolAssets_V2 for PostGIS-->
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="5547364c-252b-43c2-afc3-00c7c22bbf09">
+        <id>layerstyle_lg_geolassets_v2_pg_assetitem_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetitem', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetitem.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="e53fb0d4-5132-4de6-a5bd-a2d678ca7ec4">
+        <id>layerstyle_lg_geolassets_v2_pg_contact_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_contact', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_contact.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="f78b83c8-ae02-4703-9b66-ae66eaaa5f5f">
+        <id>layerstyle_lg_geolassets_v2_pg_publication_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_publication', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_publication.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="a5c02408-625d-44db-83e7-7bcb5f9fd865">
+        <id>layerstyle_lg_geolassets_v2_pg_internalproject_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_internalproject', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_internalproject.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="a2f44835-57b8-456c-a039-001625505f88">
+        <id>layerstyle_lg_geolassets_v2_pg_studylocation_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_studylocation', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_studylocation.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="1aa41ed1-4b26-44ea-ad87-ea2d694c71dc">
+        <id>layerstyle_lg_geolassets_v2_pg_studytrace_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_studytrace', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_studytrace.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="e417c473-65f6-4bec-8964-2fec3c2c3caa">
+        <id>layerstyle_lg_geolassets_v2_pg_studyarea_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_studyarea', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_studyarea.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="74973a4c-1ef4-4cc4-a4b5-bc007807f746">
+        <id>layerdefinition_lg_geolassets_v2_pg_hintergrundkarten_qlr_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerdefinition file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_hintergrundkarten', '.qlr')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerdefinition</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerdefinition/lg_geolassets_v2_pg_hintergrundkarten.qlr</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="25e4da69-4253-498f-bad2-a5dfc232294b">
+        <id>layerstyle_lg_geolassets_v2_pg_address_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_address', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_address.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="c63f965a-6001-4c9e-9f8a-be9d1783c266">
+        <id>layerstyle_lg_geolassets_v2_pg_id_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_id', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_id.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="1b3fceaa-4425-4522-86df-ef392149a63c">
+        <id>layerstyle_lg_geolassets_v2_pg_typenatrel_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_typenatrel', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_typenatrel.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="6a072211-2703-4ba7-b544-df9e895fc139">
+        <id>layerstyle_lg_geolassets_v2_pg_statuswork_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_statuswork', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_statuswork.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="6bc4a24a-9aa9-4731-a621-3cced8fa3590">
+        <id>layerstyle_lg_geolassets_v2_pg_autocat_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_autocat', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_autocat.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="ab1e7d24-71c4-41da-ad63-0ca646d34343">
+        <id>layerstyle_lg_geolassets_v2_pg_internaluse_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_internaluse', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_internaluse.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="bec3bcfd-1c47-473c-ae27-f64d8880b4f7">
+        <id>layerstyle_lg_geolassets_v2_pg_publicuse_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_publicuse', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_publicuse.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="793d394a-4a74-478c-8664-fd662daa862a">
+        <id>layerstyle_lg_geolassets_v2_pg_assetobjectinfo_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetobjectinfo', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetobjectinfo.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="50db5f02-8c2d-4932-9965-01f0ed9ba5c5">
+        <id>layerstyle_lg_geolassets_v2_pg_legaldoc_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_legaldoc', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_legaldoc.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="8b09472e-ad79-4d16-a6da-622703f5530c">
+        <id>layerstyle_lg_geolassets_v2_pg_mancatlabelitem_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_mancatlabelitem', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_mancatlabelitem.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="d364d737-266a-475a-8550-044ce66bc0b8">
+        <id>layerstyle_lg_geolassets_v2_pg_assetkinditem_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetkinditem', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetkinditem.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="0cf0ce3c-41ef-484a-a990-0f1674b25307">
+        <id>layerstyle_lg_geolassets_v2_pg_assetformatitem_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetformatitem', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetformatitem.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="88bc6f46-2f6c-43aa-b90d-7d2998fa2a36">
+        <id>layerstyle_lg_geolassets_v2_pg_natrelitem_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_natrelitem', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_natrelitem.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="2e44922c-7328-4092-b676-41a40e34860c">
+        <id>layerstyle_lg_geolassets_v2_pg_mancatlabelref_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_mancatlabelref', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_mancatlabelref.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="8b4f4bd4-c5db-447e-a780-516288110c42">
+        <id>layerstyle_lg_geolassets_v2_pg_assetitem_contact_author_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetitem_contact_author', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetitem_contact_author.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="c0c7cf84-c05f-4ff3-989e-5f20350d1b3e">
+        <id>layerstyle_lg_geolassets_v2_pg_assetitem_contact_initiator_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetitem_contact_initiator', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetitem_contact_initiator.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="f54fe6d0-5157-4712-8c66-11142756c94f">
+        <id>layerstyle_lg_geolassets_v2_pg_assetitem_contact_supplier_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetitem_contact_supplier', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetitem_contact_supplier.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="144952e4-849e-494e-91ed-89faaa58a09c">
+        <id>layerstyle_lg_geolassets_v2_pg_assetitem_publication_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetitem_publication', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetitem_publication.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="a958b0e8-7032-4945-aa78-882fcfbdb42d">
+        <id>layerstyle_lg_geolassets_v2_pg_assetitem_usedby_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetitem_usedby', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetitem_usedby.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="ac252cd1-1822-4f6b-93fc-960d3b0d5088">
+        <id>layerstyle_lg_geolassets_v2_pg_assetitemx_assetitemy_qml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_assetitemx_assetitemy', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/layerstyle/lg_geolassets_v2_pg_assetitemx_assetitemy.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="cef5aa83-f274-4434-afd8-625882dd9b6f">
+        <id>projecttopping_lg_geolassets_v2_pg_yaml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS projecttopping file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg', '.yaml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/projecttopping</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/projecttopping/lg_geolassets_v2_pg.yaml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="6a39e7a9-f7aa-426e-aaa5-b096f4583c9f">
+        <id>referencedata_lg_geolassets_v2_pg_geolassetscatalogues_v2_xml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS referencedata file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_GeolAssetsCatalogues_V2', '.xml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/referencedata</value>
+           </DatasetIdx16.Code_>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/model/LG_GeolAssets_V2</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>application/xml</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/referencedata/lg_geolassets_v2_pg_GeolAssetsCatalogues_V2.xml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="62adb516-8b86-456f-86d0-6cb9863fb721">
+        <id>referencedata_lg_geolassets_v2_pg_lg_geolassetscatalogues_v2_xml_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS referencedata file for lg_geolassets_v2_pg - ('lg_geolassets_v2_pg_LG_GeolAssetsCatalogues_V2', '.xml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/referencedata</value>
+           </DatasetIdx16.Code_>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/model/LG_GeolAssets_V2</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>application/xml</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/referencedata/lg_geolassets_v2_pg_LG_GeolAssetsCatalogues_V2.xml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="eecc8668-1a6f-4eac-9283-46005656d29e">
+        <id>metaconfig_lg_geolassets_v2_pg_ini_001</id>
+        <version>2022-11-18</version>
+        <publishingDate>2022-11-18</publishingDate>
+        <owner>mailto:info@swisstopo.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS Topping für LG_GeolAssets_V2 auf PostGIS</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/metaconfig</value>
+           </DatasetIdx16.Code_>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/model/LG_GeolAssets_V2</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>lg_geolassets_v2_pg/metaconfig/lg_geolassets_v2_pg.ini</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+      <!-- end LG_GeolAssets_V2 for PostGIS-->
 
       <!-- begin Jura3D-->
       <DatasetIdx16.DataIndex.DatasetMetadata TID="cf3adba7-77d0-4d2f-a103-fa3372b6a96e">
