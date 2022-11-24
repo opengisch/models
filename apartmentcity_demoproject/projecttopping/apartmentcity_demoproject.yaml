@@ -1,0 +1,36 @@
+layerorder: []
+layertree:
+- Building:
+    checked: true
+    expanded: true
+    qmlstylefile: ilidata:layerstyle_apartmentcity_demoproject_building_qml_001
+    tablename: building
+- Owner:
+    checked: true
+    expanded: true
+    qmlstylefile: ilidata:layerstyle_apartmentcity_demoproject_owner_qml_001
+    tablename: aowner
+- Apartment:
+    checked: true
+    expanded: true
+    qmlstylefile: ilidata:layerstyle_apartmentcity_demoproject_apartment_qml_001
+    tablename: apartment
+- Address:
+    checked: true
+    expanded: true
+    qmlstylefile: ilidata:layerstyle_apartmentcity_demoproject_address_qml_001
+    tablename: address
+- tables:
+    checked: true
+    child-nodes:
+    - Apartment_Owner:
+        checked: true
+        expanded: true
+        tablename: apartment_owner
+    expanded: false
+    group: true
+- Landeskarten (farbig):
+    checked: true
+    expanded: false
+    provider: wms
+    uri: contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/jpeg&layers=ch.swisstopo.pixelkarte-farbe&styles&url=https://wms.geo.admin.ch/

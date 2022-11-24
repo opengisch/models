@@ -1,0 +1,45 @@
+INTERLIS 2.3;
+
+MODEL ApartmentCity_V1_1 (en)
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2020-06-22" =
+  IMPORTS GeometryCHLV95_V1;
+
+  DOMAIN
+    Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
+
+  STRUCTURE Address =
+    Street: TEXT;
+    Number: TEXT;
+  END Address;
+
+  TOPIC Constructions =
+
+    CLASS Building  =
+      Address : Address;
+      Description : TEXT*99;
+      Geometry : Surface;
+    END Building;
+
+    CLASS Apartment  =
+      Floor: 1 .. 100;
+      Description : TEXT*99;
+    END Apartment;
+
+    CLASS Owner  =
+      Name : TEXT*99;
+    END Owner;
+
+    ASSOCIATION Building_Apartment =
+      Building -<#> {1} Building;
+      Apartment -- {0..*} Apartment;
+    END Building_Apartment;
+
+    ASSOCIATION Apartment_Owner =
+      Apartment -- {0..*} Apartment;
+      Owner -- {1..*} Owner;
+    END Apartment_Owner;
+    
+  END Constructions;
+
+END ApartmentCity_V1_1.

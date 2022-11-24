@@ -1089,6 +1089,225 @@
       <!--qmls -->
       <!-- end LU -->
 
+      <!-- begin OPENGIS.ch ApartmentCity Demo -->
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="d6cda559-f15d-4ede-ac25-82e4d6bbb96e">
+        <id>layerstyle_apartmentcity_demoproject_building_qml_001</id>
+        <version>2022-11-24</version>
+        <publishingDate>2022-11-24</publishingDate>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for apartmentcity_demoproject - ('apartmentcity_demoproject_building', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>apartmentcity_demoproject/layerstyle/apartmentcity_demoproject_building.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="185dfca9-61d4-49cb-af1c-57190b472b7c">
+        <id>layerstyle_apartmentcity_demoproject_owner_qml_001</id>
+        <version>2022-11-24</version>
+        <publishingDate>2022-11-24</publishingDate>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for apartmentcity_demoproject - ('apartmentcity_demoproject_owner', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>apartmentcity_demoproject/layerstyle/apartmentcity_demoproject_owner.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="1999abaf-4785-4f09-b70a-4961ac6ec85b">
+        <id>layerstyle_apartmentcity_demoproject_apartment_qml_001</id>
+        <version>2022-11-24</version>
+        <publishingDate>2022-11-24</publishingDate>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for apartmentcity_demoproject - ('apartmentcity_demoproject_apartment', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>apartmentcity_demoproject/layerstyle/apartmentcity_demoproject_apartment.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="7864fa0b-d298-48f9-927f-f17b830cca7a">
+        <id>layerstyle_apartmentcity_demoproject_address_qml_001</id>
+        <version>2022-11-24</version>
+        <publishingDate>2022-11-24</publishingDate>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS layerstyle file for apartmentcity_demoproject - ('apartmentcity_demoproject_address', '.qml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/layerstyle</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>apartmentcity_demoproject/layerstyle/apartmentcity_demoproject_address.qml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="f74b3641-faaa-4dcb-a6a6-82b6875b54e1">
+        <id>projecttopping_apartmentcity_demoproject_yaml_001</id>
+        <version>2022-11-24</version>
+        <publishingDate>2022-11-24</publishingDate>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS projecttopping file for apartmentcity_demoproject - ('apartmentcity_demoproject', '.yaml')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/projecttopping</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>apartmentcity_demoproject/projecttopping/apartmentcity_demoproject.yaml</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="1488b94a-2875-43bf-a724-5b05329c6120">
+        <id>referencedata_apartmentcity_demoproject_demodata_xtf_001</id>
+        <version>2022-11-24</version>
+        <publishingDate>2022-11-24</publishingDate>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS referencedata file for apartmentcity_demoproject - ('apartmentcity_demoproject_demodata', '.xtf')</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/referencedata</value>
+           </DatasetIdx16.Code_>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/model/ApartmentCity_V1_1</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>apartmentcity_demoproject/referencedata/apartmentcity_demoproject_demodata.xtf</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+     <DatasetIdx16.DataIndex.DatasetMetadata TID="6cc3cf32-6481-41dc-8ee5-d366138e59f5">
+        <id>metaconfig_apartmentcity_demoproject_ini_001</id>
+        <version>2022-11-24</version>
+        <publishingDate>2022-11-24</publishingDate>
+        <owner>mailto:david@opengis.ch</owner>
+        <title>
+           <DatasetIdx16.MultilingualText>
+              <LocalisedText>
+                 <DatasetIdx16.LocalisedText>
+                    <Text>QGIS PostGIS Topping for AppartmentCity OPENGIS.ch Demo</Text>
+                 </DatasetIdx16.LocalisedText>
+              </LocalisedText>
+           </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/type/metaconfig</value>
+           </DatasetIdx16.Code_>
+           <DatasetIdx16.Code_>
+              <value>http://codes.interlis.ch/model/ApartmentCity_V1_1</value>
+           </DatasetIdx16.Code_>
+        </categories>
+        <files>
+           <DatasetIdx16.DataFile>
+              <fileFormat>text/plain</fileFormat>
+              <file>
+                 <DatasetIdx16.File>
+                    <path>apartmentcity_demoproject/metaconfig/apartmentcity_demoproject.ini</path>
+                 </DatasetIdx16.File>
+              </file>
+           </DatasetIdx16.DataFile>
+        </files>
+     </DatasetIdx16.DataIndex.DatasetMetadata>
+      <!-- end OPENGIS.ch ApartmentCity Demo -->
+
       <!-- begin SH Kbs_LV95_V1_4 -->
       <!-- metaconfig -->
       <DatasetIdx16.DataIndex.DatasetMetadata TID="911d9e68-268e-4ed2-8f8a-eeeeaab455aa">
