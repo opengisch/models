@@ -53,7 +53,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>metaconfig/opengisch_KbS_LV95_V1_4.ini</path>
@@ -100,7 +100,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>metaconfig/opengisch_KbS_LV95_V1_4_GPKG.ini</path>
@@ -147,7 +147,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>metaconfig/opengisch_building_parcel_property.ini</path>
@@ -194,7 +194,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>metaconfig/opengisch_building_parcel_property_layertree.ini</path>
@@ -216,7 +216,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_KbS_LV95_V1_4_belasteterstandort_polygon.qml</path>
@@ -237,7 +237,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_KbS_LV95_V1_4_belasteterstandort_punkt.qml</path>
@@ -258,7 +258,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_KbS_LV95_V1_4_belasteterstandort_punkt_GPKG.qml</path>
@@ -279,7 +279,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_KbS_LV95_V1_4_parzellenidentifikation.qml</path>
@@ -300,7 +300,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_office_building.qml</path>
@@ -320,7 +320,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_public_office_building.qml</path>
@@ -340,7 +340,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_parcel.qml</path>
@@ -360,7 +360,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_residential_building.qml</path>
@@ -380,7 +380,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_property.qml</path>
@@ -400,7 +400,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_person.qml</path>
@@ -420,7 +420,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_office.qml</path>
@@ -440,7 +440,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_heating.qml</path>
@@ -460,7 +460,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_building_parcel_property_flat.qml</path>
@@ -498,7 +498,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>layertree/opengisch_layertree_KbS_LV95_V1_4.yaml</path>
@@ -536,7 +536,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>layertree/opengisch_layertree_KbS_LV95_V1_4_GPKG.yaml</path>
@@ -558,7 +558,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>layertree/opengisch_building_parcel_property_layertree.yaml</path>
@@ -590,7 +590,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>sql/opengisch_KbS_LV95_V1_4_test.sql</path>
@@ -622,7 +622,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>toml/sh_KbS_LV95_V1_4.toml</path>
@@ -662,7 +662,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>metaconfig/opengisch_wildruhezonen.ini</path>
@@ -683,7 +683,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>layertree/opengisch_wildruhezonen.yaml</path>
@@ -704,7 +704,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>toml/opengisch_wildruhezonen.toml</path>
@@ -725,7 +725,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/opengisch_wildruhezonen_wildruhezone_teilobjekt.qml</path>
@@ -774,7 +774,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>metaconfig/lu_nutzungsplanung_v310.ini</path>
@@ -813,7 +813,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>layertree/layertree_Nutzungsplanung_V310.yaml</path>
@@ -845,7 +845,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>toml/Nutzungsplanung_V310.toml</path>
@@ -867,7 +867,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_bzr_verweis_pos.qml</path>
@@ -888,7 +888,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_beschriftung_pos.qml</path>
@@ -909,7 +909,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_beschriftung_text.qml</path>
@@ -930,7 +930,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>lu_bemassung_pos.qml</path>
@@ -951,7 +951,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_ueberlagerung_punkte.qml</path>
@@ -972,7 +972,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_bemassung_hlinie.qml</path>
@@ -993,7 +993,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_bemassung_geometrie.qml</path>
@@ -1014,7 +1014,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_baulinien.qml</path>
@@ -1035,7 +1035,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_ueberlagerung_linien.qml</path>
@@ -1056,7 +1056,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_ueberlagerung_flaechen.qml</path>
@@ -1077,7 +1077,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/lu_grundnutzung.qml</path>
@@ -1347,7 +1347,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>metaconfig/sh_KbS_LV95_V1_4.ini</path>
@@ -1385,7 +1385,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>layertree/sh_layertree_KbS_LV95_V1_4.yaml</path>
@@ -1407,7 +1407,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_altlasten_status_point.qml</path>
@@ -1428,7 +1428,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_altlasten_status_polygon.qml</path>
@@ -1449,7 +1449,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_untersuchungsmassnahmen_definition.qml</path>
@@ -1470,7 +1470,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_statusaltlv_definition.qml</path>
@@ -1491,7 +1491,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_standorttyp_definition.qml</path>
@@ -1512,7 +1512,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_deponietyp_definition.qml</path>
@@ -1533,7 +1533,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_zustaendigkeitkataster.qml</path>
@@ -1554,7 +1554,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_parzellenidentifikation.qml</path>
@@ -1575,7 +1575,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_untersmassn_.qml</path>
@@ -1596,7 +1596,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_egrid_.qml</path>
@@ -1617,7 +1617,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_deponietyp_.qml</path>
@@ -1638,7 +1638,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_multilingualmtext.qml</path>
@@ -1659,7 +1659,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_localisedmtext.qml</path>
@@ -1680,7 +1680,7 @@
         </categories>
         <files>
           <DatasetIdx16.DataFile>
-            <fileFormat>text/plain;version=2.3</fileFormat>
+            <fileFormat>text/plain</fileFormat>
             <file>
               <DatasetIdx16.File>
                 <path>qml/sh_localisedtext.qml</path>
