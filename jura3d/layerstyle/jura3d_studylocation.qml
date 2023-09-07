@@ -1,171 +1,171 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.30.1-'s-Hertogenbosch" readOnly="0" styleCategories="LayerConfiguration|Symbology|Fields|Forms|CustomProperties">
+<qgis styleCategories="LayerConfiguration|Symbology|Fields|Forms|CustomProperties" version="3.28.10-Firenze" readOnly="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer" referencescale="-1">
+  <renderer-v2 referencescale="-1" symbollevels="0" type="RuleRenderer" forceraster="0" enableorderby="0">
     <rules key="{d2c54199-a9a7-40a5-9328-5cb98b803b3d}">
-      <rule label="High Priority" key="{f9f7eac5-3005-41ab-bea2-bf5105d99817}" symbol="0" filter="attribute(get_feature('AssetItem_Priority', 't_id', attribute(get_feature('AssetItem', 't_id', assetitem_ngmprd_ssts_v2geolassets_assetitem),'priority')),'dispName')='high'"/>
-      <rule label="Medium Priority" key="{f9f7eac5-3005-41ab-bea2-bf5105d99817}" symbol="1" filter="attribute(get_feature('AssetItem_Priority', 't_id', attribute(get_feature('AssetItem', 't_id', assetitem_ngmprd_ssts_v2geolassets_assetitem),'priority')),'dispName')='medium'"/>
-      <rule label="Low Priority" key="{f9f7eac5-3005-41ab-bea2-bf5105d99817}" symbol="2" filter="attribute(get_feature('AssetItem_Priority', 't_id', attribute(get_feature('AssetItem', 't_id', assetitem_ngmprd_ssts_v2geolassets_assetitem),'priority')),'dispName')='low'"/>
-      <rule label="Unkown Priority" key="{71159bf5-027c-46b0-9c0a-cca14e76d58b}" symbol="3" filter="ELSE"/>
+      <rule label="High Priority" filter="attribute(get_feature('AssetItem_Priority', 't_id', attribute(get_feature('AssetItem', 't_id', assetitem_ngmprd_ssts_v2geolassets_assetitem),'priority')),'dispName')='high'" symbol="0" key="{f9f7eac5-3005-41ab-bea2-bf5105d99817}"/>
+      <rule label="Medium Priority" filter="attribute(get_feature('AssetItem_Priority', 't_id', attribute(get_feature('AssetItem', 't_id', assetitem_ngmprd_ssts_v2geolassets_assetitem),'priority')),'dispName')='medium'" symbol="1" key="{f9f7eac5-3005-41ab-bea2-bf5105d99817}"/>
+      <rule label="Low Priority" filter="attribute(get_feature('AssetItem_Priority', 't_id', attribute(get_feature('AssetItem', 't_id', assetitem_ngmprd_ssts_v2geolassets_assetitem),'priority')),'dispName')='low'" symbol="2" key="{f9f7eac5-3005-41ab-bea2-bf5105d99817}"/>
+      <rule label="Unkown Priority" filter="ELSE" symbol="3" key="{71159bf5-027c-46b0-9c0a-cca14e76d58b}"/>
     </rules>
     <symbols>
-      <symbol is_animated="0" alpha="1" clip_to_extent="1" name="0" type="marker" force_rhr="0" frame_rate="10">
+      <symbol clip_to_extent="1" alpha="1" frame_rate="10" is_animated="0" name="0" type="marker" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" id="{01d3db84-e267-4236-941b-512ff7e072ca}" enabled="1" class="SimpleMarker" locked="0">
+        <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
           <Option type="Map">
-            <Option value="0" name="angle" type="QString"/>
-            <Option value="square" name="cap_style" type="QString"/>
-            <Option value="150,36,153,255" name="color" type="QString"/>
-            <Option value="1" name="horizontal_anchor_point" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="circle" name="name" type="QString"/>
-            <Option value="0,0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="0,0,0,255" name="outline_color" type="QString"/>
-            <Option value="solid" name="outline_style" type="QString"/>
-            <Option value="0" name="outline_width" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
-            <Option value="MM" name="outline_width_unit" type="QString"/>
-            <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="2.6" name="size" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
-            <Option value="MM" name="size_unit" type="QString"/>
-            <Option value="1" name="vertical_anchor_point" type="QString"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="150,36,153,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2.6"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol is_animated="0" alpha="1" clip_to_extent="1" name="1" type="marker" force_rhr="0" frame_rate="10">
+      <symbol clip_to_extent="1" alpha="1" frame_rate="10" is_animated="0" name="1" type="marker" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" id="{59a16cec-7d7e-4ba4-9037-ab91e5905d56}" enabled="1" class="SimpleMarker" locked="0">
+        <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
           <Option type="Map">
-            <Option value="0" name="angle" type="QString"/>
-            <Option value="square" name="cap_style" type="QString"/>
-            <Option value="223,130,225,255" name="color" type="QString"/>
-            <Option value="1" name="horizontal_anchor_point" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="circle" name="name" type="QString"/>
-            <Option value="0,0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="0,0,0,255" name="outline_color" type="QString"/>
-            <Option value="solid" name="outline_style" type="QString"/>
-            <Option value="0" name="outline_width" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
-            <Option value="MM" name="outline_width_unit" type="QString"/>
-            <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="2.6" name="size" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
-            <Option value="MM" name="size_unit" type="QString"/>
-            <Option value="1" name="vertical_anchor_point" type="QString"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="223,130,225,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2.6"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol is_animated="0" alpha="1" clip_to_extent="1" name="2" type="marker" force_rhr="0" frame_rate="10">
+      <symbol clip_to_extent="1" alpha="1" frame_rate="10" is_animated="0" name="2" type="marker" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" id="{1734ae35-6017-4c78-a9aa-c4c2e72003e0}" enabled="1" class="SimpleMarker" locked="0">
+        <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
           <Option type="Map">
-            <Option value="0" name="angle" type="QString"/>
-            <Option value="square" name="cap_style" type="QString"/>
-            <Option value="234,171,235,255" name="color" type="QString"/>
-            <Option value="1" name="horizontal_anchor_point" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="circle" name="name" type="QString"/>
-            <Option value="0,0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="0,0,0,255" name="outline_color" type="QString"/>
-            <Option value="solid" name="outline_style" type="QString"/>
-            <Option value="0" name="outline_width" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
-            <Option value="MM" name="outline_width_unit" type="QString"/>
-            <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="2.6" name="size" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
-            <Option value="MM" name="size_unit" type="QString"/>
-            <Option value="1" name="vertical_anchor_point" type="QString"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="234,171,235,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2.6"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol is_animated="0" alpha="1" clip_to_extent="1" name="3" type="marker" force_rhr="0" frame_rate="10">
+      <symbol clip_to_extent="1" alpha="1" frame_rate="10" is_animated="0" name="3" type="marker" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" id="{351d4a4a-11f0-41a6-8b3f-b70dcea0cfd4}" enabled="1" class="SimpleMarker" locked="0">
+        <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
           <Option type="Map">
-            <Option value="0" name="angle" type="QString"/>
-            <Option value="square" name="cap_style" type="QString"/>
-            <Option value="255,132,39,255" name="color" type="QString"/>
-            <Option value="1" name="horizontal_anchor_point" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="circle" name="name" type="QString"/>
-            <Option value="0,0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="0,0,0,255" name="outline_color" type="QString"/>
-            <Option value="solid" name="outline_style" type="QString"/>
-            <Option value="0" name="outline_width" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
-            <Option value="MM" name="outline_width_unit" type="QString"/>
-            <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="2.6" name="size" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
-            <Option value="MM" name="size_unit" type="QString"/>
-            <Option value="1" name="vertical_anchor_point" type="QString"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="255,132,39,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2.6"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -174,18 +174,18 @@
   </renderer-v2>
   <customproperties>
     <Option type="Map">
-      <Option value="copy" name="QFieldSync/action" type="QString"/>
-      <Option value="offline" name="QFieldSync/cloud_action" type="QString"/>
-      <Option value="{}" name="QFieldSync/photo_naming" type="QString"/>
+      <Option name="QFieldSync/action" type="QString" value="copy"/>
+      <Option name="QFieldSync/cloud_action" type="QString" value="offline"/>
+      <Option name="QFieldSync/photo_naming" type="QString" value="{}"/>
       <Option name="dualview/previewExpressions" type="List">
-        <Option value="if(length(geom_to_wkt( $geometry ))>22,substr(geom_to_wkt( $geometry ),0,23)||'...',geom_to_wkt( $geometry ))" type="QString"/>
+        <Option type="QString" value="if(length(geom_to_wkt( $geometry ))>22,substr(geom_to_wkt( $geometry ),0,23)||'...',geom_to_wkt( $geometry ))"/>
       </Option>
-      <Option value="0" name="embeddedWidgets/count" type="int"/>
+      <Option name="embeddedWidgets/count" type="int" value="0"/>
       <Option name="variableNames" type="StringList">
-        <Option value="interlis_topic" type="QString"/>
+        <Option type="QString" value="interlis_topic"/>
       </Option>
       <Option name="variableValues" type="StringList">
-        <Option value="NGMPROD_GeolAssets_V2.GeolAssets" type="QString"/>
+        <Option type="QString" value="NGMPROD_GeolAssets_V2.GeolAssets"/>
       </Option>
     </Option>
   </customproperties>
@@ -203,21 +203,21 @@
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option value="false" name="AllowAddFeatures" type="bool"/>
-            <Option value="false" name="AllowNULL" type="bool"/>
-            <Option value="false" name="ChainFilters" type="bool"/>
-            <Option value="&quot;topic&quot; = 'NGMPROD_GeolAssets_V2.GeolAssets' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'" name="FilterExpression" type="QString"/>
-            <Option name="FilterFields"/>
-            <Option value="false" name="MapIdentification" type="bool"/>
-            <Option value="true" name="OrderByValue" type="bool"/>
-            <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="/home/dave/qgis_projects/jura3dtrouble/altes/Jura3D_MA1.gpkg|layername=T_ILI2DB_BASKET" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="T_ILI2DB_BASKET_7c5407e9_5d9c_4b38_9588_f9077f4c3add" name="ReferencedLayerId" type="QString"/>
-            <Option value="T_ILI2DB_BASKET" name="ReferencedLayerName" type="QString"/>
-            <Option value="ogr" name="ReferencedLayerProviderKey" type="QString"/>
-            <Option value="studylocation_T_basket_T_ILI2DB_BASKET_T_Id" name="Relation" type="QString"/>
-            <Option value="false" name="ShowForm" type="bool"/>
-            <Option value="false" name="ShowOpenFormButton" type="bool"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="false"/>
+            <Option name="ChainFilters" type="bool" value="false"/>
+            <Option name="FilterExpression" type="QString" value="&quot;topic&quot; = 'NGMPROD_GeolAssets_V2.GeolAssets' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'"/>
+            <Option name="FilterFields" type="invalid"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_projects/jura3dtrouble/altes/Jura3D_MA1.gpkg|layername=T_ILI2DB_BASKET"/>
+            <Option name="ReferencedLayerId" type="QString" value="T_ILI2DB_BASKET_7c5407e9_5d9c_4b38_9588_f9077f4c3add"/>
+            <Option name="ReferencedLayerName" type="QString" value="T_ILI2DB_BASKET"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="studylocation_T_basket_T_ILI2DB_BASKET_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
@@ -226,8 +226,8 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
@@ -236,21 +236,21 @@
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option value="false" name="AllowAddFeatures" type="bool"/>
-            <Option value="true" name="AllowNULL" type="bool"/>
-            <Option value="false" name="ChainFilters" type="bool"/>
-            <Option value="" name="FilterExpression" type="QString"/>
+            <Option name="AllowAddFeatures" type="bool" value="false"/>
+            <Option name="AllowNULL" type="bool" value="true"/>
+            <Option name="ChainFilters" type="bool" value="false"/>
+            <Option name="FilterExpression" type="QString" value=""/>
             <Option name="FilterFields"/>
-            <Option value="false" name="MapIdentification" type="bool"/>
-            <Option value="true" name="OrderByValue" type="bool"/>
-            <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="/home/dave/qgis_projects/jura3dtrouble/altes/Jura3D_MA1.gpkg|layername=geomqualityitem" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="GeomQualityItem_6dc4cf08_a904_469b_8500_0239c276eefe" name="ReferencedLayerId" type="QString"/>
-            <Option value="GeomQualityItem" name="ReferencedLayerName" type="QString"/>
-            <Option value="ogr" name="ReferencedLayerProviderKey" type="QString"/>
-            <Option value="studylocation_geomquality_geomqualityitem_T_Id" name="Relation" type="QString"/>
-            <Option value="false" name="ShowForm" type="bool"/>
-            <Option value="false" name="ShowOpenFormButton" type="bool"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_projects/gpkg_moloch/testngmprod.gpkg|layername=geomqualityitem"/>
+            <Option name="ReferencedLayerId" type="QString" value="GeomQualityItem_ed55d26e_d7b0_4395_8dfc_ea4a98a1262b"/>
+            <Option name="ReferencedLayerName" type="QString" value="GeomQualityItem"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="studylocation_geomquality_geomqualityitem_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
@@ -259,18 +259,18 @@
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option value="true" name="AllowAddFeatures" type="bool"/>
-            <Option value="true" name="AllowNULL" type="bool"/>
-            <Option value="false" name="MapIdentification" type="bool"/>
-            <Option value="true" name="OrderByValue" type="bool"/>
-            <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="./Jura3D_MA1.gpkg|layername=assetitem" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="AssetItem_f833c131_b74c_463e_9eba_18f17a3cf41e" name="ReferencedLayerId" type="QString"/>
-            <Option value="AssetItem" name="ReferencedLayerName" type="QString"/>
-            <Option value="ogr" name="ReferencedLayerProviderKey" type="QString"/>
-            <Option value="studylocation_assetitem_assetitem_assetitem_T_Id" name="Relation" type="QString"/>
-            <Option value="false" name="ShowForm" type="bool"/>
-            <Option value="false" name="ShowOpenFormButton" type="bool"/>
+            <Option name="AllowAddFeatures" type="bool" value="true"/>
+            <Option name="AllowNULL" type="bool" value="true"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="./Jura3D_MA1.gpkg|layername=assetitem"/>
+            <Option name="ReferencedLayerId" type="QString" value="AssetItem_f833c131_b74c_463e_9eba_18f17a3cf41e"/>
+            <Option name="ReferencedLayerName" type="QString" value="AssetItem"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="studylocation_assetitem_assetitem_assetitem_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="false"/>
           </Option>
         </config>
       </editWidget>
@@ -279,62 +279,54 @@
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
-            <Option value="true" name="AllowAddFeatures" type="bool"/>
-            <Option value="true" name="AllowNULL" type="bool"/>
-            <Option value="false" name="MapIdentification" type="bool"/>
-            <Option value="true" name="OrderByValue" type="bool"/>
-            <Option value="false" name="ReadOnly" type="bool"/>
-            <Option value="/home/dave/qgis_projects/jura3dtrouble/altes/Jura3D_MA1.gpkg|layername=ngmprd_ssts_v2geolassets_assetitem" name="ReferencedLayerDataSource" type="QString"/>
-            <Option value="AssetItem_273c23c3_9714_4ae8_b321_aa03c75e9b54" name="ReferencedLayerId" type="QString"/>
-            <Option value="AssetItem" name="ReferencedLayerName" type="QString"/>
-            <Option value="ogr" name="ReferencedLayerProviderKey" type="QString"/>
-            <Option value="studylocation_assetitem_ngmprd_ssts_v2geolassets_assetitem_ngmprd_ssts_v2geolassets_assetitem_T_Id" name="Relation" type="QString"/>
-            <Option value="false" name="ShowForm" type="bool"/>
-            <Option value="false" name="ShowOpenFormButton" type="bool"/>
+            <Option name="AllowAddFeatures" type="bool" value="true"/>
+            <Option name="AllowNULL" type="bool" value="true"/>
+            <Option name="MapIdentification" type="bool" value="false"/>
+            <Option name="OrderByValue" type="bool" value="true"/>
+            <Option name="ReadOnly" type="bool" value="false"/>
+            <Option name="ReferencedLayerDataSource" type="QString" value="/home/dave/qgis_projects/gpkg_moloch/testngmprod.gpkg|layername=ngmprd_ssts_v2geolassets_assetitem"/>
+            <Option name="ReferencedLayerId" type="QString" value="AssetItem_2e25603b_932c_4fdb_99b7_5122befe067e"/>
+            <Option name="ReferencedLayerName" type="QString" value="AssetItem"/>
+            <Option name="ReferencedLayerProviderKey" type="QString" value="ogr"/>
+            <Option name="Relation" type="QString" value="studylocation_assetitem_ngmprd_ssts_v2geolassets_assetitem_ngmprd_ssts_v2geolassets_assetitem_T_Id"/>
+            <Option name="ShowForm" type="bool" value="false"/>
+            <Option name="ShowOpenFormButton" type="bool" value="true"/>
           </Option>
         </config>
       </editWidget>
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias index="0" name="" field="T_Id"/>
-    <alias index="1" name="" field="T_basket"/>
-    <alias index="2" name="" field="T_Ili_Tid"/>
-    <alias index="3" name="Qualität" field="geomquality"/>
-    <alias index="4" name="AssetItem" field="assetitem_assetitem"/>
-    <alias index="5" name="AssetItem" field="assetitem_ngmprd_ssts_v2geolassets_assetitem"/>
+    <alias name="" index="0" field="T_Id"/>
+    <alias name="" index="1" field="T_basket"/>
+    <alias name="" index="2" field="T_Ili_Tid"/>
+    <alias name="Qualität" index="3" field="geomquality"/>
+    <alias name="AssetItem" index="4" field="assetitem_assetitem"/>
+    <alias name="AssetItem" index="5" field="assetitem_ngmprd_ssts_v2geolassets_assetitem"/>
   </aliases>
-  <splitPolicies>
-    <policy policy="Duplicate" field="T_Id"/>
-    <policy policy="Duplicate" field="T_basket"/>
-    <policy policy="Duplicate" field="T_Ili_Tid"/>
-    <policy policy="Duplicate" field="geomquality"/>
-    <policy policy="Duplicate" field="assetitem_assetitem"/>
-    <policy policy="Duplicate" field="assetitem_ngmprd_ssts_v2geolassets_assetitem"/>
-  </splitPolicies>
   <defaults>
-    <default applyOnUpdate="0" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" field="T_Id"/>
-    <default applyOnUpdate="0" expression="@default_basket_ngmprod_geolassets_v2_geolassets" field="T_basket"/>
-    <default applyOnUpdate="0" expression="substr(uuid(), 2, 36)" field="T_Ili_Tid"/>
-    <default applyOnUpdate="0" expression="" field="geomquality"/>
-    <default applyOnUpdate="0" expression="" field="assetitem_assetitem"/>
-    <default applyOnUpdate="0" expression="" field="assetitem_ngmprd_ssts_v2geolassets_assetitem"/>
+    <default field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0"/>
+    <default field="T_basket" expression="@default_basket_ngmprod_geolassets_v2_geolassets" applyOnUpdate="0"/>
+    <default field="T_Ili_Tid" expression="substr(uuid(), 2, 36)" applyOnUpdate="0"/>
+    <default field="geomquality" expression="" applyOnUpdate="0"/>
+    <default field="assetitem_assetitem" expression="" applyOnUpdate="0"/>
+    <default field="assetitem_ngmprd_ssts_v2geolassets_assetitem" expression="" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint notnull_strength="1" unique_strength="1" exp_strength="0" field="T_Id" constraints="3"/>
-    <constraint notnull_strength="1" unique_strength="0" exp_strength="0" field="T_basket" constraints="1"/>
-    <constraint notnull_strength="1" unique_strength="1" exp_strength="0" field="T_Ili_Tid" constraints="3"/>
-    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" field="geomquality" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" field="assetitem_assetitem" constraints="0"/>
-    <constraint notnull_strength="1" unique_strength="0" exp_strength="0" field="assetitem_ngmprd_ssts_v2geolassets_assetitem" constraints="1"/>
+    <constraint constraints="3" notnull_strength="1" exp_strength="0" field="T_Id" unique_strength="1"/>
+    <constraint constraints="1" notnull_strength="1" exp_strength="0" field="T_basket" unique_strength="0"/>
+    <constraint constraints="3" notnull_strength="1" exp_strength="0" field="T_Ili_Tid" unique_strength="1"/>
+    <constraint constraints="0" notnull_strength="0" exp_strength="0" field="geomquality" unique_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" exp_strength="0" field="assetitem_assetitem" unique_strength="0"/>
+    <constraint constraints="1" notnull_strength="1" exp_strength="0" field="assetitem_ngmprd_ssts_v2geolassets_assetitem" unique_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" exp="" field="T_Id"/>
-    <constraint desc="" exp="" field="T_basket"/>
-    <constraint desc="" exp="" field="T_Ili_Tid"/>
-    <constraint desc="" exp="" field="geomquality"/>
-    <constraint desc="" exp="" field="assetitem_assetitem"/>
-    <constraint desc="" exp="" field="assetitem_ngmprd_ssts_v2geolassets_assetitem"/>
+    <constraint exp="" desc="" field="T_Id"/>
+    <constraint exp="" desc="" field="T_basket"/>
+    <constraint exp="" desc="" field="T_Ili_Tid"/>
+    <constraint exp="" desc="" field="geomquality"/>
+    <constraint exp="" desc="" field="assetitem_assetitem"/>
+    <constraint exp="" desc="" field="assetitem_ngmprd_ssts_v2geolassets_assetitem"/>
   </constraintExpressions>
   <expressionfields/>
   <editform tolerant="1"></editform>
@@ -359,17 +351,17 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-      <labelFont style="" bold="0" italic="0" strikethrough="0" description="Cantarell,11,-1,5,50,0,0,0,0,0" underline="0"/>
+    <labelStyle overrideLabelColor="0" labelColor="0,0,0,255" overrideLabelFont="0">
+      <labelFont description="Ubuntu,11,-1,5,50,0,0,0,0,0" strikethrough="0" italic="0" style="" underline="0" bold="0"/>
     </labelStyle>
-    <attributeEditorField index="3" showLabel="1" name="geomquality">
-      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-        <labelFont style="" bold="0" italic="0" strikethrough="0" description="Cantarell,11,-1,5,50,0,0,0,0,0" underline="0"/>
+    <attributeEditorField showLabel="1" name="geomquality" index="3">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255" overrideLabelFont="0">
+        <labelFont description="Cantarell,11,-1,5,50,0,0,0,0,0" strikethrough="0" italic="0" style="" underline="0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
-    <attributeEditorField index="5" showLabel="1" name="assetitem_ngmprd_ssts_v2geolassets_assetitem">
-      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-        <labelFont style="" bold="0" italic="0" strikethrough="0" description="Cantarell,11,-1,5,50,0,0,0,0,0" underline="0"/>
+    <attributeEditorField showLabel="1" name="assetitem_ngmprd_ssts_v2geolassets_assetitem" index="5">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255" overrideLabelFont="0">
+        <labelFont description="Cantarell,11,-1,5,50,0,0,0,0,0" strikethrough="0" italic="0" style="" underline="0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
   </attributeEditorForm>
