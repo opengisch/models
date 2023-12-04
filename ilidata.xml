@@ -1839,6 +1839,9 @@
           <DatasetIdx16.Code_>
             <value>http://codes.interlis.ch/type/projecttopping</value>
           </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/model/KbS_V1_5</value>
+          </DatasetIdx16.Code_>
         </categories>
         <files>
           <DatasetIdx16.DataFile>
